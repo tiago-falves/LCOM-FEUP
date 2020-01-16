@@ -1,0 +1,36 @@
+\hypertarget{Menu_8c}{}\section{Menu.\+c File Reference}
+\label{Menu_8c}\index{Menu.\+c@{Menu.\+c}}
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/main\+\_\+menu.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/game\+\_\+over.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/you\+Lost.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/you\+Win.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/waiting\+Screen.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/highscores1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/menu\+\_\+back.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/score.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/garf.\+xpm\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for Menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMenu}{Menu} $\ast$ \hyperlink{group__menu_ga89bccdf2d8b12f81102d85e3b77d2505}{create\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Create a menu object. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gaff74431082e0cab33a257a6947626212}{destroy\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$$\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em destroyes the menu \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_ga9a634cb675f49714a001a3ac55efe1d4}{clean\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the main menu image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gabc6c4076d16fb5f03ed1b6c19da082eb}{clean\+\_\+game\+Over} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the game over image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_ga2bd58aed5d881d9f708ce50d60d2ad51}{clean\+\_\+you\+Win} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the win image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gad08f0c8b6e2f9704c0d8a0dbceb46f52}{clean\+\_\+waiting\+Screen\+Img} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the waiting screen image. \end{DoxyCompactList}\end{DoxyCompactItemize}

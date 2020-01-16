@@ -1,0 +1,8 @@
+<map id="drawHighscoresMenu" name="drawHighscoresMenu">
+<area shape="rect" id="node2" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="389,5,515,32"/>
+<area shape="rect" id="node3" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="201,56,341,83"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="563,107,645,133"/>
+<area shape="rect" id="node6" href="$highscores_8c.html#af004aefe7f64968a793d968b2ac0e86f" title="Prints all the highscores in a formatted way. " alt="" coords="213,107,330,133"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="693,107,799,133"/>
+<area shape="rect" id="node7" href="$highscores_8c.html#a09d90496d9ad097720ef2b990b07bb9a" title="Given a number, prints to the screen the corresponding number. " alt="" coords="413,56,491,83"/>
+</map>

@@ -1,0 +1,16 @@
+\section{Modules}
+Here is a list of all modules\+:\begin{DoxyCompactList}
+\item \contentsline{section}{Drawing}{\pageref{group__Drawing}}{}
+\item \contentsline{section}{Game}{\pageref{group__Game}}{}
+\item \contentsline{section}{H\+E\+RO}{\pageref{group__HERO}}{}
+\item \contentsline{section}{Highscore}{\pageref{group__Highscore}}{}
+\item \contentsline{section}{Keyboard}{\pageref{group__Keyboard}}{}
+\item \contentsline{section}{i8254}{\pageref{group__i8254}}{}
+\item \contentsline{section}{menu}{\pageref{group__menu}}{}
+\item \contentsline{section}{Mouse}{\pageref{group__Mouse}}{}
+\item \contentsline{section}{R\+TC}{\pageref{group__RTC}}{}
+\item \contentsline{section}{Serial\+\_\+\+Port}{\pageref{group__Serial__Port}}{}
+\item \contentsline{section}{Sprite}{\pageref{group__Sprite}}{}
+\item \contentsline{section}{Terminix}{\pageref{group__Terminix}}{}
+\item \contentsline{section}{Zombie}{\pageref{group__Zombie}}{}
+\end{DoxyCompactList}

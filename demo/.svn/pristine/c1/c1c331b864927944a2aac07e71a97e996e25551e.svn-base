@@ -1,0 +1,75 @@
+ #pragma once
+  
+ #include <stdbool.h>
+ #include <stdint.h>
+ #include <minix/driver.h>
+ #include <sys/mman.h>
+ #include <lcom/lcf.h>
+ 
+
+ #define SET_GRAPHIC_MODE 0x4F02
+ #define RETURN_VBE_INFO 0x4F00
+ #define GET_VBE_MODE_INFO 0x4F01
+ #define INDEXED_VIDEO_MODE 0x105
+ #define RGB_VIDEO_MODE 0x14c
+ #define LINEAR_MODE_MASK 1<<14 
+ #define FRAME_RATE 60
+
+
+ typedef struct {
+  uint8_t vbe_signature[4];
+  uint8_t vbe_version[2];
+  phys_bytes oem_string_ptr;
+  uint8_t capabilities[4];
+  phys_bytes mode_list_ptr;
+  uint16_t total_memory;
+  uint16_t oem_software_rev;
+  phys_bytes oem_vendor_name_ptr;
+  phys_bytes oem_product_name_ptr;
+  phys_bytes oem_product_rev_ptr;
+  uint8_t reserved[222];
+  uint8_t oem_data[256];
+} VbeControllerInfo;
+
+  int get_hres();
+
+  int get_vres();
+
+  uint32_t convert_far_virtual(phys_bytes pointer,  phys_bytes base_pointer);
+
+  int calculate_index(int row, int col, int first, int no_rectangles, uint8_t step);
+
+  int calculate_Red_Component(int row, int col, int first, uint8_t step, vbe_mode_info_t *mode_info);
+
+  int calculate_Green_Component(int row, int col, int first, uint8_t step, vbe_mode_info_t *mode_info);
+
+  int calculate_Blue_Component(int row, int col, int first, uint8_t step, vbe_mode_info_t *mode_info);
+
+  int calculate_RGB(int row, int col, int first, uint8_t step, vbe_mode_info_t *mode_info);
+  
+  int (vg_draw_rectangle)(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint32_t color);
+
+  int (vg_draw_hline)(uint16_t x, uint16_t y, uint16_t len, uint32_t color);
+
+  int vg_draw_pixel(uint16_t x, uint16_t y, uint32_t color);
+
+  int graphic_mode_init(uint16_t mode);
+
+  void draw_xpm(xpm_image_t img, uint16_t x, uint16_t y);
+
+  void convert_xpm_img(xpm_map_t xpm,xpm_image_t *img, uint8_t *map);
+
+  
+
+  void clean_xpm(xpm_image_t img, uint16_t x, uint16_t y);
+
+  void animate_xpm(xpm_map_t xpm, uint16_t xi, uint16_t yi, uint16_t xf, uint16_t yf,int16_t speed, uint8_t fr_rate);
+  
+  void return_vbe_ctr_info(vg_vbe_contr_info_t * info);
+
+  int get_vbe_mode_info(uint16_t mode, vbe_mode_info_t *mode_info);
+
+  void update_buffer();
+
+
+

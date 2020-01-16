@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['get_5fbullet_5fcoords',['get_bullet_coords',['../Hero_8c.html#aac2a4eecd0a12794666227ae37f492ba',1,'get_bullet_coords(Hero *hero, uint16_t *x, uint16_t *y):&#160;Hero.c'],['../Hero_8h.html#aac2a4eecd0a12794666227ae37f492ba',1,'get_bullet_coords(Hero *hero, uint16_t *x, uint16_t *y):&#160;Hero.c']]],
+  ['get_5fbullet_5fdirection',['get_bullet_direction',['../Hero_8c.html#a890d0f121b609c134877b2139edd46da',1,'get_bullet_direction(Hero *hero, uint16_t *x, uint16_t *y):&#160;Hero.c'],['../Hero_8h.html#a890d0f121b609c134877b2139edd46da',1,'get_bullet_direction(Hero *hero, uint16_t *x, uint16_t *y):&#160;Hero.c']]],
+  ['get_5fcurrent_5fterminix',['get_current_terminix',['../Game_8h.html#a63401b160e1b4125d13b63195b8cc09a',1,'get_current_terminix():&#160;Terminix.c'],['../Terminix_8c.html#a63401b160e1b4125d13b63195b8cc09a',1,'get_current_terminix():&#160;Terminix.c'],['../Terminix_8h.html#a63401b160e1b4125d13b63195b8cc09a',1,'get_current_terminix():&#160;Terminix.c']]],
+  ['get_5fhres',['get_hres',['../drawing_8c.html#a6402ca094cd1aace6adedd01b2b5496e',1,'get_hres():&#160;drawing.c'],['../drawing_8h.html#a6402ca094cd1aace6adedd01b2b5496e',1,'get_hres():&#160;drawing.c']]],
+  ['get_5fvbe_5fmode_5finfo',['get_vbe_mode_info',['../drawing_8c.html#a7f6272b1842da39059fdf1121ce6c7e4',1,'get_vbe_mode_info(uint16_t mode, vbe_mode_info_t *mode_info):&#160;drawing.c'],['../drawing_8h.html#a7f6272b1842da39059fdf1121ce6c7e4',1,'get_vbe_mode_info(uint16_t mode, vbe_mode_info_t *mode_info):&#160;drawing.c']]],
+  ['get_5fvres',['get_vres',['../drawing_8c.html#a484929b3e33f236cd9087e18e1521ee3',1,'get_vres():&#160;drawing.c'],['../drawing_8h.html#a484929b3e33f236cd9087e18e1521ee3',1,'get_vres():&#160;drawing.c']]],
+  ['got_5ffull_5fscan_5fcode',['got_full_scan_code',['../i8042_8h.html#a1a1e847a3ff58112435390636fc34719',1,'got_full_scan_code():&#160;keyboard.c'],['../keyboard_8c.html#a1a1e847a3ff58112435390636fc34719',1,'got_full_scan_code():&#160;keyboard.c']]],
+  ['graphic_5fmode_5finit',['graphic_mode_init',['../drawing_8c.html#a30d6689ebb9f64ddca620d3d5a396446',1,'graphic_mode_init(uint16_t mode):&#160;drawing.c'],['../drawing_8h.html#a0601490a63f18afe194c8f935ea58631',1,'graphic_mode_init(uint16_t mode):&#160;drawing.c']]]
+];

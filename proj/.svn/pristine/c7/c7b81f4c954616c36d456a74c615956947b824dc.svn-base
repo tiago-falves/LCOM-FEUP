@@ -1,0 +1,10 @@
+<map id="update_bullets_position" name="update_bullets_position">
+<area shape="rect" id="node2" href="$Game_8c.html#a72797755e6b9d1841d2e9c7bff17b6cd" title="Updates the bullet position while checking for collisions. " alt="" coords="212,81,363,108"/>
+<area shape="rect" id="node3" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="775,5,915,32"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="627,31,712,57"/>
+<area shape="rect" id="node6" href="$Game_8c.html#a15a17da14a2aaac56415514511136bd6" title="Checks if the bullet as collided with anything. " alt="" coords="411,81,564,108"/>
+<area shape="rect" id="node8" href="$Hero_8c.html#a53ce3ef3123128ecf5d97853f1d00270" title="Destroys the bullet. " alt="" coords="436,132,539,159"/>
+<area shape="rect" id="node9" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="628,157,711,184"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="792,93,897,120"/>
+<area shape="rect" id="node7" href="$Zombie_8c.html#ae811d7eac3687aee9cf5dd7bc73aed3b" title="Destroyes a zombie object. " alt="" coords="612,81,727,108"/>
+</map>

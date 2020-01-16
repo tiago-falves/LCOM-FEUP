@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['packet_5fbyte_5fhandler',['packet_byte_handler',['../group__Mouse.html#gacbc1b5c21b7dfa3f4bde746667b3b3b2',1,'packet_byte_handler(int *position, uint8_t bytes[3]):&#160;mouse.c'],['../group__Mouse.html#gacbc1b5c21b7dfa3f4bde746667b3b3b2',1,'packet_byte_handler(int *position, uint8_t bytes[3]):&#160;mouse.c']]],
+  ['packet_5fhandler',['packet_handler',['../group__Mouse.html#gaed5e0cdccd09938aab783602cb657331',1,'packet_handler(struct packet *pp, uint8_t packet[3]):&#160;mouse.c'],['../group__Mouse.html#gaed5e0cdccd09938aab783602cb657331',1,'packet_handler(struct packet *pp, uint8_t packet[3]):&#160;mouse.c']]],
+  ['print_5fdigit',['print_digit',['../group__Highscore.html#ga09d90496d9ad097720ef2b990b07bb9a',1,'print_digit(unsigned num, uint16_t x, uint16_t y):&#160;highscores.c'],['../group__Highscore.html#ga09d90496d9ad097720ef2b990b07bb9a',1,'print_digit(unsigned num, uint16_t x, uint16_t y):&#160;highscores.c']]],
+  ['print_5fhighscores',['print_highscores',['../group__Highscore.html#gaf004aefe7f64968a793d968b2ac0e86f',1,'print_highscores():&#160;highscores.c'],['../group__Highscore.html#gaf004aefe7f64968a793d968b2ac0e86f',1,'print_highscores():&#160;highscores.c']]],
+  ['proj_5fmain_5floop',['proj_main_loop',['../proj_8c.html#a2a16f651eccbd248e1ad3b3b924b143b',1,'proj.c']]]
+];

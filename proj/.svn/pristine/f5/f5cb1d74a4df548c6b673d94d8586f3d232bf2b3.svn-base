@@ -1,0 +1,10 @@
+<map id="rtc_set_alarm_in_seconds" name="rtc_set_alarm_in_seconds">
+<area shape="rect" id="node2" href="$RTC_8c.html#a2cabb2f91ba0ba2cfd06a1fd80260169" title="Gets the current second. " alt="" coords="247,31,337,57"/>
+<area shape="rect" id="node6" href="$RTC_8c.html#af4cbfcf7cd2fd02862614a8209e6b7f6" title="Set alarm second value. " alt="" coords="228,81,356,108"/>
+<area shape="rect" id="node8" href="$RTC_8c.html#a356598c3705fad6db2b319b58b27530e" title="Set alarm minute value. " alt="" coords="229,132,355,159"/>
+<area shape="rect" id="node9" href="$RTC_8c.html#aabf0c92b98c848db38ef0f3063b6aa92" title="Set alarm hour value. " alt="" coords="237,183,347,209"/>
+<area shape="rect" id="node3" href="$RTC_8c.html#ab4e3a24c7228998edc81bafcf315e764" title="Reads data from the RTC_DATA_REG. " alt="" coords="437,5,506,32"/>
+<area shape="rect" id="node5" href="$RTC_8c.html#a0b67dcdd55171dd973c720a4391f475d" title="convert_to_decimal" alt="" coords="404,56,539,83"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="587,5,677,32"/>
+<area shape="rect" id="node7" href="$RTC_8c.html#ae067c9946aaa508970933b1527ea063e" title="Write a value to a register. " alt="" coords="435,132,507,159"/>
+</map>

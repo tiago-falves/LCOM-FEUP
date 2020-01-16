@@ -1,0 +1,7 @@
+<map id="timer_test_time_base" name="timer_test_time_base">
+<area shape="rect" id="node2" href="$timer_8c.html#af2c04fa8e97ffa748fd3f612886a92a7" title="timer_set_frequency" alt="" coords="200,56,340,83"/>
+<area shape="rect" id="node3" href="$timer_8c.html#a703c60b40c8c49607d6ecb6fef82d27a" title="timer_get_conf" alt="" coords="388,5,496,32"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a81621440b3d65680979425e39aa8c789" title="util_get_LSB" alt="" coords="394,56,490,83"/>
+<area shape="rect" id="node6" href="$utils_8c.html#a6a880076cd2ec468834438b6e0c58836" title="util_get_MSB" alt="" coords="392,107,492,133"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="544,5,635,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="change_other_hero_position" name="change_other_hero_position">
+<area shape="rect" id="node2" href="$Hero_8c.html#a8e82613c290b342426aef53f5b5ce91d" title="Changes the position values so the Hero moves up. " alt="" coords="246,5,353,32"/>
+<area shape="rect" id="node3" href="$Hero_8c.html#af2bc262749bfcfb933eef366a2b501fb" title="Changes the position values so the Hero moves down. " alt="" coords="237,56,361,83"/>
+<area shape="rect" id="node4" href="$Hero_8c.html#a6ad4f1771299a2e5449e209215df6de4" title="Changes the position values so the Hero moves right. " alt="" coords="240,107,359,133"/>
+<area shape="rect" id="node5" href="$Hero_8c.html#ad0ef8c3ec15731aca633aa0f765eda89" title="Changes the position values so the Hero moves left. " alt="" coords="244,157,355,184"/>
+</map>

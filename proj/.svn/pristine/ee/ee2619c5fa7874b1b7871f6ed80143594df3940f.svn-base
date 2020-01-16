@@ -1,0 +1,88 @@
+\hypertarget{drawing_8h}{}\section{drawing.\+h File Reference}
+\label{drawing_8h}\index{drawing.\+h@{drawing.\+h}}
+
+
+Classe responsible for drawing images into the screen and animating them.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/driver.\+h$>$}\newline
+{\ttfamily \#include $<$sys/mman.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for drawing.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{drawing_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{drawing_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__Drawing_gab60e2c0bed0b0520adad061979a093a0}{S\+E\+T\+\_\+\+G\+R\+A\+P\+H\+I\+C\+\_\+\+M\+O\+DE}~0x4\+F02
+\item 
+\#define \hyperlink{group__Drawing_ga90c41c592045463bf8bf27e75fefd76e}{R\+E\+T\+U\+R\+N\+\_\+\+V\+B\+E\+\_\+\+I\+N\+FO}~0x4\+F00
+\item 
+\#define \hyperlink{group__Drawing_gac3faf02beab492e13687e9f10efb6ca4}{G\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+FO}~0x4\+F01
+\item 
+\#define \hyperlink{group__Drawing_ga5718fa99910638856475da336518b500}{I\+N\+D\+E\+X\+E\+D\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}~0x105
+\item 
+\#define \hyperlink{group__Drawing_ga6bd6dce1dc9d34f9de54e2ecd6d42e6f}{R\+G\+B\+\_\+\+V\+I\+D\+E\+O\+\_\+\+M\+O\+DE}~0x14c
+\item 
+\#define \hyperlink{group__Drawing_ga094bf0581cadc1b2dcc6b575d4f8de4a}{L\+I\+N\+E\+A\+R\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK}~1$<$$<$14
+\item 
+\#define \hyperlink{group__Drawing_gae2f99e05f64d0383aee9bd75a52c4fbb}{F\+R\+A\+M\+E\+\_\+\+R\+A\+TE}~60
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Drawing_ga6402ca094cd1aace6adedd01b2b5496e}{get\+\_\+hres} ()
+\begin{DoxyCompactList}\small\item\em Get the horizontal resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga484929b3e33f236cd9087e18e1521ee3}{get\+\_\+vres} ()
+\begin{DoxyCompactList}\small\item\em Get the vertical resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga3885ed72ae1f40d10717bcab035313c9}{calculate\+\_\+\+Red\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the red component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_gaf077939f4859163aace3435a706de7ad}{calculate\+\_\+\+Green\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the green component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga555715b2c8212aae64d17ab4aa09d61b}{calculate\+\_\+\+Blue\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the blue component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga9020d25f429f0fcaaf5ff325fcc72145}{calculate\+\_\+\+R\+GB} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Calculates the red, blue and green component values of a pixel. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel in the screen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga0601490a63f18afe194c8f935ea58631}{graphic\+\_\+mode\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the graphics card mode. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga923b943e5b1b4762cd38427bdba6f3b1}{draw\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em draws a given xpm in the screen \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga40b707646a9475857a68d37fbf131e4e}{convert\+\_\+xpm\+\_\+img} (xpm\+\_\+map\+\_\+t xpm, xpm\+\_\+image\+\_\+t $\ast$img)
+\begin{DoxyCompactList}\small\item\em Converts an xpm\+\_\+map\+\_\+t into a xpm\+\_\+image\+\_\+t. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga3549b2a65240f7025f5e98bffe20b2f0}{clean\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Erases a given xpm. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga7f6272b1842da39059fdf1121ce6c7e4}{get\+\_\+vbe\+\_\+mode\+\_\+info} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Get the vbe mode info. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_gafeded743483b92b165de25bc9f0047ec}{update\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Updates the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe responsible for drawing images into the screen and animating them. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}

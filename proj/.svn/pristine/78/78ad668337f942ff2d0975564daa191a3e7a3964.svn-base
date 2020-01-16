@@ -1,0 +1,67 @@
+\hypertarget{structBullet}{}\section{Bullet Struct Reference}
+\label{structBullet}\index{Bullet@{Bullet}}
+
+
+Struct that saves the information of a bullet.  
+
+
+
+
+{\ttfamily \#include $<$Hero.\+h$>$}
+
+
+
+Collaboration diagram for Bullet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{structBullet__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{structBullet_a040bbfdb4d8e38dbd347309230e7bb50}{sprite}
+\item 
+uint16\+\_\+t \hyperlink{structBullet_a357f247d373292bf188734403480464d}{x\+\_\+direction}
+\item 
+uint16\+\_\+t \hyperlink{structBullet_a98beb889c91d1a6f222ce14869cd3da1}{y\+\_\+direction}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structBullet_afd3cb40a1c1900289cd2add8151c7556}{bullet\+\_\+img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that saves the information of a bullet. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structBullet_afd3cb40a1c1900289cd2add8151c7556}\label{structBullet_afd3cb40a1c1900289cd2add8151c7556}} 
+\index{Bullet@{Bullet}!bullet\+\_\+img@{bullet\+\_\+img}}
+\index{bullet\+\_\+img@{bullet\+\_\+img}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{bullet\+\_\+img}{bullet\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Bullet\+::bullet\+\_\+img}
+
+Specifies the bullet image to be drawn \mbox{\Hypertarget{structBullet_a040bbfdb4d8e38dbd347309230e7bb50}\label{structBullet_a040bbfdb4d8e38dbd347309230e7bb50}} 
+\index{Bullet@{Bullet}!sprite@{sprite}}
+\index{sprite@{sprite}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily \hyperlink{structSprite}{Sprite}$\ast$ Bullet\+::sprite}
+
+Information about the bullets sprite \mbox{\Hypertarget{structBullet_a357f247d373292bf188734403480464d}\label{structBullet_a357f247d373292bf188734403480464d}} 
+\index{Bullet@{Bullet}!x\+\_\+direction@{x\+\_\+direction}}
+\index{x\+\_\+direction@{x\+\_\+direction}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{x\+\_\+direction}{x\_direction}}
+{\footnotesize\ttfamily uint16\+\_\+t Bullet\+::x\+\_\+direction}
+
+Specifies the direction in the x axis \mbox{\Hypertarget{structBullet_a98beb889c91d1a6f222ce14869cd3da1}\label{structBullet_a98beb889c91d1a6f222ce14869cd3da1}} 
+\index{Bullet@{Bullet}!y\+\_\+direction@{y\+\_\+direction}}
+\index{y\+\_\+direction@{y\+\_\+direction}!Bullet@{Bullet}}
+\subsubsection{\texorpdfstring{y\+\_\+direction}{y\_direction}}
+{\footnotesize\ttfamily uint16\+\_\+t Bullet\+::y\+\_\+direction}
+
+Specifies the direction in the y axis 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Hero_8h}{Hero.\+h}\end{DoxyCompactItemize}

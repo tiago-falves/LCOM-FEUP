@@ -1,0 +1,37 @@
+#include "Terminix.h"
+
+
+static Terminix * terminix = NULL;
+
+
+Terminix * get_current_terminix() {
+  return terminix;
+}
+
+
+void create_terminix(){
+
+  if(terminix != NULL){
+    return;
+  }
+
+  terminix = malloc(sizeof (Terminix));
+  
+  xpm_image_t background_img;
+  convert_xpm_img(background_xpm,&background_img);
+  draw_xpm(background_img,0,0);
+  terminix->background_xpm = background_img;
+
+  Hero * hero = create_hero();
+  Zombie * zombie1 = create_zombie(20,20);
+  Mouse * mouse = create_mouse();
+
+  terminix->hero = hero;
+  terminix->zombie1 = zombie1;
+  terminix->mouse = mouse;
+
+  terminix->state = level;
+
+}
+
+

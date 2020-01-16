@@ -1,0 +1,5 @@
+<map id="send_movement_info" name="send_movement_info">
+<area shape="rect" id="node2" href="$Serial__port_8c.html#add4870a81710672ca2478ba34127ab6c" title="Sends a message throw de uart. " alt="" coords="200,5,339,32"/>
+<area shape="rect" id="node3" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="387,5,497,32"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="545,5,636,32"/>
+</map>

@@ -1,0 +1,89 @@
+\hypertarget{proj_8c}{}\section{proj.\+c File Reference}
+\label{proj_8c}\index{proj.\+c@{proj.\+c}}
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lcom/vbe.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Serial\+\_\+port.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/liblm.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/proj.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for proj.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\item 
+int() \hyperlink{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}{proj\+\_\+main\+\_\+loop} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{proj_8c_a9f2a72551d0150a1432fe3ad3a424f33}{global\+\_\+counter}
+\item 
+uint8\+\_\+t \hyperlink{proj_8c_a3c795973beeecd1596967a31a805488e}{status\+\_\+code}
+\item 
+uint8\+\_\+t \hyperlink{proj_8c_af4aead9dfdc0d2f7e93662387a21e0bc}{scan\+\_\+code}
+\item 
+bool \hyperlink{proj_8c_a0b5dfb204b3e8d8d65df113a3f64655e}{read\+\_\+mouse}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\index{proj.\+c@{proj.\+c}!main@{main}}
+\index{main@{main}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}\label{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b}} 
+\index{proj.\+c@{proj.\+c}!proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}}
+\index{proj\+\_\+main\+\_\+loop@{proj\+\_\+main\+\_\+loop}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{proj\+\_\+main\+\_\+loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily int() proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{proj_8c_a2a16f651eccbd248e1ad3b3b924b143b_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{proj_8c_a9f2a72551d0150a1432fe3ad3a424f33}\label{proj_8c_a9f2a72551d0150a1432fe3ad3a424f33}} 
+\index{proj.\+c@{proj.\+c}!global\+\_\+counter@{global\+\_\+counter}}
+\index{global\+\_\+counter@{global\+\_\+counter}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{global\+\_\+counter}{global\_counter}}
+{\footnotesize\ttfamily uint32\+\_\+t global\+\_\+counter}
+
+\mbox{\Hypertarget{proj_8c_a0b5dfb204b3e8d8d65df113a3f64655e}\label{proj_8c_a0b5dfb204b3e8d8d65df113a3f64655e}} 
+\index{proj.\+c@{proj.\+c}!read\+\_\+mouse@{read\+\_\+mouse}}
+\index{read\+\_\+mouse@{read\+\_\+mouse}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{read\+\_\+mouse}{read\_mouse}}
+{\footnotesize\ttfamily bool read\+\_\+mouse}
+
+\mbox{\Hypertarget{proj_8c_af4aead9dfdc0d2f7e93662387a21e0bc}\label{proj_8c_af4aead9dfdc0d2f7e93662387a21e0bc}} 
+\index{proj.\+c@{proj.\+c}!scan\+\_\+code@{scan\+\_\+code}}
+\index{scan\+\_\+code@{scan\+\_\+code}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{scan\+\_\+code}{scan\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t scan\+\_\+code}
+
+\mbox{\Hypertarget{proj_8c_a3c795973beeecd1596967a31a805488e}\label{proj_8c_a3c795973beeecd1596967a31a805488e}} 
+\index{proj.\+c@{proj.\+c}!status\+\_\+code@{status\+\_\+code}}
+\index{status\+\_\+code@{status\+\_\+code}!proj.\+c@{proj.\+c}}
+\subsubsection{\texorpdfstring{status\+\_\+code}{status\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t status\+\_\+code}
+

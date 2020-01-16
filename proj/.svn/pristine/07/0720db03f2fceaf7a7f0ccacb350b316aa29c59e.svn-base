@@ -1,0 +1,143 @@
+\hypertarget{i8042_8h}{}\section{i8042.\+h File Reference}
+\label{i8042_8h}\index{i8042.\+h@{i8042.\+h}}
+
+
+Responsible for everything related to the keyboard.  
+
+
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for i8042.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{i8042_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{i8042_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{i8042_8h_a4cd6261eafdbb595a443afa13a359729}{\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+}
+\item 
+\#define \hyperlink{group__Keyboard_ga89c4d098b53809674457b1660b1af780}{S\+T\+A\+T\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__Keyboard_ga2fec02c63eedad8c433b5fa636e30b0c}{K\+B\+C\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__Keyboard_ga88f9c10ac61d0a38fd5f2357a86e0383}{K\+B\+C\+\_\+\+A\+R\+G\+U\+M\+E\+N\+T\+\_\+\+R\+EG}~0x60
+\item 
+\#define \hyperlink{group__Keyboard_ga4680153f26a3244682a2e2e01e57e318}{W\+R\+I\+T\+E\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE}~0x60
+\item 
+\#define \hyperlink{group__Keyboard_ga305ee86129081b404b151c64293566e7}{R\+E\+A\+D\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+Y\+TE}~0x20
+\item 
+\#define \hyperlink{group__Keyboard_ga4e55ab3119a4420254fc0d8e8f9fe328}{O\+U\+T\+\_\+\+B\+U\+F\+\_\+\+R\+EG}~0x60
+\item 
+\#define \hyperlink{group__Keyboard_ga59bb4de6882480683630cc4fee1710a3}{I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+\_\+\+R\+EG}~0x60
+\item 
+\#define \hyperlink{group__Keyboard_ga6fd2756a3f63c8ad54cff3289229a4cd}{O\+B\+F\+\_\+\+B\+IT}~B\+IT(0)
+\item 
+\#define \hyperlink{group__Keyboard_ga7521122e23c8d5c83b2a033b2505c86c}{I\+N\+T0}~B\+IT(0)
+\item 
+\#define \hyperlink{group__Keyboard_ga3fe0dea7b30a55d84f5763338956eb44}{P\+A\+R\+I\+T\+Y\+\_\+\+B\+IT}~B\+IT(7)
+\item 
+\#define \hyperlink{group__Keyboard_gaf326c646519c90bcb828d8c6ee6badfc}{T\+I\+M\+E\+\_\+\+O\+U\+T\+\_\+\+B\+IT}~B\+IT(6)
+\item 
+\#define \hyperlink{group__Keyboard_gaf19f24dadaa7d0354eb5ff7a2a32265f}{A\+U\+X\+\_\+\+B\+IT}~B\+IT(5)
+\item 
+\#define \hyperlink{group__Keyboard_ga1a522aa19bcb695a9df30032a893bee3}{D\+E\+L\+A\+Y\+\_\+\+US}~15
+\item 
+\#define \hyperlink{group__Keyboard_ga0787a189d481e7b8b7e30c63c019cf6c}{I\+N\+C\+O\+M\+P\+L\+E\+T\+E\+\_\+\+S\+C\+A\+N\+\_\+\+C\+O\+DE}~0x\+E0
+\item 
+\#define \hyperlink{group__Keyboard_ga7a329783882f66a578ad3bbb787afd42}{I\+B\+F\+\_\+\+B\+IT}~B\+IT(1)
+\item 
+\#define \hyperlink{group__Keyboard_ga592dfdf397b21913348b4dd6b7759b2d}{E\+S\+C\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0x81
+\item 
+\#define \hyperlink{group__Keyboard_gacb777c7c7af1e6859732e4ab59adf681}{W\+\_\+\+M\+A\+K\+E\+\_\+\+C\+O\+DE}~0x11
+\item 
+\#define \hyperlink{group__Keyboard_ga45fda238c36661e22a2bda60110aed09}{W\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0x91
+\item 
+\#define \hyperlink{group__Keyboard_ga33aa421fd3c2491284a71ad577933fd0}{A\+\_\+\+M\+A\+K\+E\+\_\+\+C\+O\+DE}~0x1E
+\item 
+\#define \hyperlink{group__Keyboard_ga6b3bc710b60263bd76130540a24b74b6}{A\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0x9E
+\item 
+\#define \hyperlink{group__Keyboard_ga23f867dcf757da71f03cbe28e41ed98d}{D\+\_\+\+M\+A\+K\+E\+\_\+\+C\+O\+DE}~0x20
+\item 
+\#define \hyperlink{group__Keyboard_gaeb7fb0b62eabc29ca24eb9ce77b07152}{D\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0x\+A0
+\item 
+\#define \hyperlink{group__Keyboard_ga05c2d71abe8bdd210f3424fd7615a59e}{S\+\_\+\+M\+A\+K\+E\+\_\+\+C\+O\+DE}~0x1F
+\item 
+\#define \hyperlink{group__Keyboard_gaec37aea52a2989fbb1da1f848206997e}{S\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0x9F
+\item 
+\#define \hyperlink{group__Keyboard_gad4ca374ae091c434d3c8267b96a01c5e}{S\+P\+A\+C\+E\+\_\+\+M\+A\+K\+E\+\_\+\+C\+O\+DE}~0x39
+\item 
+\#define \hyperlink{group__Keyboard_ga184779318a6aa08ec4f53c1a6925c4c9}{S\+P\+A\+C\+E\+\_\+\+B\+R\+E\+A\+K\+\_\+\+C\+O\+DE}~0xb9
+\item 
+\#define \hyperlink{group__Keyboard_ga9eafc2cf25aa0928d80a9eac3e2cc64a}{M\+O\+U\+S\+E\+\_\+\+D\+I\+S\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG}~0x\+F5
+\item 
+\#define \hyperlink{group__Keyboard_ga7b2666cde8424c579b239de6759b81dc}{M\+O\+U\+S\+E\+\_\+\+E\+N\+\_\+\+D\+A\+T\+A\+\_\+\+R\+E\+P\+O\+R\+T\+I\+NG}~0x\+F4
+\item 
+\#define \hyperlink{group__Keyboard_ga6065e2718e2c8e4a5b5d005cba836cbc}{M\+O\+U\+S\+E\+\_\+\+R\+E\+A\+D\+\_\+\+D\+A\+TA}~0x\+EB
+\item 
+\#define \hyperlink{group__Keyboard_ga9af4ac19fb83e1b113043bf44520d386}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+S\+T\+R\+E\+A\+M\+\_\+\+M\+O\+DE}~0x\+EA
+\item 
+\#define \hyperlink{group__Keyboard_ga6f6489887e08bff4887d0bc5dcf214d8}{A\+CK}~0x\+FA
+\item 
+\#define \hyperlink{group__Keyboard_ga0fcdbd39ed7dcf62fede44082d09cb7a}{W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}~0x\+D4
+\item 
+\#define \hyperlink{group__Keyboard_gaaa2d5ba39424fb94c1593ae86906008c}{M\+O\+U\+S\+E\+\_\+\+S\+E\+T\+\_\+\+R\+E\+M\+O\+T\+E\+\_\+\+M\+O\+DE}~0x\+F0
+\item 
+\#define \hyperlink{group__Keyboard_gac65ea4e5008ae5c27f4784ecd5f17b94}{M\+S\+B\+\_\+\+X\+\_\+\+D\+E\+L\+T\+A\+\_\+\+B\+IT}~B\+IT(4)
+\item 
+\#define \hyperlink{group__Keyboard_gaf0d38dc434f89cdb37fc18b2ef8f2137}{M\+S\+B\+\_\+\+Y\+\_\+\+D\+E\+L\+T\+A\+\_\+\+B\+IT}~B\+IT(5)
+\item 
+\#define \hyperlink{group__Keyboard_gaa75a479ef6e531c83584901ccdf536c7}{E\+X\+T\+E\+N\+D\+\_\+8\+\_\+\+T\+O\+\_\+16}~0\+X\+F\+F00
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Keyboard_gacf4fe6cea09b4953e286c1df9a61f2c8}{keyboard\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe the interrupts of the keyboard. \end{DoxyCompactList}\item 
+int \hyperlink{group__Keyboard_gac5a55c875cfe613e7fc3dec67ab0dde8}{keyboard\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe the interrupts of the keyboard. \end{DoxyCompactList}\item 
+int \hyperlink{group__Keyboard_gaee9c5dedc3168164bf1307472fd9b12e}{reenable\+\_\+keyboard\+\_\+interrupt} ()
+\begin{DoxyCompactList}\small\item\em Reenables the default keyboards interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__Keyboard_gafd6a88e7d85a7950c3697b3f20633495}{flush\+\_\+\+O\+BF} ()
+\begin{DoxyCompactList}\small\item\em Flushs the K\+BC O\+BF. \end{DoxyCompactList}\item 
+int \hyperlink{group__Keyboard_ga1a1e847a3ff58112435390636fc34719}{got\+\_\+full\+\_\+scan\+\_\+code} ()
+\begin{DoxyCompactList}\small\item\em Checks whether we have a full scan code or not. \end{DoxyCompactList}\item 
+int \hyperlink{group__Keyboard_ga0fb71e2b76b368ba43295cdc9174558b}{keyboard\+\_\+handler} ()
+\begin{DoxyCompactList}\small\item\em Function responsible for analysing and acting on the information receive from the keyboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Responsible for everything related to the keyboard. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{i8042_8h_a4cd6261eafdbb595a443afa13a359729}\label{i8042_8h_a4cd6261eafdbb595a443afa13a359729}} 
+\index{i8042.\+h@{i8042.\+h}!\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+@{\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+@{\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+}!i8042.\+h@{i8042.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+}{\_KEYBOARD\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+\_\+}
+

@@ -1,0 +1,65 @@
+\hypertarget{Sprite_8h}{}\section{Sprite.\+h File Reference}
+\label{Sprite_8h}\index{Sprite.\+h@{Sprite.\+h}}
+
+
+Contains everything related to a sprite.  
+
+
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+Include dependency graph for Sprite.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSprite}{Sprite}
+\begin{DoxyCompactList}\small\item\em Struct containing all the information related to a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Sprite_8h_ab9be49beb8df826ff312957c7e721063}{\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{group__Sprite_ga464dfba786b963a26a579396287d291b}{create\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite\+\_\+img, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Create a sprite object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains everything related to a sprite. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Sprite_8h_ab9be49beb8df826ff312957c7e721063}\label{Sprite_8h_ab9be49beb8df826ff312957c7e721063}} 
+\index{Sprite.\+h@{Sprite.\+h}!\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+@{\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+@{\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+}!Sprite.\+h@{Sprite.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+}{\_SPRITE\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+P\+R\+I\+T\+E\+\_\+\+H\+\_\+}
+

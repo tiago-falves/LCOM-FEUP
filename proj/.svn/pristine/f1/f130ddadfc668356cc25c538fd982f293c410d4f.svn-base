@@ -1,0 +1,142 @@
+\hypertarget{Serial__port_8h}{}\section{Serial\+\_\+port.\+h File Reference}
+\label{Serial__port_8h}\index{Serial\+\_\+port.\+h@{Serial\+\_\+port.\+h}}
+
+
+contains everything related to the serial port  
+
+
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for Serial\+\_\+port.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{Serial__port_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Serial__port_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{Serial__port_8h_ae9fcd2126c543e515b8c01eae0c4c428}{\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+}
+\item 
+\#define \hyperlink{group__Serial__Port_ga00dbb3ab1c59e14699be9393693e2248}{C\+O\+M1}~0x3\+F8
+\item 
+\#define \hyperlink{group__Serial__Port_ga3685c78b9bd6dd0fa3861807e24a4e1b}{C\+O\+M1\+\_\+\+I\+RQ}~4
+\item 
+\#define \hyperlink{group__Serial__Port_ga60dc7185c07a121eeb29f21662740e8e}{R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+R\+EG}~0
+\item 
+\#define \hyperlink{group__Serial__Port_ga061ca5733cddf1ea7ca81d1af13ea386}{T\+R\+A\+N\+S\+M\+I\+T\+T\+E\+R\+\_\+\+H\+O\+L\+D\+I\+N\+G\+\_\+\+R\+EG}~0
+\item 
+\#define \hyperlink{group__Serial__Port_gabb4887f946c4539cbbe03347c8a8d1cd}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+EG}~1
+\item 
+\#define \hyperlink{group__Serial__Port_ga59b95cedbd8b7d990c50f5b4dda1d59b}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+I\+N\+D\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+EG}~2
+\item 
+\#define \hyperlink{group__Serial__Port_gaab8a90468a2fe7c543b66f196c5917b0}{F\+I\+F\+O\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+EG}~2
+\item 
+\#define \hyperlink{group__Serial__Port_ga618213d0195f742dca18c0cf178af40c}{L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+R\+EG}~3
+\item 
+\#define \hyperlink{group__Serial__Port_ga5a375d0d8943d1501138c208070e29f0}{L\+I\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+R\+EG}~5
+\item 
+\#define \hyperlink{group__Serial__Port_gae942966c7cbecd9ce09b4c6fb959bc9b}{D\+L\+\_\+\+L\+SB}~0
+\item 
+\#define \hyperlink{group__Serial__Port_ga8ad4affdf38f644451e72f654d0366b4}{D\+L\+\_\+\+M\+SB}~1
+\item 
+\#define \hyperlink{group__Serial__Port_ga3c30b77b44f349b4143029033c18bd21}{L\+C\+R\+\_\+\+B\+I\+T\+S\+\_\+\+P\+E\+R\+\_\+\+C\+H\+A\+R\+\_\+8}~(B\+IT(1) $\vert$ B\+IT(0))
+\item 
+\#define \hyperlink{group__Serial__Port_ga690c574ec3bfb0b96f2e8d5ff64d3ee2}{L\+C\+R\+\_\+\+S\+T\+O\+P\+\_\+\+B\+I\+T\+S\+\_\+1}~0
+\item 
+\#define \hyperlink{group__Serial__Port_ga210d1cea7b18fe44360ffc4f1d97b6d9}{L\+C\+R\+\_\+\+E\+V\+E\+N\+\_\+\+P\+A\+R\+I\+TY}~(B\+IT(4) $\vert$ B\+IT(3))
+\item 
+\#define \hyperlink{group__Serial__Port_ga57ff35c0ff45d7e875c769aa86d4f6ab}{L\+C\+R\+\_\+\+O\+D\+D\+\_\+\+P\+A\+R\+I\+TY}~B\+IT(3)
+\item 
+\#define \hyperlink{group__Serial__Port_ga1cf80a668c79b3081803063178f40920}{L\+C\+R\+\_\+\+D\+L\+AB}~B\+IT(7)
+\item 
+\#define \hyperlink{group__Serial__Port_ga7afe0c8c2673984fc574786f8059df52}{I\+E\+R\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+D\+A\+T\+A\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~B\+IT(0)
+\item 
+\#define \hyperlink{group__Serial__Port_ga9083c32817a79d1f19ce98920fb5e985}{E\+N\+A\+B\+L\+E\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+E\+R\+\_\+\+E\+M\+P\+T\+Y\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~B\+IT(1)
+\item 
+\#define \hyperlink{group__Serial__Port_ga8d72bac6ba91c126d7cbe40b21125067}{I\+E\+R\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}~B\+IT(2)
+\item 
+\#define \hyperlink{group__Serial__Port_ga2ac6e26903f2848772b729cddf1cd29e}{L\+S\+R\+\_\+\+R\+E\+C\+E\+I\+V\+E\+R\+\_\+\+R\+E\+A\+DY}~B\+IT(0)
+\item 
+\#define \hyperlink{group__Serial__Port_ga9190bd9a868f59e4fd5a3e76e90b2386}{L\+S\+R\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+E\+R\+\_\+\+E\+M\+P\+TY}~B\+IT(5)
+\item 
+\#define \hyperlink{group__Serial__Port_ga1a2e230078e0423a6f7681d30d8e3798}{L\+S\+R\+\_\+\+O\+V\+E\+R\+R\+U\+N\+\_\+\+E\+R\+R\+OR}~B\+IT(1)
+\item 
+\#define \hyperlink{group__Serial__Port_ga33db06ef4a01ba3df88ea1ff7255032d}{L\+S\+R\+\_\+\+P\+A\+R\+I\+T\+Y\+\_\+\+E\+R\+R\+OR}~B\+IT(2)
+\item 
+\#define \hyperlink{group__Serial__Port_ga3b8c453276843a913d454684a4069a58}{L\+S\+R\+\_\+\+F\+R\+A\+M\+I\+N\+G\+\_\+\+E\+R\+R\+OR}~B\+IT(3)
+\item 
+\#define \hyperlink{group__Serial__Port_gae6e034b3338b5b48b10125f70e1bda7d}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+O\+R\+I\+G\+I\+N\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+T\+E\+R\+\_\+\+E\+M\+P\+TY}~B\+IT(1)
+\item 
+\#define \hyperlink{group__Serial__Port_gaabe11ce4255023a9cb4c0a4dde136057}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+O\+R\+I\+G\+I\+N\+\_\+\+R\+E\+C\+E\+I\+V\+E\+D\+\_\+\+D\+A\+TA}~B\+IT(2)
+\item 
+\#define \hyperlink{group__Serial__Port_ga4622dc6de584b54ec3a01bd81477ce42}{I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+O\+R\+I\+G\+I\+N\+\_\+\+L\+I\+N\+E\+\_\+\+S\+T\+A\+T\+US}~(B\+IT(2) $\vert$ B\+IT(1))
+\item 
+\#define \hyperlink{group__Serial__Port_ga09264383fee7ad3c4452928af2775625}{N\+O\+\_\+\+F\+I\+FO}~0
+\item 
+\#define \hyperlink{group__Serial__Port_ga84fc2ce30b29006c916f8ac51cb793e2}{F\+I\+F\+O\+\_\+\+U\+N\+U\+S\+A\+B\+LE}~B\+IT(7)
+\item 
+\#define \hyperlink{group__Serial__Port_gaf4684d81a99e2909723a653e05cc2982}{F\+I\+F\+O\+\_\+\+E\+N\+A\+B\+L\+ED}~(B\+IT(7) $\vert$ B\+IT(6))
+\item 
+\#define \hyperlink{group__Serial__Port_ga866c72dbed45fcdf019363cb3b81570c}{E\+N\+A\+B\+L\+E\+\_\+\+F\+I\+FO}~B\+IT(0)
+\item 
+\#define \hyperlink{group__Serial__Port_gaf306e9dc0f51f05584e7d9b1f760442d}{F\+C\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+R\+E\+C\+E\+I\+V\+E\+\_\+\+F\+I\+FO}~B\+IT(1)
+\item 
+\#define \hyperlink{group__Serial__Port_ga990943af0dbd68dc7f41fbd2acf1ed3f}{F\+C\+R\+\_\+\+C\+L\+E\+A\+R\+\_\+\+T\+R\+A\+N\+S\+M\+I\+T\+\_\+\+F\+I\+FO}~B\+IT(2)
+\item 
+\#define \hyperlink{group__Serial__Port_ga03a6865dcf90c43728567a59e5480c33}{F\+I\+F\+O\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+T\+R\+I\+G\+G\+E\+R\+\_\+\+L\+E\+V\+E\+L\+\_\+1}~0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Serial__Port_ga04c839ee1193ff6747831a64a0971b48}{uart\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes to the uart interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__Serial__Port_ga64788186a16312699f03e3ae1a489c45}{uart\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to the uart interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group__Serial__Port_ga5e41e03b0dd1e22a95997287df58f620}{uart\+\_\+config} ()
+\begin{DoxyCompactList}\small\item\em Configures the uart so that it can receive interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group__Serial__Port_ga9caf04ba76e8da51b28c2e9b872a5d78}{uart\+\_\+ih} (char $\ast$$\ast$message, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Handles the uart interrupts. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Serial__Port_ga6f1cda41030f00afdc86fc70e377dc9e}{uart\+\_\+check\+\_\+full\+\_\+message} (char $\ast$$\ast$message, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Checks if the uart as received a full message. \end{DoxyCompactList}\item 
+void \hyperlink{group__Serial__Port_gadd4870a81710672ca2478ba34127ab6c}{uart\+\_\+send\+\_\+message} (char $\ast$message, int size)
+\begin{DoxyCompactList}\small\item\em Sends a message throw de uart. \end{DoxyCompactList}\item 
+void \hyperlink{group__Serial__Port_ga0223284cebeabb784af7cdb2bca520a6}{uart\+\_\+send\+\_\+byte} (uint8\+\_\+t info)
+\begin{DoxyCompactList}\small\item\em Sends a byte throw the uart. \end{DoxyCompactList}\item 
+void \hyperlink{group__Serial__Port_gaf8543c1ae5b4005356ff6ecc81e3b227}{uart\+\_\+clear\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Clears the uart buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains everything related to the serial port 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Serial__port_8h_ae9fcd2126c543e515b8c01eae0c4c428}\label{Serial__port_8h_ae9fcd2126c543e515b8c01eae0c4c428}} 
+\index{Serial\+\_\+port.\+h@{Serial\+\_\+port.\+h}!\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+@{\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+@{\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+}!Serial\+\_\+port.\+h@{Serial\+\_\+port.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+}{\_SERIAL\_PORT\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+H\+\_\+}
+

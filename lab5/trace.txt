@@ -1,0 +1,31 @@
+@lcflib.a:2019, lcf_start
+  video_test_init(mode, delay)
+> video_test_init(0x115, 2)
+  @drawing.c:33, get_vbe_mode_info
+    lm_alloc(sizeof(vbe_mode_info_t), &map)
+  < lm_alloc(256, addr: 0xeffff4d0 [phys: 0x0008d000, virt: 0xefb8a000, size: 256 bytes]) -> (ret: 0xefb8a000)
+  @drawing.c:48, get_vbe_mode_info
+    sys_int86(&rg)
+  > sys_int86(addr: 0xeffff4a8 [AX: 4f01, BX: 0000, CX: 0115, DX: 0000, ES: 8000, DI: d000])
+  < sys_int86(addr: 0xeffff4a8 [AX: 004f, BX: 0000, CX: 0115, DX: 0000, ES: 8000, DI: d000]) -> (ret: 0)
+  @drawing.c:54, get_vbe_mode_info
+    lm_free(&map)
+  < lm_free(addr: 0xeffff4d0 [phys: 0x0008d000, virt: 0xefb8a000, size: 256 bytes]) -> (ret: 1)
+  @drawing.c:136, graphic_mode_init
+    sys_privctl(SELF, SYS_PRIV_ADD_MEM, &mr)
+  > sys_privctl(SELF, SYS_PRIV_ADD_MEM, addr: 0xeffff548 [0xe0000000 - 0xe015f900 <1.37329 MiB>])
+  < sys_privctl(SELF, SYS_PRIV_ADD_MEM, &mr) -> (ret: 0)
+  @drawing.c:141, graphic_mode_init
+    vm_map_phys(SELF, (void *)mr.mr_base, vram_size)
+  < vm_map_phys(SELF, addr: 0xe0000000, 1.37329 MiB) -> (ret: 0xef89b000)
+  @drawing.c:154, graphic_mode_init
+    sys_int86(&rg)
+  > sys_int86(addr: 0xeffff520 [AX: 4f02, BX: 4115, CX: 0000, DX: 0000, ES: 0000, DI: 0000])
+  < sys_int86(addr: 0xeffff520 [AX: 004f, BX: 4115, CX: 0000, DX: 0000, ES: 0000, DI: 0000]) -> (ret: 0)
+  @lab5.c:47, video_test_init
+    sleep(delay)
+  > sleep(2)
+  @lab5.c:50, video_test_init
+    vg_exit()
+  < vg_exit() -> (ret: 0)
+< video_test_init(0x115, 2) -> (ret: 0)

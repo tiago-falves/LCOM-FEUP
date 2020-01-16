@@ -1,0 +1,57 @@
+\hypertarget{structSprite}{}\section{Sprite Struct Reference}
+\label{structSprite}\index{Sprite@{Sprite}}
+
+
+Struct containing all the information related to a sprite.  
+
+
+
+
+{\ttfamily \#include $<$Sprite.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structSprite_a7bf0b8881b843374906cf634fab4c29c}{x}
+\item 
+uint16\+\_\+t \hyperlink{structSprite_a5f248b11506dc86738e196e6602d2a2a}{y}
+\item 
+uint16\+\_\+t \hyperlink{structSprite_af4a443953f309cbd1c698539cf3230ca}{speed}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structSprite_a6f952b6bcbc1aaccaa2e42083f06889b}{img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct containing all the information related to a sprite. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structSprite_a6f952b6bcbc1aaccaa2e42083f06889b}\label{structSprite_a6f952b6bcbc1aaccaa2e42083f06889b}} 
+\index{Sprite@{Sprite}!img@{img}}
+\index{img@{img}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Sprite\+::img}
+
+Information related to the image of the sprite \mbox{\Hypertarget{structSprite_af4a443953f309cbd1c698539cf3230ca}\label{structSprite_af4a443953f309cbd1c698539cf3230ca}} 
+\index{Sprite@{Sprite}!speed@{speed}}
+\index{speed@{speed}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::speed}
+
+Specifies the speed of the sprite \mbox{\Hypertarget{structSprite_a7bf0b8881b843374906cf634fab4c29c}\label{structSprite_a7bf0b8881b843374906cf634fab4c29c}} 
+\index{Sprite@{Sprite}!x@{x}}
+\index{x@{x}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::x}
+
+Specifies the current x position of the sprite \mbox{\Hypertarget{structSprite_a5f248b11506dc86738e196e6602d2a2a}\label{structSprite_a5f248b11506dc86738e196e6602d2a2a}} 
+\index{Sprite@{Sprite}!y@{y}}
+\index{y@{y}!Sprite@{Sprite}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint16\+\_\+t Sprite\+::y}
+
+Specifies the current y position of the sprite 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Sprite_8h}{Sprite.\+h}\end{DoxyCompactItemize}

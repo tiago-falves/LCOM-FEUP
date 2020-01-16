@@ -1,0 +1,43 @@
+\hypertarget{Sprite_8c}{}\section{Sprite.\+c File Reference}
+\label{Sprite_8c}\index{Sprite.\+c@{Sprite.\+c}}
+{\ttfamily \#include \char`\"{}Sprite.\+h\char`\"{}}\newline
+Include dependency graph for Sprite.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{Sprite_8c_a464dfba786b963a26a579396287d291b}{create\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite\+\_\+img, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Create a sprite object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Sprite_8c_a464dfba786b963a26a579396287d291b}\label{Sprite_8c_a464dfba786b963a26a579396287d291b}} 
+\index{Sprite.\+c@{Sprite.\+c}!create\+\_\+sprite@{create\+\_\+sprite}}
+\index{create\+\_\+sprite@{create\+\_\+sprite}!Sprite.\+c@{Sprite.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \hyperlink{structSprite}{Sprite}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{sprite\+\_\+img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Create a sprite object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+\_\+img} & -\/ image of the sprite \\
+\hline
+{\em x} & -\/ starting x position of the sprite \\
+\hline
+{\em y} & -\/ starting y position of the sprite \\
+\hline
+{\em speed} & -\/ speed of the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sprite$\ast$ -\/ pointer to the sprite just created 
+\end{DoxyReturn}

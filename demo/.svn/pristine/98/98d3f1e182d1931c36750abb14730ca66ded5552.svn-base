@@ -1,0 +1,17 @@
+#include "Terminix.h"
+
+int subscribe_periphericals(int *timer_irq,int *mouse_irq,int *keyboard_irq);
+
+int unsubscribe_periphericals();
+
+Terminix * get_current_terminix();
+
+void update_positions();
+
+void update_hero_position(Hero * hero);
+void update_mouse_position(Mouse * mouse);
+void update_bullet_position(Bullet * bullet);
+
+void render();
+
+

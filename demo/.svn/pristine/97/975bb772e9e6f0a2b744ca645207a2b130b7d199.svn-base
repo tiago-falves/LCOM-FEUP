@@ -1,0 +1,28 @@
+#include "Terminix.h"
+
+
+static Terminix * terminix = NULL;
+
+
+Terminix * get_current_terminix() {
+  return terminix;
+}
+
+
+void create_terminix(){
+  if(terminix != NULL){
+    return;
+  }
+
+
+  terminix = malloc(sizeof (Terminix));
+
+  Hero * hero = create_hero();
+
+  terminix->hero = hero;
+
+
+
+}
+
+

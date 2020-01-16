@@ -1,0 +1,29 @@
+#include "Sprite.h"
+
+
+typedef struct {
+
+  xpm_image_t menu_img;
+  xpm_image_t gameOver_img;
+  xpm_image_t youWin_img;
+  xpm_image_t waitingScreen_img;
+  xpm_image_t back_img;
+  xpm_image_t score_img;
+  Sprite * highscore;
+
+
+} Menu;
+
+
+Menu * create_menu();
+
+void destroy_menu(Menu ** menu);
+
+void clean_menu(Menu * menu);
+void clean_gameOver(Menu * menu);
+void clean_youWin(Menu * menu);
+void clean_waitingScreenImg(Menu * menu);
+
+
+
+

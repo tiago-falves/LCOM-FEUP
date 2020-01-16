@@ -1,0 +1,9 @@
+<map id="Terminix" name="Terminix">
+<area shape="rect" id="node2" href="$structMouse.html" title="Struct containg all the information related to the mouse. " alt="" coords="5,196,67,223"/>
+<area shape="rect" id="node3" href="$structZombie.html" title="Zombie" alt="" coords="99,145,165,172"/>
+<area shape="rect" id="node4" href="$structSprite.html" title="Struct containing all the information related to a sprite. " alt="" coords="189,5,245,32"/>
+<area shape="rect" id="node6" href="$structBullet.html" title="Struct that saves the information of a bullet. " alt="" coords="190,95,245,121"/>
+<area shape="rect" id="node7" href="$structMenu.html" title="Struct that saves all the information related to the Menu. " alt="" coords="262,145,317,172"/>
+<area shape="rect" id="node5" href="$structHero.html" title="Struct that saves the information of a hero. " alt="" coords="192,196,243,223"/>
+<area shape="rect" id="node8" href="$structChest.html" title="Chest" alt="" coords="353,196,410,223"/>
+</map>

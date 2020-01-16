@@ -1,0 +1,5 @@
+<map id="rtc_get_hour" name="rtc_get_hour">
+<area shape="rect" id="node2" href="$RTC_8c.html#ab4e3a24c7228998edc81bafcf315e764" title="Reads data from the RTC_DATA_REG. " alt="" coords="181,5,250,32"/>
+<area shape="rect" id="node4" href="$RTC_8c.html#a0b67dcdd55171dd973c720a4391f475d" title="convert_to_decimal" alt="" coords="148,56,283,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="331,5,421,32"/>
+</map>

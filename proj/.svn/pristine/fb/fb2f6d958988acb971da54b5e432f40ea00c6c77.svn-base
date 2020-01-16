@@ -1,0 +1,5 @@
+<map id="Hero.c" name="Hero.c">
+<area shape="rect" id="node3" href="$Hero_8h.html" title="Responsible for creating, destroying everything related to the Hero. It also is responsible to changi..." alt="" coords="213,80,275,107"/>
+<area shape="rect" id="node4" href="$Sprite_8h.html" title="Contains everything related to a sprite. " alt="" coords="211,155,277,181"/>
+<area shape="rect" id="node5" href="$drawing_8h.html" title="Classe responsible for drawing images into the screen and animating them. " alt="" coords="205,229,283,256"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Zombie.c" name="Zombie.c">
+<area shape="rect" id="node2" href="$Zombie_8h.html" title="Classe que cria e destroi os Zombies, principais enimigos. " alt="" coords="206,87,282,114"/>
+<area shape="rect" id="node3" href="$drawing_8h.html" title="Classe responsible for drawing images into the screen and animating them. " alt="" coords="205,244,283,271"/>
+<area shape="rect" id="node9" href="$Sprite_8h.html" title="Contains everything related to a sprite. " alt="" coords="247,169,313,196"/>
+</map>

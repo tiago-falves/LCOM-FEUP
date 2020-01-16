@@ -1,0 +1,92 @@
+\hypertarget{drawing_8c}{}\section{drawing.\+c File Reference}
+\label{drawing_8c}\index{drawing.\+c@{drawing.\+c}}
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for drawing.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{drawing_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Drawing_ga6402ca094cd1aace6adedd01b2b5496e}{get\+\_\+hres} ()
+\begin{DoxyCompactList}\small\item\em Get the horizontal resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga484929b3e33f236cd9087e18e1521ee3}{get\+\_\+vres} ()
+\begin{DoxyCompactList}\small\item\em Get the vertical resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga7f6272b1842da39059fdf1121ce6c7e4}{get\+\_\+vbe\+\_\+mode\+\_\+info} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Get the vbe mode info. \end{DoxyCompactList}\item 
+int() \hyperlink{group__Drawing_ga0601490a63f18afe194c8f935ea58631}{graphic\+\_\+mode\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the graphics card mode. \end{DoxyCompactList}\item 
+int() \hyperlink{group__Drawing_ga6f895de9725f9f231f9a7f74b6087f60}{vg\+\_\+draw\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel in the screen. \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga3885ed72ae1f40d10717bcab035313c9}{calculate\+\_\+\+Red\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the red component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_gaf077939f4859163aace3435a706de7ad}{calculate\+\_\+\+Green\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the green component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga555715b2c8212aae64d17ab4aa09d61b}{calculate\+\_\+\+Blue\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the blue component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{group__Drawing_ga9020d25f429f0fcaaf5ff325fcc72145}{calculate\+\_\+\+R\+GB} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Calculates the red, blue and green component values of a pixel. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga923b943e5b1b4762cd38427bdba6f3b1}{draw\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em draws a given xpm in the screen \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga3549b2a65240f7025f5e98bffe20b2f0}{clean\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Erases a given xpm. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_ga40b707646a9475857a68d37fbf131e4e}{convert\+\_\+xpm\+\_\+img} (xpm\+\_\+map\+\_\+t xpm, xpm\+\_\+image\+\_\+t $\ast$img)
+\begin{DoxyCompactList}\small\item\em Converts an xpm\+\_\+map\+\_\+t into a xpm\+\_\+image\+\_\+t. \end{DoxyCompactList}\item 
+void \hyperlink{group__Drawing_gafeded743483b92b165de25bc9f0047ec}{update\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Updates the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}{video\+\_\+mem}
+\item 
+static char $\ast$ \hyperlink{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}{buffer}
+\item 
+static unsigned \hyperlink{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}{h\+\_\+res}
+\item 
+static unsigned \hyperlink{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}{v\+\_\+res}
+\item 
+static int \hyperlink{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}{bytes\+\_\+per\+\_\+pixel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}\label{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}} 
+\index{drawing.\+c@{drawing.\+c}!buffer@{buffer}}
+\index{buffer@{buffer}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char$\ast$ buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}\label{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}} 
+\index{drawing.\+c@{drawing.\+c}!bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}}
+\index{bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{bytes\+\_\+per\+\_\+pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily int bytes\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}\label{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}} 
+\index{drawing.\+c@{drawing.\+c}!h\+\_\+res@{h\+\_\+res}}
+\index{h\+\_\+res@{h\+\_\+res}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{h\+\_\+res}{h\_res}}
+{\footnotesize\ttfamily unsigned h\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}\label{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}} 
+\index{drawing.\+c@{drawing.\+c}!v\+\_\+res@{v\+\_\+res}}
+\index{v\+\_\+res@{v\+\_\+res}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{v\+\_\+res}{v\_res}}
+{\footnotesize\ttfamily unsigned v\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}\label{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}} 
+\index{drawing.\+c@{drawing.\+c}!video\+\_\+mem@{video\+\_\+mem}}
+\index{video\+\_\+mem@{video\+\_\+mem}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{video\+\_\+mem}{video\_mem}}
+{\footnotesize\ttfamily char$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+

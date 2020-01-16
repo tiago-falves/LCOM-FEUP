@@ -1,0 +1,49 @@
+\hypertarget{Terminix_8c}{}\section{Terminix.\+c File Reference}
+\label{Terminix_8c}\index{Terminix.\+c@{Terminix.\+c}}
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}highscores.\+h\char`\"{}}\newline
+Include dependency graph for Terminix.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{group__Game_ga63401b160e1b4125d13b63195b8cc09a}{get\+\_\+current\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Get the current terminix object. \end{DoxyCompactList}\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{group__Terminix_ga268a63f43cb6dadc7fce69a5ba06e179}{create\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Create a terminix object. \end{DoxyCompactList}\item 
+void \hyperlink{group__Terminix_ga1740e510328eef8db9c80b9ea8d39e33}{create\+\_\+zombies} ()
+\begin{DoxyCompactList}\small\item\em Create a zombies in a number related to the level. \end{DoxyCompactList}\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{group__Terminix_gadd7e306f121b423c4b7a29999a1875ae}{create\+\_\+second\+\_\+hero} ()
+\begin{DoxyCompactList}\small\item\em Create a second hero. \end{DoxyCompactList}\item 
+void \hyperlink{group__Terminix_ga19c1ab8791ee4b3b7227447b8a833df3}{destroy\+\_\+terminix} (\hyperlink{structTerminix}{Terminix} $\ast$$\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Destroys the terminix. \end{DoxyCompactList}\item 
+void \hyperlink{group__Terminix_ga6d04ea52dec1b6162200295c0790e3d7}{reset\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Resets the current terminix. \end{DoxyCompactList}\item 
+\hyperlink{structChest}{Chest} $\ast$ \hyperlink{group__Terminix_gac6cab27efc5eabe8a452d024046385c8}{create\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Create a chest object. \end{DoxyCompactList}\item 
+void \hyperlink{group__Terminix_gaa3fb663e72a1741ec89704689f8220d2}{draw\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Draws the chest image into the screen. \end{DoxyCompactList}\item 
+void \hyperlink{group__Terminix_ga2ad77274d6f657808be655a6aca7577c}{clean\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Clean the chest image in the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}\label{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}} 
+\index{Terminix.\+c@{Terminix.\+c}!terminix@{terminix}}
+\index{terminix@{terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{terminix}{terminix}}
+{\footnotesize\ttfamily \hyperlink{structTerminix}{Terminix}$\ast$ terminix = N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}}
+

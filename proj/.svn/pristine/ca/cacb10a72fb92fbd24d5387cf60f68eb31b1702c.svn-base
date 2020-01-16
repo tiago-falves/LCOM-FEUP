@@ -1,0 +1,63 @@
+#include "Sprite.h"
+
+
+ #define HERO_START_POSITION_X 545
+ #define HERO_START_POSITION_Y 240
+
+ #define HERO_1_START_POISITION_X 380
+ #define HERO_1_START_POISITION_y 400
+ #define HERO_2_START_POISITION_X 745
+ #define HERO_2_START_POISITION_y 400
+
+typedef struct {
+
+  Sprite * sprite;
+  uint16_t x_direction;
+  uint16_t y_direction;
+  xpm_image_t bullet_img;
+
+} Bullet;
+
+enum direction {up, left, right, down, ne, nw, sw, se};
+
+typedef struct {
+
+  uint16_t x;
+  uint16_t y;
+  uint16_t new_x;
+  uint16_t new_y;
+  uint16_t init_x;
+  uint16_t init_y;
+  uint16_t x_direction;
+  uint16_t y_direction;
+  uint16_t score;
+  xpm_image_t hero_img;
+  xpm_image_t  sprites[8];
+  enum direction direction;
+  Bullet * bullet;
+
+} Hero;
+
+Hero * create_hero();
+void get_bullet_coords(Hero* hero, uint16_t * x, uint16_t * y);
+
+
+void hero_move_up(Hero * hero_ptr);
+void hero_move_down(Hero * hero_ptr);
+void hero_move_left(Hero * hero_ptr);
+void hero_move_right(Hero * hero_ptr);
+void reset_hero_position(Hero * hero_ptr);
+void change_hero1_multiplayer_positon(Hero * hero_ptr);
+Bullet * shoot(Hero * hero_ptr);
+
+void get_bullet_direction(Hero * hero, uint16_t * x, uint16_t * y);
+
+void destroy_bullet(Bullet ** bullet);
+
+void destroy_hero(Hero ** hero);
+
+
+void update_xpm(Hero * hero);
+
+
+

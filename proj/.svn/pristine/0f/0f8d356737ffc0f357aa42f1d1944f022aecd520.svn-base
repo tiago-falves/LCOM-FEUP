@@ -1,0 +1,14 @@
+<map id="mouse.c" name="mouse.c">
+<area shape="rect" id="node4" href="$i8042_8h.html" title="Responsible for everything related to the keyboard. " alt="" coords="1194,229,1258,256"/>
+<area shape="rect" id="node7" href="$mouse_8h.html" title="responsible for everything related to the mouse " alt="" coords="1117,155,1189,181"/>
+<area shape="rect" id="node9" href="$drawing_8h.html" title="Classe responsible for drawing images into the screen and animating them. " alt="" coords="463,304,541,331"/>
+<area shape="rect" id="node13" href="$RTC_8h.html" title="RTC.h" alt="" coords="177,304,238,331"/>
+<area shape="rect" id="node14" href="$Terminix_8h.html" title="Terminix.h" alt="" coords="813,80,895,107"/>
+<area shape="rect" id="node22" href="$highscores_8h.html" title="highscores.h" alt="" coords="338,304,434,331"/>
+<area shape="rect" id="node23" href="$Serial__port_8h.html" title="contains everything related to the serial port " alt="" coords="5,229,100,256"/>
+<area shape="rect" id="node8" href="$Sprite_8h.html" title="Contains everything related to a sprite. " alt="" coords="478,229,545,256"/>
+<area shape="rect" id="node16" href="$i8254_8h.html" title="Contains macros used in timer.c. " alt="" coords="327,229,391,256"/>
+<area shape="rect" id="node17" href="$Hero_8h.html" title="Responsible for creating, destroying everything related to the Hero. It also is responsible to changi..." alt="" coords="1031,155,1093,181"/>
+<area shape="rect" id="node18" href="$Zombie_8h.html" title="Classe que cria e destroi os Zombies, principais enimigos. " alt="" coords="379,155,455,181"/>
+<area shape="rect" id="node19" href="$Menu_8h.html" title="responsible for drawing and cleaning the menus " alt="" coords="479,155,544,181"/>
+</map>

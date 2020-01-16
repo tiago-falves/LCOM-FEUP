@@ -1,0 +1,50 @@
+\hypertarget{Hero_8c}{}\section{Hero.\+c File Reference}
+\label{Hero_8c}\index{Hero.\+c@{Hero.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Hero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+up.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+down.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+S\+E.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+N\+E.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+N\+W.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+S\+W.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+right.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/bullet.\+xpm\char`\"{}}\newline
+Include dependency graph for Hero.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{group__HERO_ga302b01469625ed347b10bf601d544857}{create\+\_\+hero} ()
+\begin{DoxyCompactList}\small\item\em Create a hero object. \end{DoxyCompactList}\item 
+\hyperlink{structBullet}{Bullet} $\ast$ \hyperlink{group__HERO_gafe71445b565fa332c2b971ace8fe6967}{shoot} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Creates a bullet object and draws it. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga9859c410abaeff3b3c6c985530800747}{hero\+\_\+move\+\_\+up} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves up. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gadac95b606a4a65603ea47063695fc981}{hero\+\_\+move\+\_\+down} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves down. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga81029e17113386e8230886e16164c6ab}{hero\+\_\+move\+\_\+left} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves left. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga373d3012aae9ae04da1e8243a2184bc1}{hero\+\_\+move\+\_\+right} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves right. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gabacf757d624835370dac1b72975db77f}{reset\+\_\+hero\+\_\+position} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} goes back to the initial position. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga93b2cf88fd937e91131502a252565ffb}{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} of the player one starts in the right position. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga53ce3ef3123128ecf5d97853f1d00270}{destroy\+\_\+bullet} (\hyperlink{structBullet}{Bullet} $\ast$$\ast$bullet)
+\begin{DoxyCompactList}\small\item\em Destroys the bullet. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gaa1e5857dcfd09c2438d013b95b93c2c9}{destroy\+\_\+hero} (\hyperlink{structHero}{Hero} $\ast$$\ast$hero)
+\begin{DoxyCompactList}\small\item\em Destroys the hero. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga84b19814b865635c101d1eac30b654f2}{update\+\_\+xpm} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Updates the xpm of the hero, mainly used when he changes direction. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gaac2a4eecd0a12794666227ae37f492ba}{get\+\_\+bullet\+\_\+coords} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet coordinatess based on where the hero is and which direction he is facing. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga890d0f121b609c134877b2139edd46da}{get\+\_\+bullet\+\_\+direction} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet direction based on which direction the hero is facing. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+#include "Terminix.h"
+
+
+
+int subscribe_periphericals(int *timer_irq, int *mouse_irq, int *keyboard_irq,int *rtc_irq, int *uart_irq);
+
+int unsubscribe_periphericals();
+
+Terminix *get_current_terminix();
+
+void update_positions();
+
+void update_hero_position(Terminix * terminix, int hero_index);
+
+void update_zombie_position(Zombie * zombie, int zombie_index);
+
+void update_mouse_img(Mouse * mouse);
+
+void update_bullet_position(Bullet * bullet, int hero_index);
+
+void update_bullets_position(Terminix * terminix);
+
+void update_zombies_position(Zombie * zombies[6], int n);
+
+void update_heroes_position(Terminix * terminix);
+
+void update_level();
+
+void reset_heroes_position(Terminix * terminix);
+
+void render();
+
+bool check_bullet_colisions(Bullet * bullet, Terminix * terminix);
+
+bool check_heroe_enemy_collisions(Hero * hero, Terminix * terminix);
+
+bool check_heroe_friendly_collisions(Hero * hero, Terminix * terminix);
+
+bool check_zombie_collisions(Zombie * zombie, Terminix * terminix, int zombie_index);
+
+bool check_zombie_chest_collision(Zombie * zombie, Terminix * terminix);
+
+bool check_zombie_zombie_collision(Zombie* zombie, Terminix * terminix);
+
+void check_hero_direction(Hero * hero, Mouse * mouse);
+
+void uart_message_analyse(char * message);
+
+void change_other_hero_direction(char message, Hero * hero);
+
+void change_other_hero_position(char message, Hero * hero);
+
+void send_movement_info(Terminix * terminix, char movement);
+
+char check_smallest_distance(Terminix * terminix, Zombie * zombie);
+
+void change_zombie_coords(Terminix * terminix, Zombie * zombie, char object);
+
+void save_score();
+
+void drawMenu();
+
+void drawGameOver();
+void cleanGameOver();

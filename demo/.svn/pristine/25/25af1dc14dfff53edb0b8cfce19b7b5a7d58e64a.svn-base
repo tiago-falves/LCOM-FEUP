@@ -1,0 +1,19 @@
+#include <stdlib.h>
+#include "i8042.h"
+#include "i8254.h"
+#include "Hero.h"
+#include "test.xpm"
+
+
+
+typedef struct {
+
+  Hero * hero;
+  uint8_t x;
+  xpm_image_t  background_xpm;
+
+} Terminix;
+
+void create_terminix();
+Terminix * get_current_terminix();
+

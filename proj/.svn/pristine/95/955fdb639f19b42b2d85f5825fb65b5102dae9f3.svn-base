@@ -1,0 +1,5 @@
+<map id="rtc_update_enable" name="rtc_update_enable">
+<area shape="rect" id="node2" href="$RTC_8c.html#ab4e3a24c7228998edc81bafcf315e764" title="Reads data from the RTC_DATA_REG. " alt="" coords="183,5,252,32"/>
+<area shape="rect" id="node4" href="$RTC_8c.html#ae067c9946aaa508970933b1527ea063e" title="Write a value to a register. " alt="" coords="181,56,253,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="301,5,392,32"/>
+</map>

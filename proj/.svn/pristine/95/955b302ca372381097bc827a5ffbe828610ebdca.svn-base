@@ -1,0 +1,139 @@
+\hypertarget{RTC_8h}{}\section{R\+T\+C.\+h File Reference}
+\label{RTC_8h}\index{R\+T\+C.\+h@{R\+T\+C.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for R\+T\+C.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{RTC_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{RTC_8h_aa80964f7e7fcec82372115a07bbd8e0c}{\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+}
+\item 
+\#define \hyperlink{group__RTC_ga4e22feb6ffbc1cda32fadff5c740dc51}{R\+T\+C\+\_\+\+I\+RQ}~8
+\item 
+\#define \hyperlink{group__RTC_ga710b98232df2c563009e6f8a6cd18220}{R\+T\+C\+\_\+\+A\+D\+D\+R\+\_\+\+R\+EG}~0x70
+\item 
+\#define \hyperlink{group__RTC_ga2f258a00c59c3f347c8d2d4a75471ce0}{R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG}~0x71
+\item 
+\#define \hyperlink{group__RTC_gae5ffad506b363f28bed1bb5e5926bd2d}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+A}~0x0A
+\item 
+\#define \hyperlink{group__RTC_ga2d0dea617451446330a89387a9dfed99}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+A\+\_\+\+U\+IP}~B\+IT(7)
+\item 
+\#define \hyperlink{group__RTC_ga03954a63ead3f02b7790ce79e9877eea}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+B}~0x0B
+\item 
+\#define \hyperlink{group__RTC_ga0f56a2e4d35b0ad99f8fe85b425f59dc}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+S\+ET}~B\+IT(7)
+\item 
+\#define \hyperlink{group__RTC_ga7a275b39d2b9880655bf653b953b425e}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+P\+IE}~B\+IT(6)
+\item 
+\#define \hyperlink{group__RTC_ga4966ec0df7137606da48c11e339173a8}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+A\+IE}~B\+IT(5)
+\item 
+\#define \hyperlink{group__RTC_gac49ad037dea0a2eac11860a6c01a05a2}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+U\+IE}~B\+IT(4)
+\item 
+\#define \hyperlink{group__RTC_gabc5526120e6a1f035ef362b6f4fa5b63}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+S\+Q\+WE}~B\+IT(3)
+\item 
+\#define \hyperlink{group__RTC_ga9dc43c3d09d5ff86a6ccc538c922de85}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+\+DM}~B\+IT(2)
+\item 
+\#define \hyperlink{group__RTC_ga7bc7f8512a4b6da13faef7e83e4e0eb8}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+B\+\_\+2412}~B\+IT(1)
+\item 
+\#define \hyperlink{group__RTC_ga407d66b6eb13cf9de910e6714de696e9}{R\+T\+C\+\_\+\+D\+O\+N\+T\+\_\+\+C\+A\+R\+E\+\_\+\+A\+L\+A\+RM}~B\+IT(6) $\vert$ B\+IT(7)
+\item 
+\#define \hyperlink{group__RTC_ga1bd6f771dc313129723812fe7ac52d9e}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+C}~0x0C
+\item 
+\#define \hyperlink{group__RTC_ga4e96da8e6998c6a7b275d8d1d2e21657}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+PF}~B\+IT(6)
+\item 
+\#define \hyperlink{group__RTC_ga5d87d84ef1cc2472d66bea9f1309cd60}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+AF}~B\+IT(5)
+\item 
+\#define \hyperlink{group__RTC_gaf8ce7b20a854a0ce90b2954cc1cef920}{R\+T\+C\+\_\+\+R\+E\+G\+\_\+\+C\+\_\+\+UF}~B\+IT(4)
+\item 
+\#define \hyperlink{group__RTC_ga2507e650d4ccc8a2bdf3001800a3e743}{R\+T\+C\+\_\+\+S\+EC}~0x00
+\item 
+\#define \hyperlink{group__RTC_ga2a29111b7668c8202ab4943b9ac7cb34}{R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+S\+EC}~0x01
+\item 
+\#define \hyperlink{group__RTC_gaf18480d399826dcb4e789fe5a3e0df8c}{R\+T\+C\+\_\+\+M\+I\+NT}~0x02
+\item 
+\#define \hyperlink{group__RTC_gaa9afc5f3082764bd282acc3bd023c6c2}{R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+M\+I\+NT}~0x03
+\item 
+\#define \hyperlink{group__RTC_ga7264eac87ffc91cbdea1239d346a0ea4}{R\+T\+C\+\_\+\+H\+O\+UR}~0x04
+\item 
+\#define \hyperlink{group__RTC_gab985eab103d5cf66e49a7a8c66bfd835}{R\+T\+C\+\_\+\+A\+L\+A\+R\+M\+\_\+\+H\+O\+UR}~0x05
+\item 
+\#define \hyperlink{group__RTC_ga8645ae13bb42ddf10d3ca762a8754160}{R\+T\+C\+\_\+\+D\+AY}~0x07
+\item 
+\#define \hyperlink{group__RTC_gabda0c877ee1a02b8351c0cfe72838088}{R\+T\+C\+\_\+\+M\+O\+N\+TH}~0x08
+\item 
+\#define \hyperlink{group__RTC_ga1df5568e6774b73aa4c6e59fc40e9147}{R\+T\+C\+\_\+\+Y\+E\+AR}~0x09
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__RTC_gab832160971533b0b461a1ccdb78a7b61}{rtc\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes R\+TC interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group__RTC_ga75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Handles R\+TC interrupts Shows an easter egg if the user is in the \hyperlink{structHighscore}{Highscore} \hyperlink{structMenu}{Menu} when the alarm rings Handles periodic, update and alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga8ee1ffb1e38bc735ccf645370fe5b573}{rtc\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga791d4631b1e982663b5d5e3c2ec315ee}{rtc\+\_\+get\+\_\+year} ()
+\begin{DoxyCompactList}\small\item\em Gets the current year. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gab99c050ddedc035564c30e0a88fee811}{rtc\+\_\+get\+\_\+month} ()
+\begin{DoxyCompactList}\small\item\em Gets the current month. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gaf37570cf04260d0e062b86ba57c683ca}{rtc\+\_\+get\+\_\+day} ()
+\begin{DoxyCompactList}\small\item\em Gets the current day. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gad46ca0a253252aafbe34faa42bd74416}{rtc\+\_\+get\+\_\+hour} ()
+\begin{DoxyCompactList}\small\item\em Gets the current hour. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga4564fbf599419d865d3b050d3d502cd7}{rtc\+\_\+get\+\_\+min} ()
+\begin{DoxyCompactList}\small\item\em Gets the current minute. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga2cabb2f91ba0ba2cfd06a1fd80260169}{rtc\+\_\+get\+\_\+sec} ()
+\begin{DoxyCompactList}\small\item\em Gets the current second. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gab4e3a24c7228998edc81bafcf315e764}{rtc\+\_\+read} (uint8\+\_\+t $\ast$data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Reads data from the R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gae067c9946aaa508970933b1527ea063e}{rtc\+\_\+write} (uint8\+\_\+t data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Write a value to a register. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gad820e4525a3e89eb5418021cea7c22f0}{rtc\+\_\+enable\+\_\+alarm} ()
+\begin{DoxyCompactList}\small\item\em Enable alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gac8915ed7e97ce0c42a5efc6fcf002e35}{rtc\+\_\+disable\+\_\+alarm} ()
+\begin{DoxyCompactList}\small\item\em Disable alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gaf4cbfcf7cd2fd02862614a8209e6b7f6}{set\+\_\+alarm\+\_\+second} (uint8\+\_\+t second)
+\begin{DoxyCompactList}\small\item\em Set alarm second value. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga356598c3705fad6db2b319b58b27530e}{set\+\_\+alarm\+\_\+minute} (uint8\+\_\+t minute)
+\begin{DoxyCompactList}\small\item\em Set alarm minute value. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gaabf0c92b98c848db38ef0f3063b6aa92}{set\+\_\+alarm\+\_\+hour} (uint8\+\_\+t hour)
+\begin{DoxyCompactList}\small\item\em Set alarm hour value. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gad37c8f73d6eb5fb1d966b3b4e2cf26cd}{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds} (int seconds)
+\begin{DoxyCompactList}\small\item\em Set an alarm for the second \char`\"{}seconds\char`\"{}, every minute. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_gad7b08763cdc8e6f979ffde822455f499}{rtc\+\_\+update\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enable update interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga7ddb6af7a877e44c12f8db6c4ff37f93}{rtc\+\_\+update\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disable update interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga3896d27e8e25cc207d7013788497544c}{rtc\+\_\+enable\+\_\+periodic} ()
+\begin{DoxyCompactList}\small\item\em Enable periodic interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga69ba31d0081549b2418944de50971670}{rtc\+\_\+disable\+\_\+periodic} ()
+\begin{DoxyCompactList}\small\item\em Disable alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__RTC_ga0b67dcdd55171dd973c720a4391f475d}{convert\+\_\+to\+\_\+decimal} (uint32\+\_\+t bcd)
+\begin{DoxyCompactList}\small\item\em Converts B\+CD to decimal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{group__RTC_ga9fc22e6d8203dddf397ca66d65055d1d}{hook\+\_\+id\+\_\+rtc} = 8
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{RTC_8h_aa80964f7e7fcec82372115a07bbd8e0c}\label{RTC_8h_aa80964f7e7fcec82372115a07bbd8e0c}} 
+\index{R\+T\+C.\+h@{R\+T\+C.\+h}!\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+@{\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+@{\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+}!R\+T\+C.\+h@{R\+T\+C.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+R\+T\+C\+\_\+\+H\+\_\+}{\_RTC\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+R\+T\+C\+\_\+\+H\+\_\+}
+

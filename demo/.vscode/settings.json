@@ -1,0 +1,27 @@
+{
+  "git.ignoreLimitWarning": true,
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "editor.formatOnSave": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 100,
+  "files.associations": {
+    "system_error": "c",
+    "lcf.h": "c",
+    "proj.h": "c",
+    "stdint.h": "c",
+    "i8254.h": "c",
+    "mouse.h": "c",
+    "i8042.h": "c",
+    "liblm.h": "c",
+    "*.xpm": "c",
+    "stdbool.h": "c",
+    "drawing.h": "c",
+    "terminix.h": "c",
+    "*.ipp": "c",
+    "vbe.h": "c",
+    "hero.h": "c"
+  },
+  "C_Cpp.errorSquiggles": "Disabled",
+}

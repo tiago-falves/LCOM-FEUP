@@ -1,0 +1,22 @@
+\hypertarget{Zombie_8c}{}\section{Zombie.\+c File Reference}
+\label{Zombie_8c}\index{Zombie.\+c@{Zombie.\+c}}
+{\ttfamily \#include \char`\"{}Zombie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+down.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+up.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+right.\+xpm\char`\"{}}\newline
+Include dependency graph for Zombie.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Zombie_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structZombie}{Zombie} $\ast$ \hyperlink{group__Zombie_gaa003ca5fa8438b430e6fe9ccac7ed1bd}{create\+\_\+zombie} (uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Create a zombie object. \end{DoxyCompactList}\item 
+void \hyperlink{group__Zombie_gae811d7eac3687aee9cf5dd7bc73aed3b}{destroy\+\_\+zombie} (\hyperlink{structZombie}{Zombie} $\ast$$\ast$zombie)
+\begin{DoxyCompactList}\small\item\em Destroyes a zombie object. \end{DoxyCompactList}\end{DoxyCompactItemize}

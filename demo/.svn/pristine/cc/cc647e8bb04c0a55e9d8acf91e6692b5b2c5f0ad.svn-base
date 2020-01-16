@@ -1,0 +1,36 @@
+#include "drawing.h"
+
+
+ #define HERO_START_POSITION_X 300
+ #define HERO_START_POSITION_Y 300
+
+
+
+
+typedef struct {
+
+  uint16_t x;
+  uint16_t new_x;
+  uint16_t y;
+  uint16_t new_y;
+  double angle;
+  xpm_image_t hero_img;
+
+  
+} Hero;
+
+Hero * create_hero();
+
+Hero create_second_hero();
+
+
+void hero_move_up(Hero * hero_ptr);
+void hero_move_down(Hero * hero_ptr);
+void hero_move_left(Hero * hero_ptr);
+void hero_move_right(Hero * hero_ptr);
+
+void hero_set_x(Hero * hero_ptr,uint16_t x);
+void hero_set_y(Hero * hero_ptr,uint16_t y);
+void hero_set_new_x(Hero * hero_ptr,uint16_t new_x);
+void hero_set_new_y(Hero * hero_ptr,uint16_t new_y);
+

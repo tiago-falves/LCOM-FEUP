@@ -1,0 +1,8 @@
+<map id="shoot" name="shoot">
+<area shape="rect" id="node2" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="113,5,238,32"/>
+<area shape="rect" id="node3" href="$Hero_8c.html#aac2a4eecd0a12794666227ae37f492ba" title="Get the bullet coordinatess based on where the hero is and which direction he is facing. " alt="" coords="113,56,237,83"/>
+<area shape="rect" id="node4" href="$Sprite_8c.html#a464dfba786b963a26a579396287d291b" title="Create a sprite object. " alt="" coords="127,107,224,133"/>
+<area shape="rect" id="node5" href="$Hero_8c.html#a890d0f121b609c134877b2139edd46da" title="Get the bullet direction based on which direction the hero is facing. " alt="" coords="108,157,243,184"/>
+<area shape="rect" id="node6" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="134,208,217,235"/>
+<area shape="rect" id="node7" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="291,208,396,235"/>
+</map>

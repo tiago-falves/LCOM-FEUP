@@ -1,0 +1,61 @@
+\hypertarget{Menu_8h}{}\section{Menu.\+h File Reference}
+\label{Menu_8h}\index{Menu.\+h@{Menu.\+h}}
+
+
+responsible for drawing and cleaning the menus  
+
+
+{\ttfamily \#include \char`\"{}Sprite.\+h\char`\"{}}\newline
+Include dependency graph for Menu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMenu}{Menu}
+\begin{DoxyCompactList}\small\item\em Struct that saves all the information related to the \hyperlink{structMenu}{Menu}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMenu}{Menu} $\ast$ \hyperlink{group__menu_ga89bccdf2d8b12f81102d85e3b77d2505}{create\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Create a menu object. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gaff74431082e0cab33a257a6947626212}{destroy\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$$\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em destroyes the menu \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_ga9a634cb675f49714a001a3ac55efe1d4}{clean\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the main menu image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gabc6c4076d16fb5f03ed1b6c19da082eb}{clean\+\_\+game\+Over} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the game over image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_ga2bd58aed5d881d9f708ce50d60d2ad51}{clean\+\_\+you\+Win} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the win image. \end{DoxyCompactList}\item 
+void \hyperlink{group__menu_gad08f0c8b6e2f9704c0d8a0dbceb46f52}{clean\+\_\+waiting\+Screen\+Img} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{group__Terminix_ggab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the waiting screen image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+responsible for drawing and cleaning the menus 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}

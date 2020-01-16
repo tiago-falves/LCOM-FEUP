@@ -1,0 +1,16 @@
+\hypertarget{Sprite_8c}{}\section{Sprite.\+c File Reference}
+\label{Sprite_8c}\index{Sprite.\+c@{Sprite.\+c}}
+{\ttfamily \#include \char`\"{}Sprite.\+h\char`\"{}}\newline
+Include dependency graph for Sprite.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{group__Sprite_ga464dfba786b963a26a579396287d291b}{create\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite\+\_\+img, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Create a sprite object. \end{DoxyCompactList}\end{DoxyCompactItemize}

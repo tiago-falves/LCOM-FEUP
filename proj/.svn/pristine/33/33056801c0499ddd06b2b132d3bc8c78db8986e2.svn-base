@@ -1,0 +1,4 @@
+<map id="reset_KBC_command_byte" name="reset_KBC_command_byte">
+<area shape="rect" id="node2" href="$mouse_8c.html#afa2d1d26c3b833ddc82ba44d1700f094" title="Checks if the IBF is full. " alt="" coords="236,5,359,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="407,5,497,32"/>
+</map>

@@ -1,0 +1,94 @@
+\hypertarget{testFunctions_8h}{}\section{test\+Functions.\+h File Reference}
+\label{testFunctions_8h}\index{test\+Functions.\+h@{test\+Functions.\+h}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int() \hyperlink{testFunctions_8h_a14584175ec1896421e18a7ae10282c5a}{timer\+\_\+test\+\_\+read\+\_\+config} (uint8\+\_\+t timer, enum timer\+\_\+status\+\_\+field field)
+\item 
+int() \hyperlink{testFunctions_8h_a975d99c5190f4f11625c5238d61741ef}{timer\+\_\+test\+\_\+time\+\_\+base} (uint8\+\_\+t timer, uint32\+\_\+t freq)
+\item 
+int() \hyperlink{testFunctions_8h_a309c450bfec2d912c19a0ed8ab55b60a}{timer\+\_\+test\+\_\+int} (uint8\+\_\+t time)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint32\+\_\+t \hyperlink{testFunctions_8h_a9f2a72551d0150a1432fe3ad3a424f33}{global\+\_\+counter}
+\item 
+uint8\+\_\+t \hyperlink{testFunctions_8h_a3c795973beeecd1596967a31a805488e}{status\+\_\+code}
+\item 
+uint8\+\_\+t \hyperlink{testFunctions_8h_af4aead9dfdc0d2f7e93662387a21e0bc}{scan\+\_\+code}
+\item 
+int \hyperlink{testFunctions_8h_afbdc0ae65628140f24149cb2a53452f7}{count\+\_\+sysb}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{testFunctions_8h_a309c450bfec2d912c19a0ed8ab55b60a}\label{testFunctions_8h_a309c450bfec2d912c19a0ed8ab55b60a}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!timer\+\_\+test\+\_\+int@{timer\+\_\+test\+\_\+int}}
+\index{timer\+\_\+test\+\_\+int@{timer\+\_\+test\+\_\+int}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{timer\+\_\+test\+\_\+int()}{timer\_test\_int()}}
+{\footnotesize\ttfamily int() timer\+\_\+test\+\_\+int (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{time }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{testFunctions_8h_a309c450bfec2d912c19a0ed8ab55b60a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{testFunctions_8h_a14584175ec1896421e18a7ae10282c5a}\label{testFunctions_8h_a14584175ec1896421e18a7ae10282c5a}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!timer\+\_\+test\+\_\+read\+\_\+config@{timer\+\_\+test\+\_\+read\+\_\+config}}
+\index{timer\+\_\+test\+\_\+read\+\_\+config@{timer\+\_\+test\+\_\+read\+\_\+config}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{timer\+\_\+test\+\_\+read\+\_\+config()}{timer\_test\_read\_config()}}
+{\footnotesize\ttfamily int() timer\+\_\+test\+\_\+read\+\_\+config (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{enum timer\+\_\+status\+\_\+field}]{field }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testFunctions_8h_a14584175ec1896421e18a7ae10282c5a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{testFunctions_8h_a975d99c5190f4f11625c5238d61741ef}\label{testFunctions_8h_a975d99c5190f4f11625c5238d61741ef}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!timer\+\_\+test\+\_\+time\+\_\+base@{timer\+\_\+test\+\_\+time\+\_\+base}}
+\index{timer\+\_\+test\+\_\+time\+\_\+base@{timer\+\_\+test\+\_\+time\+\_\+base}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{timer\+\_\+test\+\_\+time\+\_\+base()}{timer\_test\_time\_base()}}
+{\footnotesize\ttfamily int() timer\+\_\+test\+\_\+time\+\_\+base (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{timer,  }\item[{uint32\+\_\+t}]{freq }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testFunctions_8h_a975d99c5190f4f11625c5238d61741ef_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{testFunctions_8h_afbdc0ae65628140f24149cb2a53452f7}\label{testFunctions_8h_afbdc0ae65628140f24149cb2a53452f7}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!count\+\_\+sysb@{count\+\_\+sysb}}
+\index{count\+\_\+sysb@{count\+\_\+sysb}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{count\+\_\+sysb}{count\_sysb}}
+{\footnotesize\ttfamily int count\+\_\+sysb}
+
+\mbox{\Hypertarget{testFunctions_8h_a9f2a72551d0150a1432fe3ad3a424f33}\label{testFunctions_8h_a9f2a72551d0150a1432fe3ad3a424f33}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!global\+\_\+counter@{global\+\_\+counter}}
+\index{global\+\_\+counter@{global\+\_\+counter}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{global\+\_\+counter}{global\_counter}}
+{\footnotesize\ttfamily uint32\+\_\+t global\+\_\+counter}
+
+\mbox{\Hypertarget{testFunctions_8h_af4aead9dfdc0d2f7e93662387a21e0bc}\label{testFunctions_8h_af4aead9dfdc0d2f7e93662387a21e0bc}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!scan\+\_\+code@{scan\+\_\+code}}
+\index{scan\+\_\+code@{scan\+\_\+code}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{scan\+\_\+code}{scan\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t scan\+\_\+code}
+
+\mbox{\Hypertarget{testFunctions_8h_a3c795973beeecd1596967a31a805488e}\label{testFunctions_8h_a3c795973beeecd1596967a31a805488e}} 
+\index{test\+Functions.\+h@{test\+Functions.\+h}!status\+\_\+code@{status\+\_\+code}}
+\index{status\+\_\+code@{status\+\_\+code}!test\+Functions.\+h@{test\+Functions.\+h}}
+\subsubsection{\texorpdfstring{status\+\_\+code}{status\_code}}
+{\footnotesize\ttfamily uint8\+\_\+t status\+\_\+code}
+

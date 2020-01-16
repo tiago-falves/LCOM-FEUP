@@ -1,0 +1,4 @@
+<map id="Hero" name="Hero">
+<area shape="rect" id="node2" href="$structBullet.html" title="Struct that saves the information of a bullet. " alt="" coords="6,95,61,121"/>
+<area shape="rect" id="node3" href="$structSprite.html" title="Struct containing all the information related to a sprite. " alt="" coords="5,5,61,32"/>
+</map>

@@ -1,0 +1,223 @@
+\hypertarget{Terminix_8c}{}\section{Terminix.\+c File Reference}
+\label{Terminix_8c}\index{Terminix.\+c@{Terminix.\+c}}
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}time.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}highscores.\+h\char`\"{}}\newline
+Include dependency graph for Terminix.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{Terminix_8c_a63401b160e1b4125d13b63195b8cc09a}{get\+\_\+current\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Get the current terminix object. \end{DoxyCompactList}\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{Terminix_8c_a268a63f43cb6dadc7fce69a5ba06e179}{create\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Create a terminix object. \end{DoxyCompactList}\item 
+void \hyperlink{Terminix_8c_a1740e510328eef8db9c80b9ea8d39e33}{create\+\_\+zombies} ()
+\begin{DoxyCompactList}\small\item\em Create a zombies in a number related to the level. \end{DoxyCompactList}\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{Terminix_8c_add7e306f121b423c4b7a29999a1875ae}{create\+\_\+second\+\_\+hero} ()
+\begin{DoxyCompactList}\small\item\em Create a second hero. \end{DoxyCompactList}\item 
+void \hyperlink{Terminix_8c_a19c1ab8791ee4b3b7227447b8a833df3}{destroy\+\_\+terminix} (\hyperlink{structTerminix}{Terminix} $\ast$$\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Destroys the terminix. \end{DoxyCompactList}\item 
+void \hyperlink{Terminix_8c_a6d04ea52dec1b6162200295c0790e3d7}{reset\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Resets the current terminix. \end{DoxyCompactList}\item 
+\hyperlink{structChest}{Chest} $\ast$ \hyperlink{Terminix_8c_ac6cab27efc5eabe8a452d024046385c8}{create\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Create a chest object. \end{DoxyCompactList}\item 
+void \hyperlink{Terminix_8c_aa3fb663e72a1741ec89704689f8220d2}{draw\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Draws the chest image into the screen. \end{DoxyCompactList}\item 
+void \hyperlink{Terminix_8c_a2ad77274d6f657808be655a6aca7577c}{clean\+\_\+chest} ()
+\begin{DoxyCompactList}\small\item\em Clean the chest image in the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Terminix_8c_a2ad77274d6f657808be655a6aca7577c}\label{Terminix_8c_a2ad77274d6f657808be655a6aca7577c}} 
+\index{Terminix.\+c@{Terminix.\+c}!clean\+\_\+chest@{clean\+\_\+chest}}
+\index{clean\+\_\+chest@{clean\+\_\+chest}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+chest()}{clean\_chest()}}
+{\footnotesize\ttfamily void clean\+\_\+chest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clean the chest image in the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_a2ad77274d6f657808be655a6aca7577c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_ac6cab27efc5eabe8a452d024046385c8}\label{Terminix_8c_ac6cab27efc5eabe8a452d024046385c8}} 
+\index{Terminix.\+c@{Terminix.\+c}!create\+\_\+chest@{create\+\_\+chest}}
+\index{create\+\_\+chest@{create\+\_\+chest}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+chest()}{create\_chest()}}
+{\footnotesize\ttfamily \hyperlink{structChest}{Chest}$\ast$ create\+\_\+chest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a chest object. 
+
+\begin{DoxyReturn}{Returns}
+Chest$\ast$ -\/ pointer to the chest just created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{Terminix_8c_ac6cab27efc5eabe8a452d024046385c8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_add7e306f121b423c4b7a29999a1875ae}\label{Terminix_8c_add7e306f121b423c4b7a29999a1875ae}} 
+\index{Terminix.\+c@{Terminix.\+c}!create\+\_\+second\+\_\+hero@{create\+\_\+second\+\_\+hero}}
+\index{create\+\_\+second\+\_\+hero@{create\+\_\+second\+\_\+hero}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+second\+\_\+hero()}{create\_second\_hero()}}
+{\footnotesize\ttfamily \hyperlink{structHero}{Hero}$\ast$ create\+\_\+second\+\_\+hero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a second hero. 
+
+\begin{DoxyReturn}{Returns}
+Hero$\ast$ -\/ pointer to the second hero created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_add7e306f121b423c4b7a29999a1875ae_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_a268a63f43cb6dadc7fce69a5ba06e179}\label{Terminix_8c_a268a63f43cb6dadc7fce69a5ba06e179}} 
+\index{Terminix.\+c@{Terminix.\+c}!create\+\_\+terminix@{create\+\_\+terminix}}
+\index{create\+\_\+terminix@{create\+\_\+terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+terminix()}{create\_terminix()}}
+{\footnotesize\ttfamily \hyperlink{structTerminix}{Terminix}$\ast$ create\+\_\+terminix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a terminix object. 
+
+\begin{DoxyReturn}{Returns}
+Terminix$\ast$ -\/ pointer to the terminix just created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_a268a63f43cb6dadc7fce69a5ba06e179_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_a1740e510328eef8db9c80b9ea8d39e33}\label{Terminix_8c_a1740e510328eef8db9c80b9ea8d39e33}} 
+\index{Terminix.\+c@{Terminix.\+c}!create\+\_\+zombies@{create\+\_\+zombies}}
+\index{create\+\_\+zombies@{create\+\_\+zombies}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+zombies()}{create\_zombies()}}
+{\footnotesize\ttfamily void create\+\_\+zombies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a zombies in a number related to the level. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_a1740e510328eef8db9c80b9ea8d39e33_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_a19c1ab8791ee4b3b7227447b8a833df3}\label{Terminix_8c_a19c1ab8791ee4b3b7227447b8a833df3}} 
+\index{Terminix.\+c@{Terminix.\+c}!destroy\+\_\+terminix@{destroy\+\_\+terminix}}
+\index{destroy\+\_\+terminix@{destroy\+\_\+terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+terminix()}{destroy\_terminix()}}
+{\footnotesize\ttfamily void destroy\+\_\+terminix (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$$\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Destroys the terminix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ terminix to be destroyed \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{Terminix_8c_a19c1ab8791ee4b3b7227447b8a833df3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_aa3fb663e72a1741ec89704689f8220d2}\label{Terminix_8c_aa3fb663e72a1741ec89704689f8220d2}} 
+\index{Terminix.\+c@{Terminix.\+c}!draw\+\_\+chest@{draw\+\_\+chest}}
+\index{draw\+\_\+chest@{draw\+\_\+chest}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+chest()}{draw\_chest()}}
+{\footnotesize\ttfamily void draw\+\_\+chest (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the chest image into the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_aa3fb663e72a1741ec89704689f8220d2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Terminix_8c_a63401b160e1b4125d13b63195b8cc09a}\label{Terminix_8c_a63401b160e1b4125d13b63195b8cc09a}} 
+\index{Terminix.\+c@{Terminix.\+c}!get\+\_\+current\+\_\+terminix@{get\+\_\+current\+\_\+terminix}}
+\index{get\+\_\+current\+\_\+terminix@{get\+\_\+current\+\_\+terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+terminix()}{get\_current\_terminix()}}
+{\footnotesize\ttfamily \hyperlink{structTerminix}{Terminix}$\ast$ get\+\_\+current\+\_\+terminix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current terminix object. 
+
+\begin{DoxyReturn}{Returns}
+Terminix$\ast$ -\/ pointer to the current terminix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Terminix_8c_a6d04ea52dec1b6162200295c0790e3d7}\label{Terminix_8c_a6d04ea52dec1b6162200295c0790e3d7}} 
+\index{Terminix.\+c@{Terminix.\+c}!reset\+\_\+terminix@{reset\+\_\+terminix}}
+\index{reset\+\_\+terminix@{reset\+\_\+terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{reset\+\_\+terminix()}{reset\_terminix()}}
+{\footnotesize\ttfamily void reset\+\_\+terminix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the current terminix. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Terminix_8c_a6d04ea52dec1b6162200295c0790e3d7_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}\label{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}} 
+\index{Terminix.\+c@{Terminix.\+c}!terminix@{terminix}}
+\index{terminix@{terminix}!Terminix.\+c@{Terminix.\+c}}
+\subsubsection{\texorpdfstring{terminix}{terminix}}
+{\footnotesize\ttfamily \hyperlink{structTerminix}{Terminix}$\ast$ terminix = N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}}
+

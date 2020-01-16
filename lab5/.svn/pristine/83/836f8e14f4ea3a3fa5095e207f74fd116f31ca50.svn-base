@@ -1,0 +1,58 @@
+@lcflib.a:2019, lcf_start
+  video_test_rectangle(mode, x, y, width, height, color)
+> video_test_rectangle(0x105, 10, 10, 30, 30, 0x00000002 [2])
+  @keyboard.c:28, keyboard_subscribe
+    sys_irqsetpolicy(KEYBOARD_IRQ, IRQ_REENABLE | IRQ_EXCLUSIVE, &hook_id)
+  > sys_irqsetpolicy(1, 3, addr: 0x81f9238 [1])
+  < sys_irqsetpolicy(1, 3, addr: 0x81f9238 [10]) -> (ret: 0)
+  @keyboard.c:145, run_until_ESC_key
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff5c0, addr: 0xeffff608)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000010]>)
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &x)
+  > sys_inb(0x64, addr: 0xeffff590)
+  < sys_inb(0x64, addr: 0xeffff590 [0x1d = 0b00011101])
+  @keyboard.c:163, run_until_ESC_key
+    kbc_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &x)
+    > sys_inb(0x60, addr: 0xeffff4dc)
+    < sys_inb(0x60, addr: 0xeffff4dc [0x9c = 0b10011100])
+  @keyboard.c:145, run_until_ESC_key
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff5c0, addr: 0xeffff608)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000010]>)
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &x)
+  > sys_inb(0x64, addr: 0xeffff590)
+  < sys_inb(0x64, addr: 0xeffff590 [0x1d = 0b00011101])
+  @keyboard.c:163, run_until_ESC_key
+    kbc_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &x)
+    > sys_inb(0x60, addr: 0xeffff4dc)
+    < sys_inb(0x60, addr: 0xeffff4dc [0x01 = 0b00000001])
+  @keyboard.c:145, run_until_ESC_key
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff5c0, addr: 0xeffff608)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000010]>)
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &x)
+  > sys_inb(0x64, addr: 0xeffff590)
+  < sys_inb(0x64, addr: 0xeffff590 [0x1d = 0b00011101])
+  @keyboard.c:163, run_until_ESC_key
+    kbc_ih()
+    @utils.c:25, util_sys_inb
+      sys_inb(port, &x)
+    > sys_inb(0x60, addr: 0xeffff4dc)
+    < sys_inb(0x60, addr: 0xeffff4dc [0x81 = 0b10000001])
+  @utils.c:25, util_sys_inb
+    sys_inb(port, &x)
+  > sys_inb(0x64, addr: 0xeffff570)
+  < sys_inb(0x64, addr: 0xeffff570 [0x1c = 0b00011100])
+  @keyboard.c:38, keyboard_unsubscribe
+    sys_irqrmpolicy(&hook_id)
+  > sys_irqrmpolicy(addr: 0x81f9238 [10])
+  < sys_irqrmpolicy(addr: 0x81f9238 [10]) -> (ret: 0)
+< video_test_rectangle(0x105, 10, 10, 30, 30, 0x00000002 [2]) -> (ret: 1)

@@ -1,0 +1,5 @@
+<map id="create_zombies" name="create_zombies">
+<area shape="rect" id="node2" href="$Zombie_8c.html#aa003ca5fa8438b430e6fe9ccac7ed1bd" title="Create a zombie object. " alt="" coords="168,31,275,57"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="323,5,448,32"/>
+<area shape="rect" id="node4" href="$Sprite_8c.html#a464dfba786b963a26a579396287d291b" title="Create a sprite object. " alt="" coords="337,56,434,83"/>
+</map>

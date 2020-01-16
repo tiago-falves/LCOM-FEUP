@@ -1,0 +1,121 @@
+
+#include "Game.h"
+#include "i8042.h"
+#include "i8254.h"
+#include "mouse.h"
+#include <stdint.h>
+int subscribe_periphericals(int *timer_irq, int *mouse_irq, int *keyboard_irq) {
+  uint8_t bit_no;
+
+  if (mouse_subscribe(&bit_no)) {
+    printf("Error subscribing mouse.\n");
+    return 1;
+  }
+
+  *mouse_irq = BIT(bit_no);
+
+  // Enable Mouse Data Reporting
+  mouse_disable_interrupts();
+  mouse_send_command(MOUSE_EN_DATA_REPORTING);
+  mouse_enable_interrupts();
+  if (keyboard_subscribe(&bit_no)) {
+    printf("Error subscribing keyboard.\n");
+    return 1;
+  }
+  *keyboard_irq = BIT(bit_no);
+  // Subscribing to the timer
+  if (timer_subscribe_int(&bit_no)) {
+    printf("Error subscribing timer.\n");
+    return 1;
+  }
+  *timer_irq = BIT(bit_no);
+  return 0;
+}
+int unsubscribe_periphericals() {
+  // Disables Mouse Data Reporting
+  mouse_disable_interrupts();
+  mouse_send_command(MOUSE_DIS_DATA_REPORTING);
+  mouse_enable_interrupts();
+  // Unsubscribing to the Mouse
+  if (mouse_unsubscribe()) {
+    printf("Error unsubscribing mouse.\n");
+  }
+  if (keyboard_unsubscribe()) {
+    printf("Error unsubscribing keyboard.\n");
+    return 1;
+  }
+  if (timer_unsubscribe_int()) {
+    printf("Error unsubscribing timer.\n");
+    return 1;
+  }
+  // Checks if the OBF is full and if it is, it cleans it
+  if (mouse_flush_OBF()) {
+    printf("Error flushing OBF byte \n");
+    return 1;
+  }
+  return 0;
+}
+void render() {
+  update_positions();
+  update_buffer();
+}
+void update_positions() {
+
+  // Update hero position
+  Terminix *terminix = get_current_terminix();
+  update_hero_position(terminix->hero);
+
+  update_mouse_img(terminix->mouse);
+
+
+  if (terminix->hero->bullet != NULL){
+    update_bullets_position(terminix->hero->bullet);
+  }
+  
+  
+
+
+
+}
+void update_hero_position(Hero * hero) {
+
+
+  clean_xpm(hero->hero_img, hero->x, hero->y);
+  // Update Hero position
+  hero->x = hero->new_x;
+  hero->y = hero->new_y;
+  draw_xpm(hero->hero_img, hero->new_x, hero->new_y);
+  
+}
+void update_mouse_img(Mouse * mouse) {
+  clean_xpm(mouse->mouse_img, mouse->x, mouse->y);
+  // Update mouse position
+  mouse->x = mouse->new_x;
+  mouse->y = mouse->new_y;
+  draw_xpm(mouse->mouse_img, mouse->new_x, mouse->new_y);
+}
+
+void update_bullets_position(Bullet * bullet) {
+  Terminix * terminix = get_current_terminix();
+
+  clean_xpm(bullet->sprite->img, bullet->sprite->x, bullet->sprite->y);
+  // Update mouse position
+  
+
+  bullet->sprite->x += (bullet->x_direction) * (bullet->sprite->speed);
+  bullet->sprite->y += (bullet->y_direction) * (bullet->sprite->speed);
+  if((bullet->sprite->y < 6) || (bullet->sprite->x < 6)){
+     destroy_bullet(&bullet);
+     terminix->hero->bullet = NULL;
+
+  } else
+  {
+    draw_xpm(bullet->sprite->img, bullet->sprite->x, bullet->sprite->y);
+  }
+  
+
+
+  
+
+
+}

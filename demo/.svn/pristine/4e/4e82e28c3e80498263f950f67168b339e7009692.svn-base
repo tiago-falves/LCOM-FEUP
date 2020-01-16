@@ -1,0 +1,16 @@
+#include "drawing.h"
+
+typedef struct {
+
+  uint16_t x;
+  uint16_t new_x;
+  uint16_t y;
+  uint16_t new_y;
+  double angle;
+  xpm_image_t zombie_img;
+
+  
+} Zombie;
+
+Zombie * create_zombie(uint16_t x, uint16_t y);
+void destroy_zombie(Zombie ** zombie);

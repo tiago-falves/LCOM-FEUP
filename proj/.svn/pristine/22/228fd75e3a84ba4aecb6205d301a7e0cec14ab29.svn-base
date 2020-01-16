@@ -1,0 +1,12 @@
+<map id="mouse.h" name="mouse.h">
+<area shape="rect" id="node2" href="$Terminix_8h.html" title="Terminix.h" alt="" coords="291,80,374,107"/>
+<area shape="rect" id="node5" href="$Game_8c.html" title="Game.c" alt="" coords="5,229,73,256"/>
+<area shape="rect" id="node7" href="$proj_8c.html" title="proj.c" alt="" coords="173,229,228,256"/>
+<area shape="rect" id="node9" href="$mouse_8c.html" title="mouse.c" alt="" coords="597,155,669,181"/>
+<area shape="rect" id="node3" href="$drawing_8c.html" title="drawing.c" alt="" coords="196,155,275,181"/>
+<area shape="rect" id="node4" href="$Game_8h.html" title="Containg everything that regards the logic of the game and the way it runs. " alt="" coords="299,155,367,181"/>
+<area shape="rect" id="node8" href="$highscores_8c.html" title="highscores.c" alt="" coords="391,155,487,181"/>
+<area shape="rect" id="node10" href="$RTC_8c.html" title="RTC.c" alt="" coords="511,155,573,181"/>
+<area shape="rect" id="node11" href="$Terminix_8c.html" title="Terminix.c" alt="" coords="89,155,171,181"/>
+<area shape="rect" id="node6" href="$keyboard_8c.html" title="keyboard.c" alt="" coords="289,229,376,256"/>
+</map>

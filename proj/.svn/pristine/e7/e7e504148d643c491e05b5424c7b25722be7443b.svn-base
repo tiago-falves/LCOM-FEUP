@@ -1,0 +1,107 @@
+\hypertarget{Hero_8h}{}\section{Hero.\+h File Reference}
+\label{Hero_8h}\index{Hero.\+h@{Hero.\+h}}
+
+
+Responsible for creating, destroying everything related to the \hyperlink{structHero}{Hero}. It also is responsible to changing its position.  
+
+
+{\ttfamily \#include \char`\"{}Sprite.\+h\char`\"{}}\newline
+Include dependency graph for Hero.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structBullet}{Bullet}
+\begin{DoxyCompactList}\small\item\em Struct that saves the information of a bullet. \end{DoxyCompactList}\item 
+struct \hyperlink{structHero}{Hero}
+\begin{DoxyCompactList}\small\item\em Struct that saves the information of a hero. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__HERO_gaf41123c65aa06f35e24331855e053035}{H\+E\+R\+O\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+X}~545
+\item 
+\#define \hyperlink{group__HERO_gadd4aa95c9acf5dfb1429a9bef3a40fe9}{H\+E\+R\+O\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+O\+N\+\_\+Y}~240
+\item 
+\#define \hyperlink{group__HERO_gaf30c0106538498bf54e65d0e0862b863}{H\+E\+R\+O\+\_\+1\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+I\+S\+I\+T\+I\+O\+N\+\_\+X}~380
+\item 
+\#define \hyperlink{group__HERO_ga417446fb6e7e3552bdcc3ac8020629ea}{H\+E\+R\+O\+\_\+1\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+I\+S\+I\+T\+I\+O\+N\+\_\+y}~400
+\item 
+\#define \hyperlink{group__HERO_gace54c4c2af37cffd5d321accba5cc43f}{H\+E\+R\+O\+\_\+2\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+I\+S\+I\+T\+I\+O\+N\+\_\+X}~745
+\item 
+\#define \hyperlink{group__HERO_gac9a99d16e427df8a254f204b5adc9f74}{H\+E\+R\+O\+\_\+2\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+I\+S\+I\+T\+I\+O\+N\+\_\+y}~400
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group__HERO_ga99f26e6ee9fcd62f75203b5402df8098}{direction} \{ \newline
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098aebc281bf093563220c2270ba57dedfce}{up}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098ab0ac36b187aa60c167ffcead3d5a03c0}{left}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098af763d610923b0c4614e8ecd65212666a}{right}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098a00156fc42b17a87d0746d97b42caf296}{down}, 
+\newline
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098a66043c15c39a5291ed7255362eadbeda}{ne}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098af038e4013bba5ff72ca9a7adfe50fd45}{nw}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098ab48682a3eb74fee5906661994a00ba3b}{sw}, 
+\hyperlink{group__HERO_gga99f26e6ee9fcd62f75203b5402df8098a936df56785b5dba0946fc67b922b6c5c}{se}
+ \}\begin{DoxyCompactList}\small\item\em tells where the hero is poiting to \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{group__HERO_ga302b01469625ed347b10bf601d544857}{create\+\_\+hero} ()
+\begin{DoxyCompactList}\small\item\em Create a hero object. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gaa1e5857dcfd09c2438d013b95b93c2c9}{destroy\+\_\+hero} (\hyperlink{structHero}{Hero} $\ast$$\ast$hero)
+\begin{DoxyCompactList}\small\item\em Destroys the hero. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga9859c410abaeff3b3c6c985530800747}{hero\+\_\+move\+\_\+up} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves up. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gadac95b606a4a65603ea47063695fc981}{hero\+\_\+move\+\_\+down} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves down. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga81029e17113386e8230886e16164c6ab}{hero\+\_\+move\+\_\+left} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves left. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga373d3012aae9ae04da1e8243a2184bc1}{hero\+\_\+move\+\_\+right} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves right. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gabacf757d624835370dac1b72975db77f}{reset\+\_\+hero\+\_\+position} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} goes back to the initial position. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga93b2cf88fd937e91131502a252565ffb}{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} of the player one starts in the right position. \end{DoxyCompactList}\item 
+\hyperlink{structBullet}{Bullet} $\ast$ \hyperlink{group__HERO_gafe71445b565fa332c2b971ace8fe6967}{shoot} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Creates a bullet object and draws it. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga53ce3ef3123128ecf5d97853f1d00270}{destroy\+\_\+bullet} (\hyperlink{structBullet}{Bullet} $\ast$$\ast$bullet)
+\begin{DoxyCompactList}\small\item\em Destroys the bullet. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_gaac2a4eecd0a12794666227ae37f492ba}{get\+\_\+bullet\+\_\+coords} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet coordinatess based on where the hero is and which direction he is facing. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga890d0f121b609c134877b2139edd46da}{get\+\_\+bullet\+\_\+direction} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet direction based on which direction the hero is facing. \end{DoxyCompactList}\item 
+void \hyperlink{group__HERO_ga84b19814b865635c101d1eac30b654f2}{update\+\_\+xpm} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Updates the xpm of the hero, mainly used when he changes direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Responsible for creating, destroying everything related to the \hyperlink{structHero}{Hero}. It also is responsible to changing its position. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}

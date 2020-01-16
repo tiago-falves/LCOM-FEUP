@@ -1,0 +1,3 @@
+int subscribe_periphericals(int *timer_irq,int *mouse_irq,int *keyboard_irq);
+
+

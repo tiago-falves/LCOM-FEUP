@@ -1,0 +1,516 @@
+\hypertarget{RTC_8c}{}\section{R\+T\+C.\+c File Reference}
+\label{RTC_8c}\index{R\+T\+C.\+c@{R\+T\+C.\+c}}
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+Include dependency graph for R\+T\+C.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{RTC_8c_ab832160971533b0b461a1ccdb78a7b61}{rtc\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a8ee1ffb1e38bc735ccf645370fe5b573}{rtc\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ae067c9946aaa508970933b1527ea063e}{rtc\+\_\+write} (uint8\+\_\+t data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Write a value to a register. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ab4e3a24c7228998edc81bafcf315e764}{rtc\+\_\+read} (uint8\+\_\+t $\ast$data, uint8\+\_\+t address)
+\begin{DoxyCompactList}\small\item\em Reads data from the R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG. \end{DoxyCompactList}\item 
+void \hyperlink{RTC_8c_a75dad42881d64cf07cf1bdc2979a7056}{rtc\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Handles R\+TC interrupts Shows an easter egg if the user is in the \hyperlink{structHighscore}{Highscore} \hyperlink{structMenu}{Menu} when the alarm rings Handles periodic, update and alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ab99c050ddedc035564c30e0a88fee811}{rtc\+\_\+get\+\_\+month} ()
+\begin{DoxyCompactList}\small\item\em Gets the current month. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a791d4631b1e982663b5d5e3c2ec315ee}{rtc\+\_\+get\+\_\+year} ()
+\begin{DoxyCompactList}\small\item\em Gets the current year. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_af37570cf04260d0e062b86ba57c683ca}{rtc\+\_\+get\+\_\+day} ()
+\begin{DoxyCompactList}\small\item\em Gets the current day. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ad46ca0a253252aafbe34faa42bd74416}{rtc\+\_\+get\+\_\+hour} ()
+\begin{DoxyCompactList}\small\item\em Gets the current hour. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a4564fbf599419d865d3b050d3d502cd7}{rtc\+\_\+get\+\_\+min} ()
+\begin{DoxyCompactList}\small\item\em Gets the current minute. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a2cabb2f91ba0ba2cfd06a1fd80260169}{rtc\+\_\+get\+\_\+sec} ()
+\begin{DoxyCompactList}\small\item\em Gets the current second. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a0b67dcdd55171dd973c720a4391f475d}{convert\+\_\+to\+\_\+decimal} (uint32\+\_\+t bcd)
+\item 
+int \hyperlink{RTC_8c_ad820e4525a3e89eb5418021cea7c22f0}{rtc\+\_\+enable\+\_\+alarm} ()
+\begin{DoxyCompactList}\small\item\em Enable alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ac8915ed7e97ce0c42a5efc6fcf002e35}{rtc\+\_\+disable\+\_\+alarm} ()
+\begin{DoxyCompactList}\small\item\em Disable alarm interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_af4cbfcf7cd2fd02862614a8209e6b7f6}{set\+\_\+alarm\+\_\+second} (uint8\+\_\+t second)
+\begin{DoxyCompactList}\small\item\em Set alarm second value. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a356598c3705fad6db2b319b58b27530e}{set\+\_\+alarm\+\_\+minute} (uint8\+\_\+t minute)
+\begin{DoxyCompactList}\small\item\em Set alarm minute value. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_aabf0c92b98c848db38ef0f3063b6aa92}{set\+\_\+alarm\+\_\+hour} (uint8\+\_\+t hour)
+\begin{DoxyCompactList}\small\item\em Set alarm hour value. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ad37c8f73d6eb5fb1d966b3b4e2cf26cd}{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds} (int seconds)
+\begin{DoxyCompactList}\small\item\em Set an alarm for the second \char`\"{}seconds\char`\"{}, every minute. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_ad7b08763cdc8e6f979ffde822455f499}{rtc\+\_\+update\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enable update interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a7ddb6af7a877e44c12f8db6c4ff37f93}{rtc\+\_\+update\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disable update interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a3896d27e8e25cc207d7013788497544c}{rtc\+\_\+enable\+\_\+periodic} ()
+\begin{DoxyCompactList}\small\item\em Enable periodic interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{RTC_8c_a69ba31d0081549b2418944de50971670}{rtc\+\_\+disable\+\_\+periodic} ()
+\begin{DoxyCompactList}\small\item\em Disable alarm interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{RTC_8c_a0b67dcdd55171dd973c720a4391f475d}\label{RTC_8c_a0b67dcdd55171dd973c720a4391f475d}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!convert\+\_\+to\+\_\+decimal@{convert\+\_\+to\+\_\+decimal}}
+\index{convert\+\_\+to\+\_\+decimal@{convert\+\_\+to\+\_\+decimal}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{convert\+\_\+to\+\_\+decimal()}{convert\_to\_decimal()}}
+{\footnotesize\ttfamily int convert\+\_\+to\+\_\+decimal (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{bcd }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{RTC_8c_ac8915ed7e97ce0c42a5efc6fcf002e35}\label{RTC_8c_ac8915ed7e97ce0c42a5efc6fcf002e35}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+disable\+\_\+alarm@{rtc\+\_\+disable\+\_\+alarm}}
+\index{rtc\+\_\+disable\+\_\+alarm@{rtc\+\_\+disable\+\_\+alarm}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+disable\+\_\+alarm()}{rtc\_disable\_alarm()}}
+{\footnotesize\ttfamily int rtc\+\_\+disable\+\_\+alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable alarm interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ac8915ed7e97ce0c42a5efc6fcf002e35_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a69ba31d0081549b2418944de50971670}\label{RTC_8c_a69ba31d0081549b2418944de50971670}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+disable\+\_\+periodic@{rtc\+\_\+disable\+\_\+periodic}}
+\index{rtc\+\_\+disable\+\_\+periodic@{rtc\+\_\+disable\+\_\+periodic}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+disable\+\_\+periodic()}{rtc\_disable\_periodic()}}
+{\footnotesize\ttfamily int rtc\+\_\+disable\+\_\+periodic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable alarm interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a69ba31d0081549b2418944de50971670_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ad820e4525a3e89eb5418021cea7c22f0}\label{RTC_8c_ad820e4525a3e89eb5418021cea7c22f0}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+enable\+\_\+alarm@{rtc\+\_\+enable\+\_\+alarm}}
+\index{rtc\+\_\+enable\+\_\+alarm@{rtc\+\_\+enable\+\_\+alarm}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+enable\+\_\+alarm()}{rtc\_enable\_alarm()}}
+{\footnotesize\ttfamily int rtc\+\_\+enable\+\_\+alarm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable alarm interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ad820e4525a3e89eb5418021cea7c22f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a3896d27e8e25cc207d7013788497544c}\label{RTC_8c_a3896d27e8e25cc207d7013788497544c}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+enable\+\_\+periodic@{rtc\+\_\+enable\+\_\+periodic}}
+\index{rtc\+\_\+enable\+\_\+periodic@{rtc\+\_\+enable\+\_\+periodic}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+enable\+\_\+periodic()}{rtc\_enable\_periodic()}}
+{\footnotesize\ttfamily int rtc\+\_\+enable\+\_\+periodic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable periodic interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a3896d27e8e25cc207d7013788497544c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_af37570cf04260d0e062b86ba57c683ca}\label{RTC_8c_af37570cf04260d0e062b86ba57c683ca}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+day@{rtc\+\_\+get\+\_\+day}}
+\index{rtc\+\_\+get\+\_\+day@{rtc\+\_\+get\+\_\+day}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+day()}{rtc\_get\_day()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+day (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current day. 
+
+\begin{DoxyReturn}{Returns}
+returns the day 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_af37570cf04260d0e062b86ba57c683ca_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ad46ca0a253252aafbe34faa42bd74416}\label{RTC_8c_ad46ca0a253252aafbe34faa42bd74416}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+hour@{rtc\+\_\+get\+\_\+hour}}
+\index{rtc\+\_\+get\+\_\+hour@{rtc\+\_\+get\+\_\+hour}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+hour()}{rtc\_get\_hour()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+hour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current hour. 
+
+\begin{DoxyReturn}{Returns}
+returns the hour 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ad46ca0a253252aafbe34faa42bd74416_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a4564fbf599419d865d3b050d3d502cd7}\label{RTC_8c_a4564fbf599419d865d3b050d3d502cd7}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+min@{rtc\+\_\+get\+\_\+min}}
+\index{rtc\+\_\+get\+\_\+min@{rtc\+\_\+get\+\_\+min}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+min()}{rtc\_get\_min()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current minute. 
+
+\begin{DoxyReturn}{Returns}
+returns the minute 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a4564fbf599419d865d3b050d3d502cd7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ab99c050ddedc035564c30e0a88fee811}\label{RTC_8c_ab99c050ddedc035564c30e0a88fee811}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+month@{rtc\+\_\+get\+\_\+month}}
+\index{rtc\+\_\+get\+\_\+month@{rtc\+\_\+get\+\_\+month}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+month()}{rtc\_get\_month()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current month. 
+
+\begin{DoxyReturn}{Returns}
+returns the month 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ab99c050ddedc035564c30e0a88fee811_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a2cabb2f91ba0ba2cfd06a1fd80260169}\label{RTC_8c_a2cabb2f91ba0ba2cfd06a1fd80260169}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+sec@{rtc\+\_\+get\+\_\+sec}}
+\index{rtc\+\_\+get\+\_\+sec@{rtc\+\_\+get\+\_\+sec}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+sec()}{rtc\_get\_sec()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+sec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current second. 
+
+\begin{DoxyReturn}{Returns}
+returns the second 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a2cabb2f91ba0ba2cfd06a1fd80260169_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a791d4631b1e982663b5d5e3c2ec315ee}\label{RTC_8c_a791d4631b1e982663b5d5e3c2ec315ee}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+get\+\_\+year@{rtc\+\_\+get\+\_\+year}}
+\index{rtc\+\_\+get\+\_\+year@{rtc\+\_\+get\+\_\+year}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+get\+\_\+year()}{rtc\_get\_year()}}
+{\footnotesize\ttfamily int rtc\+\_\+get\+\_\+year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current year. 
+
+\begin{DoxyReturn}{Returns}
+returns the year 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a791d4631b1e982663b5d5e3c2ec315ee_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a75dad42881d64cf07cf1bdc2979a7056}\label{RTC_8c_a75dad42881d64cf07cf1bdc2979a7056}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+ih@{rtc\+\_\+ih}}
+\index{rtc\+\_\+ih@{rtc\+\_\+ih}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+ih()}{rtc\_ih()}}
+{\footnotesize\ttfamily void rtc\+\_\+ih (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles R\+TC interrupts Shows an easter egg if the user is in the \hyperlink{structHighscore}{Highscore} \hyperlink{structMenu}{Menu} when the alarm rings Handles periodic, update and alarm interrupts. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a75dad42881d64cf07cf1bdc2979a7056_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ab4e3a24c7228998edc81bafcf315e764}\label{RTC_8c_ab4e3a24c7228998edc81bafcf315e764}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+read@{rtc\+\_\+read}}
+\index{rtc\+\_\+read@{rtc\+\_\+read}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+read()}{rtc\_read()}}
+{\footnotesize\ttfamily int rtc\+\_\+read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{data,  }\item[{uint8\+\_\+t}]{address }\end{DoxyParamCaption})}
+
+
+
+Reads data from the R\+T\+C\+\_\+\+D\+A\+T\+A\+\_\+\+R\+EG. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & -\/ Data to read from the register \\
+\hline
+{\em address} & -\/ Address to write data to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{RTC_8c_ab4e3a24c7228998edc81bafcf315e764_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ad37c8f73d6eb5fb1d966b3b4e2cf26cd}\label{RTC_8c_ad37c8f73d6eb5fb1d966b3b4e2cf26cd}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds@{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds}}
+\index{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds@{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds()}{rtc\_set\_alarm\_in\_seconds()}}
+{\footnotesize\ttfamily int rtc\+\_\+set\+\_\+alarm\+\_\+in\+\_\+seconds (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})}
+
+
+
+Set an alarm for the second \char`\"{}seconds\char`\"{}, every minute. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em second} & -\/ second the alarm rings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ad37c8f73d6eb5fb1d966b3b4e2cf26cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ab832160971533b0b461a1ccdb78a7b61}\label{RTC_8c_ab832160971533b0b461a1ccdb78a7b61}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+subscribe@{rtc\+\_\+subscribe}}
+\index{rtc\+\_\+subscribe@{rtc\+\_\+subscribe}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+subscribe()}{rtc\_subscribe()}}
+{\footnotesize\ttfamily int rtc\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes R\+TC interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if the operation wasn\textquotesingle{}t succssessfull 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RTC_8c_a8ee1ffb1e38bc735ccf645370fe5b573}\label{RTC_8c_a8ee1ffb1e38bc735ccf645370fe5b573}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+unsubscribe@{rtc\+\_\+unsubscribe}}
+\index{rtc\+\_\+unsubscribe@{rtc\+\_\+unsubscribe}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+unsubscribe()}{rtc\_unsubscribe()}}
+{\footnotesize\ttfamily int rtc\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes R\+TC interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Returns 0 if successful, not 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RTC_8c_a7ddb6af7a877e44c12f8db6c4ff37f93}\label{RTC_8c_a7ddb6af7a877e44c12f8db6c4ff37f93}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+update\+\_\+disable@{rtc\+\_\+update\+\_\+disable}}
+\index{rtc\+\_\+update\+\_\+disable@{rtc\+\_\+update\+\_\+disable}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+update\+\_\+disable()}{rtc\_update\_disable()}}
+{\footnotesize\ttfamily int rtc\+\_\+update\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disable update interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_a7ddb6af7a877e44c12f8db6c4ff37f93_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ad7b08763cdc8e6f979ffde822455f499}\label{RTC_8c_ad7b08763cdc8e6f979ffde822455f499}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+update\+\_\+enable@{rtc\+\_\+update\+\_\+enable}}
+\index{rtc\+\_\+update\+\_\+enable@{rtc\+\_\+update\+\_\+enable}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+update\+\_\+enable()}{rtc\_update\_enable()}}
+{\footnotesize\ttfamily int rtc\+\_\+update\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enable update interrupts. 
+
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{RTC_8c_ad7b08763cdc8e6f979ffde822455f499_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_ae067c9946aaa508970933b1527ea063e}\label{RTC_8c_ae067c9946aaa508970933b1527ea063e}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!rtc\+\_\+write@{rtc\+\_\+write}}
+\index{rtc\+\_\+write@{rtc\+\_\+write}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+write()}{rtc\_write()}}
+{\footnotesize\ttfamily int rtc\+\_\+write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{data,  }\item[{uint8\+\_\+t}]{address }\end{DoxyParamCaption})}
+
+
+
+Write a value to a register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em address} & Address of register to change \\
+\hline
+{\em data} & Data to write \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{RTC_8c_aabf0c92b98c848db38ef0f3063b6aa92}\label{RTC_8c_aabf0c92b98c848db38ef0f3063b6aa92}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!set\+\_\+alarm\+\_\+hour@{set\+\_\+alarm\+\_\+hour}}
+\index{set\+\_\+alarm\+\_\+hour@{set\+\_\+alarm\+\_\+hour}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+alarm\+\_\+hour()}{set\_alarm\_hour()}}
+{\footnotesize\ttfamily int set\+\_\+alarm\+\_\+hour (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{hour }\end{DoxyParamCaption})}
+
+
+
+Set alarm hour value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hour} & -\/ Value to write to the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{RTC_8c_aabf0c92b98c848db38ef0f3063b6aa92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_a356598c3705fad6db2b319b58b27530e}\label{RTC_8c_a356598c3705fad6db2b319b58b27530e}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!set\+\_\+alarm\+\_\+minute@{set\+\_\+alarm\+\_\+minute}}
+\index{set\+\_\+alarm\+\_\+minute@{set\+\_\+alarm\+\_\+minute}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+alarm\+\_\+minute()}{set\_alarm\_minute()}}
+{\footnotesize\ttfamily int set\+\_\+alarm\+\_\+minute (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{minute }\end{DoxyParamCaption})}
+
+
+
+Set alarm minute value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minute} & -\/ Value to write to the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{RTC_8c_a356598c3705fad6db2b319b58b27530e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{RTC_8c_af4cbfcf7cd2fd02862614a8209e6b7f6}\label{RTC_8c_af4cbfcf7cd2fd02862614a8209e6b7f6}} 
+\index{R\+T\+C.\+c@{R\+T\+C.\+c}!set\+\_\+alarm\+\_\+second@{set\+\_\+alarm\+\_\+second}}
+\index{set\+\_\+alarm\+\_\+second@{set\+\_\+alarm\+\_\+second}!R\+T\+C.\+c@{R\+T\+C.\+c}}
+\subsubsection{\texorpdfstring{set\+\_\+alarm\+\_\+second()}{set\_alarm\_second()}}
+{\footnotesize\ttfamily int set\+\_\+alarm\+\_\+second (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{second }\end{DoxyParamCaption})}
+
+
+
+Set alarm second value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em second} & -\/ Value to write to the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return 0 upon success and non-\/zero otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{RTC_8c_af4cbfcf7cd2fd02862614a8209e6b7f6_cgraph}
+\end{center}
+\end{figure}

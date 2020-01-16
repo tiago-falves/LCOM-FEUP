@@ -1,0 +1,187 @@
+#include <stdlib.h>
+#include "Hero.h"
+#include "hero1_up.xpm"
+#include "hero1_down.xpm"
+#include "hero1_left.xpm"
+#include "hero1_right.xpm"
+#include "bullet.xpm"
+
+
+
+
+Hero * create_hero(){
+
+  Hero * hero_ptr = malloc(sizeof (Hero));
+  xpm_image_t  hero_img;
+  convert_xpm_img(hero1_xpm,&hero_img);
+
+  hero_ptr->x = HERO_START_POSITION_X;
+  hero_ptr->y = HERO_START_POSITION_Y;
+  hero_ptr->new_x = HERO_START_POSITION_X;
+  hero_ptr->new_y = HERO_START_POSITION_Y;
+  hero_ptr->x_direction = 0;
+  hero_ptr->y_direction = 1;
+  hero_ptr->hero_img = hero_img;
+  hero_ptr->bullet = NULL;
+  hero_ptr->direction = up;
+  
+  draw_xpm(hero_img,hero_ptr->x,hero_ptr->y);
+ 
+  
+  return hero_ptr;
+}
+
+
+Bullet * shoot(Hero * hero){
+
+  Bullet * bullet_ptr = malloc(sizeof (Bullet));
+
+  xpm_image_t bullet_img;
+  convert_xpm_img(bullet_xpm, &bullet_img);
+
+  uint16_t bullet_x, bullet_y;
+
+  get_bullet_coords(hero, &bullet_x, &bullet_y);
+
+  bullet_ptr->sprite = create_sprite(bullet_img,bullet_x, bullet_y,5);
+
+  bullet_ptr->x_direction = hero->x_direction;
+  bullet_ptr->y_direction = hero->y_direction;
+
+  draw_xpm(bullet_img, bullet_ptr->sprite->x, bullet_ptr->sprite->y);
+
+  return bullet_ptr;
+}
+
+
+void hero_move_up(Hero * hero) {
+  hero->new_y = hero->y - 10;
+  hero->y_direction = -1;
+  hero->x_direction = 0;
+  hero->direction = up;
+
+  update_xpm(hero);
+}
+
+void hero_move_down(Hero * hero){
+    hero->new_y  = hero->y + 10;
+    hero->y_direction = 1;
+    hero->x_direction = 0;
+    hero->direction = down;
+
+    update_xpm(hero);
+}
+
+void hero_move_left(Hero * hero){
+    hero->new_x = hero->x - 10;
+    hero->x_direction = -1;
+    hero->y_direction = 0;
+    hero->direction = left;
+
+    update_xpm(hero);
+}
+
+void hero_move_right(Hero * hero){
+    hero->new_x  = hero->x + 10;
+    hero->x_direction = 1;
+    hero->y_direction = 0;
+    hero->direction = right;
+
+    update_xpm(hero);
+}
+
+
+void destroy_bullet(Bullet ** bullet) {
+
+  if(*bullet == NULL){
+    return;
+  }
+  free(*bullet);
+  *bullet = NULL;
+}
+
+void update_xpm(Hero * hero){
+
+  if(hero->x_direction == 0 && hero->y_direction == (uint16_t) -1){
+    
+    clean_xpm(hero->hero_img, hero->x, hero->y);
+
+    xpm_image_t  hero_img;
+    convert_xpm_img(hero1_xpm,&hero_img);
+    hero->hero_img = hero_img;
+
+    draw_xpm(hero->hero_img, hero->x, hero->y);
+  }
+
+  else if(hero->x_direction == 0 && hero->y_direction == 1){
+
+  clean_xpm(hero->hero_img, hero->x, hero->y);
+
+  xpm_image_t  hero_img;
+  convert_xpm_img(hero1_down_xpm,&hero_img);
+  hero->hero_img = hero_img;
+
+  draw_xpm(hero->hero_img, hero->x, hero->y);
+  }
+
+  else if(hero->x_direction == 1 && hero->y_direction == 0){
+
+  clean_xpm(hero->hero_img, hero->x, hero->y);
+
+  xpm_image_t  hero_img;
+  convert_xpm_img(hero1_right_xpm,&hero_img);
+  hero->hero_img = hero_img;
+
+  draw_xpm(hero->hero_img, hero->x, hero->y);
+  }
+
+  else if(hero->x_direction == (uint16_t) -1 && hero->y_direction == 0){
+
+  clean_xpm(hero->hero_img, hero->x, hero->y);
+
+  xpm_image_t  hero_img;
+  convert_xpm_img(hero1_left_xpm,&hero_img);
+  hero->hero_img = hero_img;
+
+  draw_xpm(hero->hero_img, hero->x, hero->y);
+  }
+}
+
+void get_bullet_coords(Hero* hero, uint16_t * x, uint16_t * y){
+
+  uint16_t hero_width = (hero->hero_img).width;
+  uint16_t hero_height = (hero->hero_img).height;
+
+  switch(hero->direction){
+    case up:
+      *x = hero->x + hero_width/2.3;
+      *y = hero->y;
+      break;
+    case left:
+      *x = hero->x;
+      *y = hero->y + hero_height/3.25;
+      break;
+    case right:
+      *x = hero->x + hero_width;
+      *y = hero->y + hero_height/2.3;
+      break;
+    case down:
+      *x = hero->x + hero_width/3.25;
+      *y = hero->y + hero_height;
+      break;
+  }
+
+  return;
+}
+
+
+
+
+
+
+
+
+
+
+
+

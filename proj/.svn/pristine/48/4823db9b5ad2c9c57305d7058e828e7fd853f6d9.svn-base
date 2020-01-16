@@ -1,0 +1,75 @@
+\hypertarget{highscores_8c}{}\section{highscores.\+c File Reference}
+\label{highscores_8c}\index{highscores.\+c@{highscores.\+c}}
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}R\+T\+C.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}highscores.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/one.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/two.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/three.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/four.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/five.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/six.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/seven.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/eight.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/nine.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/zero.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/slash.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/points.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/date.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/time.\+xpm\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for highscores.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{highscores_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Highscore_ga2b6da2f788faf5219097209fd0c6a037}{load\+\_\+numbers\+\_\+xpms} ()
+\begin{DoxyCompactList}\small\item\em Loads all the xpms, corresponding to numbers and. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga282a23438b4a11db250b677940e5957b}{save\+\_\+score} (int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Saves the score to the scores.\+txt file. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga09d90496d9ad097720ef2b990b07bb9a}{print\+\_\+digit} (unsigned num, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Given a number, prints to the screen the corresponding number. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga6cc8c84ab9739c5413e011f6f8ec35b6}{read\+\_\+highscores} ()
+\begin{DoxyCompactList}\small\item\em Reads the Highscores from the scores.\+txt file. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_gaf004aefe7f64968a793d968b2ac0e86f}{print\+\_\+highscores} ()
+\begin{DoxyCompactList}\small\item\em Prints all the highscores in a formatted way. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga97df1c7501b1ec44d1bfc2c9044b82c5}{draw\+Highscores\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the Highscores \hyperlink{structMenu}{Menu}. \end{DoxyCompactList}\item 
+\hyperlink{structHighscore}{Highscore} $\ast$ \hyperlink{group__Highscore_gaa56da1d2f24e53b5d61b07a0b5974bab}{create\+\_\+highscore} (int score, int day, int month, int year, int hour, int minute, int second)
+\begin{DoxyCompactList}\small\item\em Creates the struct \hyperlink{structHighscore}{Highscore} according to the paramters. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga030ed7b517c039e183ab155c9222f40d}{destroy\+\_\+highscore} (\hyperlink{structHighscore}{Highscore} $\ast$$\ast$highscore)
+\begin{DoxyCompactList}\small\item\em Destroys the Highscores Struct. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{highscores_8c_a42bbbe1c7771ce8774ae6af5864f6971}{numbers\+\_\+xpms} \mbox{[}10\mbox{]}
+\item 
+\hyperlink{structHighscore}{Highscore} $\ast$ \hyperlink{highscores_8c_a4b7c8aaba51d76cd6ed14189c0b8a199}{highscores} \mbox{[}5\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{highscores_8c_a4b7c8aaba51d76cd6ed14189c0b8a199}\label{highscores_8c_a4b7c8aaba51d76cd6ed14189c0b8a199}} 
+\index{highscores.\+c@{highscores.\+c}!highscores@{highscores}}
+\index{highscores@{highscores}!highscores.\+c@{highscores.\+c}}
+\subsubsection{\texorpdfstring{highscores}{highscores}}
+{\footnotesize\ttfamily \hyperlink{structHighscore}{Highscore}$\ast$ highscores\mbox{[}5\mbox{]}}
+
+\mbox{\Hypertarget{highscores_8c_a42bbbe1c7771ce8774ae6af5864f6971}\label{highscores_8c_a42bbbe1c7771ce8774ae6af5864f6971}} 
+\index{highscores.\+c@{highscores.\+c}!numbers\+\_\+xpms@{numbers\+\_\+xpms}}
+\index{numbers\+\_\+xpms@{numbers\+\_\+xpms}!highscores.\+c@{highscores.\+c}}
+\subsubsection{\texorpdfstring{numbers\+\_\+xpms}{numbers\_xpms}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t numbers\+\_\+xpms\mbox{[}10\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+

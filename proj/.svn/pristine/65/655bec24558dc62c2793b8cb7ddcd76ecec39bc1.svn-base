@@ -1,0 +1,101 @@
+/**
+ * @file Terminix.h
+ * @author Bernardo Ramalho & Tiago Alves
+ * @brief Contains everything related to the Terminix
+ * @version 0.1
+ * @date 2020-01-06
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
+
+#include <stdlib.h>
+#include "i8042.h"
+#include "i8254.h"
+#include "Hero.h"
+#include "Zombie.h"
+#include "Menu.h"
+#include "mouse.h"
+#include "Images/new_background.xpm"
+#include "Images/chest.xpm"
+
+//Game State Macros
+#define MENU_STATE 0
+#define HIGHSCORE_STATE 1
+#define START_LEVEL_STATE 2
+#define LEVEL_STATE 3
+#define LEADERBOARD_STATE 4
+#define END_STATE 5
+#define WAITING_FOR_PLAYER 6
+#define WIN 7
+
+//Chest initial coords
+#define CHEST_X 549
+#define CHEST_Y 399
+
+/**
+ * @brief Enumerated game state for identifying the game's current state
+ * 
+ */
+enum game_states {
+  menu,                   /*!< Main menu state s*/
+  highscore_state,        /*!< Highscore state */
+  start_level,            /*!< Start Level state */
+  level,                  /*!< Level state */
+  learderboard,           /*!< Leaderboard state */
+  end,                    /*!< Game Over state */
+  waiting_for_player,     /*!< Waiting for Player state */
+  win
+  };                   /*!< Win state */
+
+/**
+ * @brief Struct containing all the information about the chest
+ * 
+ */
+typedef struct{
+  int x;
+  int y;
+  xpm_image_t chest_img;
+} Chest;
+
+typedef struct {
+
+  Mouse * mouse;
+  Chest * chest;
+  Hero * heroes[2];
+  Zombie * zombies[8];
+
+  Menu * menu;
+  
+  bool multiplayer;
+
+  int nr_zombies;
+  int nr_dead_zombies;
+  int nr_dead_players;
+
+  int level;
+  int max_level;
+
+  int nr_player;
+
+  enum game_states state;
+
+
+  uint8_t x;
+  xpm_image_t  background_xpm;
+
+  vbe_mode_info_t mode_info;
+
+} Terminix;
+
+Terminix * create_terminix();
+Terminix * get_current_terminix();
+void create_random_zombies();
+Hero * create_second_hero();
+void destroy_terminix(Terminix ** terminix);
+void reset_terminix();
+Chest * create_chest();
+void destroy_chest(Chest ** chest);
+void draw_chest();
+void clean_chest();
+

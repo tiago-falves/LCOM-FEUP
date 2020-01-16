@@ -1,0 +1,4 @@
+<map id="uart_send_message" name="uart_send_message">
+<area shape="rect" id="node2" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="192,5,303,32"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="351,5,441,32"/>
+</map>

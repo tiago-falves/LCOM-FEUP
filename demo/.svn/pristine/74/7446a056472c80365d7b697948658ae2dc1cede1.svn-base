@@ -1,0 +1,108 @@
+#include <stdlib.h>
+#include "Hero.h"
+#include "hero1.xpm"
+#include "bullet.xpm"
+
+
+
+
+Hero * create_hero(){
+
+  Hero * hero_ptr = malloc(sizeof (Hero));
+  xpm_image_t  hero_img;
+  convert_xpm_img(hero1_xpm,&hero_img);
+
+  hero_ptr->x = HERO_START_POSITION_X;
+  hero_ptr->y = HERO_START_POSITION_Y;
+  hero_ptr->new_x = HERO_START_POSITION_X;
+  hero_ptr->new_y = HERO_START_POSITION_Y;
+  hero_ptr->x_direction = 0;
+  hero_ptr->y_direction = 1;
+  hero_ptr->hero_img = hero_img;
+  hero_ptr->bullet = NULL;
+  
+  draw_xpm(hero_img,hero_ptr->x,hero_ptr->y);
+ 
+  
+  return hero_ptr;
+}
+
+
+Bullet * shoot(Hero * hero){
+
+  Bullet * bullet_ptr = malloc(sizeof (Bullet));
+
+  xpm_image_t bullet_img;
+
+  convert_xpm_img(bullet_xpm, &bullet_img);
+  bullet_ptr->sprite = create_sprite(bullet_img,hero->x + 30,hero->y,5);
+
+  // bullet_ptr->sprite->x = hero->x + 30;
+  // bullet_ptr->sprite->y = hero->y;
+  bullet_ptr->x_direction = hero->x_direction;
+  bullet_ptr->y_direction = hero->y_direction;
+  bullet_ptr->bullet_img = bullet_img;
+  // bullet_ptr->sprite->speed = 5;
+
+  draw_xpm(bullet_img, bullet_ptr->sprite->x, bullet_ptr->sprite->y);
+
+  return bullet_ptr;
+}
+
+
+void hero_move_up(Hero * hero) {
+
+  if(hero->y < 5){ hero->new_y = 0;}
+  else{hero->new_y = hero->y - 5;}
+  hero->y_direction = -1;
+  hero->x_direction = 0;
+
+
+}
+
+void hero_move_down(Hero * hero){
+    hero->new_y  = hero->y + 5;
+    hero->y_direction = 1;
+    hero->x_direction = 0;
+
+}
+
+void hero_move_left(Hero * hero){
+    if(hero->x < 5){ hero->new_x = 0;}
+    else {hero->new_x = hero->x - 5;}
+    hero->x_direction = -1;
+    hero->y_direction = 0;
+
+
+}
+
+void hero_move_right(Hero * hero){
+    hero->new_x  = hero->x + 5;
+    hero->x_direction = 1;
+    hero->y_direction = 0;
+
+}
+
+
+void destroy_bullet(Bullet ** bullet) {
+
+  if(*bullet == NULL){
+    return;
+  }
+  free(*bullet);
+  *bullet = NULL;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

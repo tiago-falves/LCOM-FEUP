@@ -1,0 +1,7 @@
+<map id="change_other_hero_direction" name="change_other_hero_direction">
+<area shape="rect" id="node2" href="$Hero_8c.html#a84b19814b865635c101d1eac30b654f2" title="Updates the xpm of the hero, mainly used when he changes direction. " alt="" coords="241,31,335,57"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="383,5,468,32"/>
+<area shape="rect" id="node6" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="384,56,467,83"/>
+<area shape="rect" id="node4" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="516,5,656,32"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="533,56,639,83"/>
+</map>

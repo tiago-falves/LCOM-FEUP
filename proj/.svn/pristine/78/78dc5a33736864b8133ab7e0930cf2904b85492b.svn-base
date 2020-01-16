@@ -1,0 +1,51 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node2" href="$group__Drawing.html#ga0601490a63f18afe194c8f935ea58631" title="Initializes the graphics card mode. " alt="" coords="185,120,312,147"/>
+<area shape="rect" id="node4" href="$group__Terminix.html#ga268a63f43cb6dadc7fce69a5ba06e179" title="Create a terminix object. " alt="" coords="193,284,304,311"/>
+<area shape="rect" id="node15" href="$group__Serial__Port.html#ga5e41e03b0dd1e22a95997287df58f620" title="Configures the uart so that it can receive interrupts. " alt="" coords="205,1424,292,1451"/>
+<area shape="rect" id="node16" href="$group__Game.html#ga54b83745e9f20db86407fcdef76e0d3a" title="Subscribes to all the periphericals used. " alt="" coords="169,1525,328,1552"/>
+<area shape="rect" id="node28" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title="timer_int_handler" alt="" coords="188,1576,309,1603"/>
+<area shape="rect" id="node29" href="$group__Game.html#ga7d9edd8b0a8d0d2f737eb5ee0b0a5040" title="Renders the game into the screen depending on the state. " alt="" coords="219,867,278,893"/>
+<area shape="rect" id="node39" href="$group__Keyboard.html#ga0fb71e2b76b368ba43295cdc9174558b" title="Function responsible for analysing and acting on the information receive from the keyboard..." alt="" coords="187,1297,311,1324"/>
+<area shape="rect" id="node44" href="$group__Mouse.html#gae0e722e1e3878b0ecdd7b485b4b44792" title="Handles the mouse interrupts and acts on them. " alt="" coords="193,1627,304,1653"/>
+<area shape="rect" id="node45" href="$group__RTC.html#ga75dad42881d64cf07cf1bdc2979a7056" title="Handles RTC interrupts Shows an easter egg if the user is in the Highscore Menu when the alarm rings ..." alt="" coords="221,1183,276,1209"/>
+<area shape="rect" id="node46" href="$group__Serial__Port.html#ga9caf04ba76e8da51b28c2e9b872a5d78" title="Handles the uart interrupts. " alt="" coords="218,1677,279,1704"/>
+<area shape="rect" id="node47" href="$group__Serial__Port.html#ga6f1cda41030f00afdc86fc70e377dc9e" title="Checks if the uart as received a full message. " alt="" coords="163,1728,334,1755"/>
+<area shape="rect" id="node48" href="$group__Game.html#gaf73db0b415ba94ed8c070b4fe68891c1" title="Analyses and acts on the message received by the uart. " alt="" coords="392,613,548,640"/>
+<area shape="rect" id="node49" href="$group__Keyboard.html#gafd6a88e7d85a7950c3697b3f20633495" title="Flushs the KBC OBF. " alt="" coords="207,1779,291,1805"/>
+<area shape="rect" id="node50" href="$group__Game.html#ga291882147b24986d611c050246df5a32" title="Unsubscribes to all the periphericals used. " alt="" coords="163,1475,335,1501"/>
+<area shape="rect" id="node3" href="$group__Drawing.html#ga7f6272b1842da39059fdf1121ce6c7e4" title="Get the vbe mode info. " alt="" coords="403,5,537,32"/>
+<area shape="rect" id="node5" href="$group__Drawing.html#ga40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="796,360,921,387"/>
+<area shape="rect" id="node6" href="$group__Drawing.html#ga923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="635,689,718,716"/>
+<area shape="rect" id="node7" href="$group__Highscore.html#ga2b6da2f788faf5219097209fd0c6a037" title="Loads all the xpms, corresponding to numbers and. " alt="" coords="605,119,748,145"/>
+<area shape="rect" id="node8" href="$group__Highscore.html#ga6cc8c84ab9739c5413e011f6f8ec35b6" title="Reads the Highscores from the scores.txt file. " alt="" coords="411,309,529,336"/>
+<area shape="rect" id="node9" href="$group__HERO.html#ga302b01469625ed347b10bf601d544857" title="Create a hero object. " alt="" coords="631,411,722,437"/>
+<area shape="rect" id="node10" href="$group__Mouse.html#ga746cb478532b016b28ad06f8e03b22bc" title="Create a mouse object. " alt="" coords="418,512,522,539"/>
+<area shape="rect" id="node11" href="$group__menu.html#ga89bccdf2d8b12f81102d85e3b77d2505" title="Create a menu object. " alt="" coords="628,284,725,311"/>
+<area shape="rect" id="node12" href="$group__Terminix.html#gac6cab27efc5eabe8a452d024046385c8" title="Create a chest object. " alt="" coords="628,360,725,387"/>
+<area shape="rect" id="node13" href="$group__RTC.html#gad37c8f73d6eb5fb1d966b3b4e2cf26cd" title="Set an alarm for the second &quot;seconds&quot;, every minute. " alt="" coords="383,157,557,184"/>
+<area shape="rect" id="node14" href="$group__RTC.html#ga2cabb2f91ba0ba2cfd06a1fd80260169" title="Gets the current second. " alt="" coords="631,195,722,221"/>
+<area shape="rect" id="node17" href="$group__Mouse.html#ga45dc77b0600161f8d821d5e758aa8d88" title="Subscribe the interrupts of the mouse. " alt="" coords="408,1931,532,1957"/>
+<area shape="rect" id="node18" href="$group__Mouse.html#gaea10ce450ff0807b0a151bbd930af51c" title="Disables the mouse interrupts. " alt="" coords="385,1475,555,1501"/>
+<area shape="rect" id="node19" href="$group__Mouse.html#ga8f2981a74d75d33c2e4bec9a93314711" title="Sends a command to the mouse controller. " alt="" coords="390,1525,550,1552"/>
+<area shape="rect" id="node20" href="$group__Mouse.html#ga92e15de5ff284887d84010dec166c684" title="Enables the mouse interrupts. " alt="" coords="387,1424,553,1451"/>
+<area shape="rect" id="node21" href="$group__Keyboard.html#gacf4fe6cea09b4953e286c1df9a61f2c8" title="Subscribe the interrupts of the keyboard. " alt="" coords="401,1576,539,1603"/>
+<area shape="rect" id="node22" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title="timer_subscribe_int" alt="" coords="403,1627,537,1653"/>
+<area shape="rect" id="node23" href="$group__RTC.html#gab832160971533b0b461a1ccdb78a7b61" title="Subscribes RTC interrupts. " alt="" coords="420,1677,520,1704"/>
+<area shape="rect" id="node24" href="$group__RTC.html#gad820e4525a3e89eb5418021cea7c22f0" title="Enable alarm interrupts. " alt="" coords="409,1728,531,1755"/>
+<area shape="rect" id="node25" href="$group__RTC.html#ga3896d27e8e25cc207d7013788497544c" title="Enable periodic interrupts. " alt="" coords="403,1779,537,1805"/>
+<area shape="rect" id="node26" href="$group__RTC.html#gad7b08763cdc8e6f979ffde822455f499" title="Enable update interrupts. " alt="" coords="406,1829,534,1856"/>
+<area shape="rect" id="node27" href="$group__Serial__Port.html#ga04c839ee1193ff6747831a64a0971b48" title="Subscribes to the uart interrupts. " alt="" coords="417,1880,523,1907"/>
+<area shape="rect" id="node30" href="$group__Game.html#ga63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="607,968,747,995"/>
+<area shape="rect" id="node31" href="$group__Game.html#gaa13653318c21b0e6b86838e6091bfc9a" title="Draws the menu image. " alt="" coords="429,765,511,792"/>
+<area shape="rect" id="node32" href="$group__Highscore.html#ga97df1c7501b1ec44d1bfc2c9044b82c5" title="Draws the Highscores Menu. " alt="" coords="396,867,544,893"/>
+<area shape="rect" id="node33" href="$group__Game.html#ga65d696c970e3074a3b07780b1cedc407" title="Starts the level. Initializes the zombies and puts everything in its original position. " alt="" coords="423,1019,517,1045"/>
+<area shape="rect" id="node34" href="$group__Game.html#ga4ed56aa25646901e2e90801de0edca1c" title="Updates the position of all the game objects. " alt="" coords="410,1069,530,1096"/>
+<area shape="rect" id="node35" href="$group__Terminix.html#ga6d04ea52dec1b6162200295c0790e3d7" title="Resets the current terminix. " alt="" coords="418,461,522,488"/>
+<area shape="rect" id="node36" href="$group__Game.html#gaeb2c7e9c7d14c9eccb7e624bd9611ef8" title="Draws the game over image. " alt="" coords="413,816,527,843"/>
+<area shape="rect" id="node37" href="$group__Game.html#gaeda5cbb59d8ddcc06a8126c505233a1c" title="Updates the position of the mouse. " alt="" coords="403,664,537,691"/>
+<area shape="rect" id="node38" href="$group__Drawing.html#gafeded743483b92b165de25bc9f0047ec" title="Updates the buffer. " alt="" coords="419,917,521,944"/>
+<area shape="rect" id="node40" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="kbc_ih" alt="" coords="440,1221,500,1248"/>
+<area shape="rect" id="node41" href="$group__HERO.html#ga9859c410abaeff3b3c6c985530800747" title="Changes the position values so the Hero moves up. " alt="" coords="417,1272,523,1299"/>
+<area shape="rect" id="node42" href="$group__Game.html#ga610e8db405e8c7986932336cf6fb85eb" title="Send the information about the movement of the hero. " alt="" coords="397,1323,543,1349"/>
+<area shape="rect" id="node43" href="$group__HERO.html#gadac95b606a4a65603ea47063695fc981" title="Changes the position values so the Hero moves down. " alt="" coords="408,1373,532,1400"/>
+</map>

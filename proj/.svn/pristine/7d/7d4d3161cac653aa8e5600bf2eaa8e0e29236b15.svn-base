@@ -1,0 +1,51 @@
+\hypertarget{structZombie}{}\section{Zombie Struct Reference}
+\label{structZombie}\index{Zombie@{Zombie}}
+
+
+{\ttfamily \#include $<$Zombie.\+h$>$}
+
+
+
+Collaboration diagram for Zombie\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{structZombie__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{structZombie_a033ffb7120af3ecccdd873213c789701}{sprite}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structZombie_a3c3b477625fb74068a332b2efcdb7e6d}{zombie\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structZombie_a7a4fe50e5f2d007012bbc3613863e7cc}{sprites} \mbox{[}4\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structZombie_a033ffb7120af3ecccdd873213c789701}\label{structZombie_a033ffb7120af3ecccdd873213c789701}} 
+\index{Zombie@{Zombie}!sprite@{sprite}}
+\index{sprite@{sprite}!Zombie@{Zombie}}
+\subsubsection{\texorpdfstring{sprite}{sprite}}
+{\footnotesize\ttfamily \hyperlink{structSprite}{Sprite}$\ast$ Zombie\+::sprite}
+
+\mbox{\Hypertarget{structZombie_a7a4fe50e5f2d007012bbc3613863e7cc}\label{structZombie_a7a4fe50e5f2d007012bbc3613863e7cc}} 
+\index{Zombie@{Zombie}!sprites@{sprites}}
+\index{sprites@{sprites}!Zombie@{Zombie}}
+\subsubsection{\texorpdfstring{sprites}{sprites}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Zombie\+::sprites\mbox{[}4\mbox{]}}
+
+\mbox{\Hypertarget{structZombie_a3c3b477625fb74068a332b2efcdb7e6d}\label{structZombie_a3c3b477625fb74068a332b2efcdb7e6d}} 
+\index{Zombie@{Zombie}!zombie\+\_\+img@{zombie\+\_\+img}}
+\index{zombie\+\_\+img@{zombie\+\_\+img}!Zombie@{Zombie}}
+\subsubsection{\texorpdfstring{zombie\+\_\+img}{zombie\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Zombie\+::zombie\+\_\+img}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Zombie_8h}{Zombie.\+h}\end{DoxyCompactItemize}

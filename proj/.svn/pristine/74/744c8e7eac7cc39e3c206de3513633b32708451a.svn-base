@@ -1,0 +1,30 @@
+
+ #include <stdbool.h>
+ #include <stdint.h>
+ #include <minix/driver.h>
+ #include <sys/mman.h>
+ #include <lcom/lcf.h>
+
+ typedef struct {
+    int score;
+    int day;
+    int month;
+    int year;
+    int hour;
+    int minute;
+    int sec;
+  
+} Highscore;
+
+void load_numbers_xpms();
+void save_score();
+void print_digit(unsigned num,uint16_t x, uint16_t y);
+char** str_split(char* a_str, const char a_delim);
+void read_highscores();
+void print_highscore(int score, int day, int month, int year,int hours,int mins, int secs);
+void drawHighscoresMenu();
+
+Highscore * create_highscore(int score, int day,int month,int year,int hour,int minute,int second);
+
+void destroy_highscore(Highscore ** highscore);
+

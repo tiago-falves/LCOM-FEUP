@@ -1,0 +1,15 @@
+<map id="update_hero_position" name="update_hero_position">
+<area shape="rect" id="node2" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="655,67,741,93"/>
+<area shape="rect" id="node5" href="$Game_8c.html#a275f4c8ad5b91f91d3dede1c46946ee5" title="Checks if the hero as collided with a friendly object. " alt="" coords="449,219,595,261"/>
+<area shape="rect" id="node6" href="$Game_8c.html#aa3afe490fccdfdeef019b03a2de701a4" title="Changes the hero direction based on the mouse position. " alt="" coords="227,117,373,144"/>
+<area shape="rect" id="node8" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="657,16,739,43"/>
+<area shape="rect" id="node12" href="$Game_8c.html#acf3c5ee8ecaf5eb146148e5e3269fe13" title="Checks if the hero as collided with an enemy. " alt="" coords="199,219,401,245"/>
+<area shape="rect" id="node13" href="$Game_8h.html#ad497d88bc271e65ce31454c4659e4477" title="Saves the score of the hero. " alt="" coords="255,269,345,296"/>
+<area shape="rect" id="node14" href="$Hero_8c.html#aa1e5857dcfd09c2438d013b95b93c2c9" title="Destroys the hero. " alt="" coords="251,320,349,347"/>
+<area shape="rect" id="node3" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="801,104,941,131"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="819,41,924,68"/>
+<area shape="rect" id="node7" href="$Hero_8c.html#a84b19814b865635c101d1eac30b654f2" title="Updates the xpm of the hero, mainly used when he changes direction. " alt="" coords="475,67,569,93"/>
+<area shape="rect" id="node9" href="$Serial__port_8c.html#add4870a81710672ca2478ba34127ab6c" title="Sends a message throw de uart. " alt="" coords="453,168,591,195"/>
+<area shape="rect" id="node10" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="643,168,753,195"/>
+<area shape="rect" id="node11" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="826,168,917,195"/>
+</map>

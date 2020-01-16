@@ -1,0 +1,147 @@
+\hypertarget{structTerminix}{}\section{Terminix Struct Reference}
+\label{structTerminix}\index{Terminix@{Terminix}}
+
+
+{\ttfamily \#include $<$Terminix.\+h$>$}
+
+
+
+Collaboration diagram for Terminix\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structTerminix__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMouse}{Mouse} $\ast$ \hyperlink{structTerminix_a9c97982af4d7a67e1845bbd20f31b243}{mouse}
+\item 
+\hyperlink{structChest}{Chest} $\ast$ \hyperlink{structTerminix_a2fe5b38705442b34d62508ccf403a7f5}{chest}
+\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{structTerminix_ad5effabcc2340d668fb0a929cee99789}{heroes} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{structZombie}{Zombie} $\ast$ \hyperlink{structTerminix_a10470cad3c553dc19b17fcf2867affe4}{zombies} \mbox{[}8\mbox{]}
+\item 
+\hyperlink{structMenu}{Menu} $\ast$ \hyperlink{structTerminix_ad4dfae24c3cd19fed7fa9a7edd95acfc}{menu}
+\item 
+bool \hyperlink{structTerminix_adb47a4bb6036a47c0ecb943d4a813997}{multiplayer}
+\item 
+int \hyperlink{structTerminix_a47bdacd73640e8dcfaf217da654c537b}{nr\+\_\+zombies}
+\item 
+int \hyperlink{structTerminix_a26e83d113df7bcb51d1c3e46d9522f92}{nr\+\_\+dead\+\_\+zombies}
+\item 
+int \hyperlink{structTerminix_a408c5aa22c1a009c83bc1493a6caa26c}{nr\+\_\+dead\+\_\+players}
+\item 
+int \hyperlink{structTerminix_ac54b95610c8ae326909e06e927b70930}{level}
+\item 
+int \hyperlink{structTerminix_ae894e2dc5efa820a0d52cc71cfd7c399}{max\+\_\+level}
+\item 
+int \hyperlink{structTerminix_a99b36e6b38285c9ba146eca509b0b2ec}{nr\+\_\+player}
+\item 
+enum \hyperlink{group__Terminix_gab0edca8721ed515bb9906f1c3e538c60}{game\+\_\+states} \hyperlink{structTerminix_ac68d6f28f8b44886e7b58988c470e518}{state}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structTerminix_a4ee001064a26dc16949945785067bd56}{background\+\_\+xpm}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \hyperlink{structTerminix_a1ea1ce5231e7e4b1e5b9b62949085b9d}{mode\+\_\+info}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structTerminix_a4ee001064a26dc16949945785067bd56}\label{structTerminix_a4ee001064a26dc16949945785067bd56}} 
+\index{Terminix@{Terminix}!background\+\_\+xpm@{background\+\_\+xpm}}
+\index{background\+\_\+xpm@{background\+\_\+xpm}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{background\+\_\+xpm}{background\_xpm}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Terminix\+::background\+\_\+xpm}
+
+Information about the background image \mbox{\Hypertarget{structTerminix_a2fe5b38705442b34d62508ccf403a7f5}\label{structTerminix_a2fe5b38705442b34d62508ccf403a7f5}} 
+\index{Terminix@{Terminix}!chest@{chest}}
+\index{chest@{chest}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{chest}{chest}}
+{\footnotesize\ttfamily \hyperlink{structChest}{Chest}$\ast$ Terminix\+::chest}
+
+Pointer to the chest object \mbox{\Hypertarget{structTerminix_ad5effabcc2340d668fb0a929cee99789}\label{structTerminix_ad5effabcc2340d668fb0a929cee99789}} 
+\index{Terminix@{Terminix}!heroes@{heroes}}
+\index{heroes@{heroes}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{heroes}{heroes}}
+{\footnotesize\ttfamily \hyperlink{structHero}{Hero}$\ast$ Terminix\+::heroes\mbox{[}2\mbox{]}}
+
+Array containing the information of the heroes \mbox{\Hypertarget{structTerminix_ac54b95610c8ae326909e06e927b70930}\label{structTerminix_ac54b95610c8ae326909e06e927b70930}} 
+\index{Terminix@{Terminix}!level@{level}}
+\index{level@{level}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Terminix\+::level}
+
+Specifies the current level \mbox{\Hypertarget{structTerminix_ae894e2dc5efa820a0d52cc71cfd7c399}\label{structTerminix_ae894e2dc5efa820a0d52cc71cfd7c399}} 
+\index{Terminix@{Terminix}!max\+\_\+level@{max\+\_\+level}}
+\index{max\+\_\+level@{max\+\_\+level}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{max\+\_\+level}{max\_level}}
+{\footnotesize\ttfamily int Terminix\+::max\+\_\+level}
+
+Specifies the max level \mbox{\Hypertarget{structTerminix_ad4dfae24c3cd19fed7fa9a7edd95acfc}\label{structTerminix_ad4dfae24c3cd19fed7fa9a7edd95acfc}} 
+\index{Terminix@{Terminix}!menu@{menu}}
+\index{menu@{menu}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \hyperlink{structMenu}{Menu}$\ast$ Terminix\+::menu}
+
+Pointer to the menu object \mbox{\Hypertarget{structTerminix_a1ea1ce5231e7e4b1e5b9b62949085b9d}\label{structTerminix_a1ea1ce5231e7e4b1e5b9b62949085b9d}} 
+\index{Terminix@{Terminix}!mode\+\_\+info@{mode\+\_\+info}}
+\index{mode\+\_\+info@{mode\+\_\+info}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{mode\+\_\+info}{mode\_info}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t Terminix\+::mode\+\_\+info}
+
+Information about the current vbe mode \mbox{\Hypertarget{structTerminix_a9c97982af4d7a67e1845bbd20f31b243}\label{structTerminix_a9c97982af4d7a67e1845bbd20f31b243}} 
+\index{Terminix@{Terminix}!mouse@{mouse}}
+\index{mouse@{mouse}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \hyperlink{structMouse}{Mouse}$\ast$ Terminix\+::mouse}
+
+Pointer to the mouse object \mbox{\Hypertarget{structTerminix_adb47a4bb6036a47c0ecb943d4a813997}\label{structTerminix_adb47a4bb6036a47c0ecb943d4a813997}} 
+\index{Terminix@{Terminix}!multiplayer@{multiplayer}}
+\index{multiplayer@{multiplayer}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{multiplayer}{multiplayer}}
+{\footnotesize\ttfamily bool Terminix\+::multiplayer}
+
+Tells if the game is being played in multiplayer or not \mbox{\Hypertarget{structTerminix_a408c5aa22c1a009c83bc1493a6caa26c}\label{structTerminix_a408c5aa22c1a009c83bc1493a6caa26c}} 
+\index{Terminix@{Terminix}!nr\+\_\+dead\+\_\+players@{nr\+\_\+dead\+\_\+players}}
+\index{nr\+\_\+dead\+\_\+players@{nr\+\_\+dead\+\_\+players}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{nr\+\_\+dead\+\_\+players}{nr\_dead\_players}}
+{\footnotesize\ttfamily int Terminix\+::nr\+\_\+dead\+\_\+players}
+
+Specifies the number of deade players \mbox{\Hypertarget{structTerminix_a26e83d113df7bcb51d1c3e46d9522f92}\label{structTerminix_a26e83d113df7bcb51d1c3e46d9522f92}} 
+\index{Terminix@{Terminix}!nr\+\_\+dead\+\_\+zombies@{nr\+\_\+dead\+\_\+zombies}}
+\index{nr\+\_\+dead\+\_\+zombies@{nr\+\_\+dead\+\_\+zombies}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{nr\+\_\+dead\+\_\+zombies}{nr\_dead\_zombies}}
+{\footnotesize\ttfamily int Terminix\+::nr\+\_\+dead\+\_\+zombies}
+
+Specifies the number of deade zombies \mbox{\Hypertarget{structTerminix_a99b36e6b38285c9ba146eca509b0b2ec}\label{structTerminix_a99b36e6b38285c9ba146eca509b0b2ec}} 
+\index{Terminix@{Terminix}!nr\+\_\+player@{nr\+\_\+player}}
+\index{nr\+\_\+player@{nr\+\_\+player}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{nr\+\_\+player}{nr\_player}}
+{\footnotesize\ttfamily int Terminix\+::nr\+\_\+player}
+
+Specifies player number \mbox{\Hypertarget{structTerminix_a47bdacd73640e8dcfaf217da654c537b}\label{structTerminix_a47bdacd73640e8dcfaf217da654c537b}} 
+\index{Terminix@{Terminix}!nr\+\_\+zombies@{nr\+\_\+zombies}}
+\index{nr\+\_\+zombies@{nr\+\_\+zombies}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{nr\+\_\+zombies}{nr\_zombies}}
+{\footnotesize\ttfamily int Terminix\+::nr\+\_\+zombies}
+
+Specifies the number of zombies that exist in the beggining of the level \mbox{\Hypertarget{structTerminix_ac68d6f28f8b44886e7b58988c470e518}\label{structTerminix_ac68d6f28f8b44886e7b58988c470e518}} 
+\index{Terminix@{Terminix}!state@{state}}
+\index{state@{state}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily enum \hyperlink{group__Terminix_gab0edca8721ed515bb9906f1c3e538c60}{game\+\_\+states} Terminix\+::state}
+
+Specifies the state of the game \mbox{\Hypertarget{structTerminix_a10470cad3c553dc19b17fcf2867affe4}\label{structTerminix_a10470cad3c553dc19b17fcf2867affe4}} 
+\index{Terminix@{Terminix}!zombies@{zombies}}
+\index{zombies@{zombies}!Terminix@{Terminix}}
+\subsubsection{\texorpdfstring{zombies}{zombies}}
+{\footnotesize\ttfamily \hyperlink{structZombie}{Zombie}$\ast$ Terminix\+::zombies\mbox{[}8\mbox{]}}
+
+Array containing the information of the zombies 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Terminix_8h}{Terminix.\+h}\end{DoxyCompactItemize}

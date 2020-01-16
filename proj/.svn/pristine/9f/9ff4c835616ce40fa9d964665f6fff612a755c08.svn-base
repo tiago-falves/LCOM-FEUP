@@ -1,0 +1,4 @@
+<map id="draw_chest" name="draw_chest">
+<area shape="rect" id="node2" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="143,5,225,32"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="273,5,379,32"/>
+</map>

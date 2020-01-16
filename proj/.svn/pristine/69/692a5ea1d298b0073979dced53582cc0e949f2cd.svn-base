@@ -1,0 +1,31 @@
+\section{File List}
+Here is a list of all files with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{drawing_8c}{drawing.\+c} }{\pageref{drawing_8c}}{}
+\item\contentsline{section}{\hyperlink{drawing_8h}{drawing.\+h} \\*Classe responsible for drawing images into the screen and animating them }{\pageref{drawing_8h}}{}
+\item\contentsline{section}{\hyperlink{Game_8c}{Game.\+c} }{\pageref{Game_8c}}{}
+\item\contentsline{section}{\hyperlink{Game_8h}{Game.\+h} \\*Containg everything that regards the logic of the game and the way it runs }{\pageref{Game_8h}}{}
+\item\contentsline{section}{\hyperlink{Hero_8c}{Hero.\+c} }{\pageref{Hero_8c}}{}
+\item\contentsline{section}{\hyperlink{Hero_8h}{Hero.\+h} \\*Responsible for creating, destroying everything related to the \hyperlink{structHero}{Hero}. It also is responsible to changing its position }{\pageref{Hero_8h}}{}
+\item\contentsline{section}{\hyperlink{highscores_8c}{highscores.\+c} }{\pageref{highscores_8c}}{}
+\item\contentsline{section}{\hyperlink{highscores_8h}{highscores.\+h} }{\pageref{highscores_8h}}{}
+\item\contentsline{section}{\hyperlink{i8042_8h}{i8042.\+h} \\*Responsible for everything related to the keyboard }{\pageref{i8042_8h}}{}
+\item\contentsline{section}{\hyperlink{i8254_8h}{i8254.\+h} \\*Contains macros used in \hyperlink{timer_8c}{timer.\+c} }{\pageref{i8254_8h}}{}
+\item\contentsline{section}{\hyperlink{keyboard_8c}{keyboard.\+c} }{\pageref{keyboard_8c}}{}
+\item\contentsline{section}{\hyperlink{Menu_8c}{Menu.\+c} }{\pageref{Menu_8c}}{}
+\item\contentsline{section}{\hyperlink{Menu_8h}{Menu.\+h} \\*Responsible for drawing and cleaning the menus }{\pageref{Menu_8h}}{}
+\item\contentsline{section}{\hyperlink{mouse_8c}{mouse.\+c} }{\pageref{mouse_8c}}{}
+\item\contentsline{section}{\hyperlink{mouse_8h}{mouse.\+h} \\*Responsible for everything related to the mouse }{\pageref{mouse_8h}}{}
+\item\contentsline{section}{\hyperlink{proj_8c}{proj.\+c} }{\pageref{proj_8c}}{}
+\item\contentsline{section}{\hyperlink{RTC_8c}{R\+T\+C.\+c} }{\pageref{RTC_8c}}{}
+\item\contentsline{section}{\hyperlink{RTC_8h}{R\+T\+C.\+h} }{\pageref{RTC_8h}}{}
+\item\contentsline{section}{\hyperlink{Serial__port_8c}{Serial\+\_\+port.\+c} }{\pageref{Serial__port_8c}}{}
+\item\contentsline{section}{\hyperlink{Serial__port_8h}{Serial\+\_\+port.\+h} \\*Everything related to the serial port }{\pageref{Serial__port_8h}}{}
+\item\contentsline{section}{\hyperlink{Sprite_8c}{Sprite.\+c} }{\pageref{Sprite_8c}}{}
+\item\contentsline{section}{\hyperlink{Sprite_8h}{Sprite.\+h} \\*Contains everything related to a sprite }{\pageref{Sprite_8h}}{}
+\item\contentsline{section}{\hyperlink{Terminix_8c}{Terminix.\+c} }{\pageref{Terminix_8c}}{}
+\item\contentsline{section}{\hyperlink{Terminix_8h}{Terminix.\+h} }{\pageref{Terminix_8h}}{}
+\item\contentsline{section}{\hyperlink{timer_8c}{timer.\+c} }{\pageref{timer_8c}}{}
+\item\contentsline{section}{\hyperlink{utils_8c}{utils.\+c} }{\pageref{utils_8c}}{}
+\item\contentsline{section}{\hyperlink{Zombie_8c}{Zombie.\+c} }{\pageref{Zombie_8c}}{}
+\item\contentsline{section}{\hyperlink{Zombie_8h}{Zombie.\+h} \\*Classe que cria e destroi os Zombies, principais enimigos }{\pageref{Zombie_8h}}{}
+\end{DoxyCompactList}

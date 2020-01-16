@@ -1,0 +1,102 @@
+\hypertarget{Game_8h}{}\section{Game.\+h File Reference}
+\label{Game_8h}\index{Game.\+h@{Game.\+h}}
+
+
+Containg everything that regards the logic of the game and the way it runs.  
+
+
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+Include dependency graph for Game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{Game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__Game_ga54b83745e9f20db86407fcdef76e0d3a}{subscribe\+\_\+periphericals} (int $\ast$timer\+\_\+irq, int $\ast$mouse\+\_\+irq, int $\ast$keyboard\+\_\+irq, int $\ast$rtc\+\_\+irq, int $\ast$uart\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em Subscribes to all the periphericals used. \end{DoxyCompactList}\item 
+int \hyperlink{group__Game_ga291882147b24986d611c050246df5a32}{unsubscribe\+\_\+periphericals} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to all the periphericals used. \end{DoxyCompactList}\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{group__Game_ga63401b160e1b4125d13b63195b8cc09a}{get\+\_\+current\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Get the current terminix object. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga4ed56aa25646901e2e90801de0edca1c}{update\+\_\+positions} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of all the game objects. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga8ebce32afc6f04c74c31e6ae117c7db9}{update\+\_\+hero\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the hero position while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga75a798133c788dc6869d6a55a514e091}{update\+\_\+zombie\+\_\+position} (\hyperlink{structZombie}{Zombie} $\ast$zombie, int zombie\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the position of a zombie while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gaeda5cbb59d8ddcc06a8126c505233a1c}{update\+\_\+mouse\+\_\+img} (\hyperlink{structMouse}{Mouse} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Updates the position of the mouse. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga72797755e6b9d1841d2e9c7bff17b6cd}{update\+\_\+bullet\+\_\+position} (\hyperlink{structBullet}{Bullet} $\ast$bullet, int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the bullet position while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga18fa19c055aed56c84050b5794899836}{update\+\_\+bullets\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Calls the update\+\_\+bullet\+\_\+position function to all the bullets. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga3ac0ed4d55e10a17440ba09e85c59199}{update\+\_\+zombies\+\_\+position} (\hyperlink{structZombie}{Zombie} $\ast$zombies\mbox{[}6\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Call the update\+\_\+zombie\+\_\+position function to all the zombies. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gafe16f76ca129d87bfec488f37bc0aacc}{update\+\_\+heroes\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Call the update\+\_\+hero\+\_\+position function to all the heroes. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga65d696c970e3074a3b07780b1cedc407}{update\+\_\+level} ()
+\begin{DoxyCompactList}\small\item\em Starts the level. Initializes the zombies and puts everything in its original position. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga65be84c8b68eec6b653278216887b4ba}{reset\+\_\+heroes\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Resets the position of all the heroes. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga7d9edd8b0a8d0d2f737eb5ee0b0a5040}{render} ()
+\begin{DoxyCompactList}\small\item\em Renders the game into the screen depending on the state. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game_ga15a17da14a2aaac56415514511136bd6}{check\+\_\+bullet\+\_\+colisions} (\hyperlink{structBullet}{Bullet} $\ast$bullet, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the bullet as collided with anything. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game_gacf3c5ee8ecaf5eb146148e5e3269fe13}{check\+\_\+heroe\+\_\+enemy\+\_\+collisions} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the hero as collided with an enemy. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game_ga275f4c8ad5b91f91d3dede1c46946ee5}{check\+\_\+heroe\+\_\+friendly\+\_\+collisions} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the hero as collided with a friendly object. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Game_ga5eea7a6f4efdb1dd7166b34a614b0ab1}{check\+\_\+zombie\+\_\+collisions} (\hyperlink{structZombie}{Zombie} $\ast$zombie, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, int zombie\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Checks if the zombie as collided with anything. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gaa3afe490fccdfdeef019b03a2de701a4}{check\+\_\+hero\+\_\+direction} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structMouse}{Mouse} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Changes the hero direction based on the mouse position. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gaf73db0b415ba94ed8c070b4fe68891c1}{uart\+\_\+message\+\_\+analyse} (char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Analyses and acts on the message received by the uart. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gae6d5829cbab7d81e5e004c33e3bb3903}{change\+\_\+other\+\_\+hero\+\_\+direction} (char message, \hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the other player\textquotesingle{}s hero direction based on the uart message. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gae77af44145e909fac44792a8583c0935}{change\+\_\+other\+\_\+hero\+\_\+position} (char message, \hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the other player\textquotesingle{}s hero position based on the uart message. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga610e8db405e8c7986932336cf6fb85eb}{send\+\_\+movement\+\_\+info} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, char movement)
+\begin{DoxyCompactList}\small\item\em Send the information about the movement of the hero. \end{DoxyCompactList}\item 
+char \hyperlink{group__Game_gaf5e9e5cb046a4b21b7e72424eac9056d}{check\+\_\+smallest\+\_\+distance} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, \hyperlink{structZombie}{Zombie} $\ast$zombie)
+\begin{DoxyCompactList}\small\item\em Checks the smallest distance between the \hyperlink{structZombie}{Zombie} and all the other game objects (except other zombies) \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga63f41f9c6089f42e768b981f4d9765ae}{change\+\_\+zombie\+\_\+coords} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, \hyperlink{structZombie}{Zombie} $\ast$zombie, char object)
+\begin{DoxyCompactList}\small\item\em Changes the zombies coordinatess based on the output of the check\+\_\+smallest\+\_\+distance. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gad497d88bc271e65ce31454c4659e4477}{save\+\_\+score} ()
+\begin{DoxyCompactList}\small\item\em Saves the score of the hero. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gaa13653318c21b0e6b86838e6091bfc9a}{draw\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the menu image. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_gaeb2c7e9c7d14c9eccb7e624bd9611ef8}{draw\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Draws the game over image. \end{DoxyCompactList}\item 
+void \hyperlink{group__Game_ga7b8cbde4affe3d2b71eb5bdb75f5e9b3}{clean\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Cleans the game over image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Containg everything that regards the logic of the game and the way it runs. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}

@@ -1,0 +1,11 @@
+<map id="check_hero_direction" name="check_hero_direction">
+<area shape="rect" id="node2" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="551,10,691,36"/>
+<area shape="rect" id="node3" href="$Hero_8c.html#a84b19814b865635c101d1eac30b654f2" title="Updates the xpm of the hero, mainly used when he changes direction. " alt="" coords="225,35,318,62"/>
+<area shape="rect" id="node7" href="$Game_8c.html#a275f4c8ad5b91f91d3dede1c46946ee5" title="Checks if the hero as collided with a friendly object. " alt="" coords="199,86,344,128"/>
+<area shape="rect" id="node8" href="$Serial__port_8c.html#add4870a81710672ca2478ba34127ab6c" title="Sends a message throw de uart. " alt="" coords="202,152,341,179"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="405,35,490,62"/>
+<area shape="rect" id="node6" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="406,86,489,112"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="568,72,673,99"/>
+<area shape="rect" id="node9" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="392,152,503,179"/>
+<area shape="rect" id="node10" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="575,152,666,179"/>
+</map>

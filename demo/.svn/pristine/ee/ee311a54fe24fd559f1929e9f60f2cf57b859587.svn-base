@@ -1,0 +1,34 @@
+#include "Terminix.h"
+
+
+static Terminix * terminix = NULL;
+
+
+Terminix * get_current_terminix() {
+  return terminix;
+}
+
+
+void create_terminix(){
+  if(terminix != NULL){
+    return;
+  }
+  xpm_image_t background_img;
+
+
+  terminix = malloc(sizeof (Terminix));
+
+  convert_xpm_img(test_xpm,&background_img);
+  draw_xpm(background_img,0,0);
+
+  terminix->background_xpm = background_img;
+
+  Hero * hero = create_hero();
+
+  terminix->hero = hero;
+
+
+
+}
+
+

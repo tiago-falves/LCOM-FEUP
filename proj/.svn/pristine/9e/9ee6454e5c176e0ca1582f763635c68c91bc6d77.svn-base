@@ -1,0 +1,75 @@
+/**
+ * @file Menu.h
+ * @author Bernardo Ramalho & Tiago Alves
+ * @brief responsible for drawing and cleaning the menus
+ * @version 0.1
+ * @date 2020-01-06
+ * 
+ * @copyright Copyright (c) 2020
+ * 
+ */
+
+#include "Sprite.h"
+
+/**
+ * @brief Struct that saves all the information related to the Menu
+ * 
+ */
+typedef struct {
+
+  xpm_image_t menu_img; /*!< Main menu image */
+  xpm_image_t gameOver_img; /*!< Game Over Image */
+  xpm_image_t youWin_img; /*!< Win image */
+  xpm_image_t waitingScreen_img; /*!< Waiting screen image */
+  xpm_image_t back_img; /*!< Infor about the bullets sprite */
+  xpm_image_t score_img; /*!< Score Image */
+  Sprite * highscore; /*!< Highscore sprite */
+
+
+} Menu;
+
+/**
+ * @brief Create a menu object
+ * 
+ * @return Menu* - pointer to the Menu just created
+ */
+Menu * create_menu();
+
+/**
+ * @brief destroyes the menu
+ * 
+ * @param menu - menu to be destroyed
+ */
+void destroy_menu(Menu ** menu);
+
+/**
+ * @brief Clean the main menu image
+ * 
+ * @param menu - pointer to the menu containing the image info
+ */
+void clean_menu(Menu * menu);
+
+/**
+ * @brief Clean the game over image
+ * 
+ * @param menu - pointer to the menu containing the image info
+ */
+void clean_gameOver(Menu * menu);
+
+/**
+ * @brief Clean the win image
+ * 
+ * @param menu - pointer to the menu containing the image info
+ */
+void clean_youWin(Menu * menu);
+
+/**
+ * @brief Clean the waiting screen image
+ * 
+ * @param menu - pointer to the menu containing the image info
+ */
+void clean_waitingScreenImg(Menu * menu);
+
+
+
+

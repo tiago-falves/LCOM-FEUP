@@ -1,0 +1,28 @@
+<map id="update_positions" name="update_positions">
+<area shape="rect" id="node2" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="1216,810,1356,837"/>
+<area shape="rect" id="node3" href="$Terminix_8c.html#aa3fb663e72a1741ec89704689f8220d2" title="Draws the chest image into the screen. " alt="" coords="213,169,303,195"/>
+<area shape="rect" id="node6" href="$Game_8c.html#afe16f76ca129d87bfec488f37bc0aacc" title="Call the update_hero_position function to all the heroes. " alt="" coords="179,354,337,381"/>
+<area shape="rect" id="node16" href="$Game_8h.html#ad497d88bc271e65ce31454c4659e4477" title="Saves the score of the hero. " alt="" coords="884,455,973,482"/>
+<area shape="rect" id="node18" href="$Game_8c.html#ae072c9a18f49cbe13a84b1503aec7fdd" title="update_zombies_position" alt="" coords="173,570,343,597"/>
+<area shape="rect" id="node23" href="$Game_8c.html#a18fa19c055aed56c84050b5794899836" title="Calls the update_bullet_position function to all the bullets. " alt="" coords="179,621,337,647"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="1069,405,1152,431"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="1233,557,1339,583"/>
+<area shape="rect" id="node7" href="$Game_8c.html#a8ebce32afc6f04c74c31e6ae117c7db9" title="Updates the hero position while checking for collisions. " alt="" coords="399,278,545,305"/>
+<area shape="rect" id="node8" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="1068,607,1153,634"/>
+<area shape="rect" id="node9" href="$Game_8c.html#a275f4c8ad5b91f91d3dede1c46946ee5" title="Checks if the hero as collided with a friendly object. " alt="" coords="856,85,1001,127"/>
+<area shape="rect" id="node10" href="$Game_8c.html#aa3afe490fccdfdeef019b03a2de701a4" title="Changes the hero direction based on the mouse position. " alt="" coords="630,151,775,178"/>
+<area shape="rect" id="node15" href="$Game_8c.html#acf3c5ee8ecaf5eb146148e5e3269fe13" title="Checks if the hero as collided with an enemy. " alt="" coords="601,253,804,279"/>
+<area shape="rect" id="node17" href="$Hero_8c.html#aa1e5857dcfd09c2438d013b95b93c2c9" title="Destroys the hero. " alt="" coords="654,303,751,330"/>
+<area shape="rect" id="node11" href="$Hero_8c.html#a84b19814b865635c101d1eac30b654f2" title="Updates the xpm of the hero, mainly used when he changes direction. " alt="" coords="882,253,975,279"/>
+<area shape="rect" id="node12" href="$Serial__port_8c.html#add4870a81710672ca2478ba34127ab6c" title="Sends a message throw de uart. " alt="" coords="859,151,998,178"/>
+<area shape="rect" id="node13" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="1055,151,1166,178"/>
+<area shape="rect" id="node14" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="1241,151,1331,178"/>
+<area shape="rect" id="node19" href="$Game_8c.html#a75a798133c788dc6869d6a55a514e091" title="Updates the position of a zombie while checking for collisions. " alt="" coords="391,607,553,634"/>
+<area shape="rect" id="node20" href="$Game_8c.html#af5e9e5cb046a4b21b7e72424eac9056d" title="Checks the smallest distance between the Zombie and all the other game objects (except other zombies)..." alt="" coords="618,658,787,685"/>
+<area shape="rect" id="node21" href="$Game_8c.html#a63f41f9c6089f42e768b981f4d9765ae" title="Changes the zombies coordinatess based on the output of the check_smallest_distance. " alt="" coords="623,709,782,735"/>
+<area shape="rect" id="node22" href="$Game_8c.html#a5eea7a6f4efdb1dd7166b34a614b0ab1" title="Checks if the zombie as collided with anything. " alt="" coords="619,506,786,533"/>
+<area shape="rect" id="node24" href="$Game_8c.html#a72797755e6b9d1841d2e9c7bff17b6cd" title="Updates the bullet position while checking for collisions. " alt="" coords="627,759,778,786"/>
+<area shape="rect" id="node25" href="$Game_8c.html#a15a17da14a2aaac56415514511136bd6" title="Checks if the bullet as collided with anything. " alt="" coords="852,709,1005,735"/>
+<area shape="rect" id="node27" href="$Hero_8c.html#a53ce3ef3123128ecf5d97853f1d00270" title="Destroys the bullet. " alt="" coords="877,759,980,786"/>
+<area shape="rect" id="node26" href="$Zombie_8c.html#ae811d7eac3687aee9cf5dd7bc73aed3b" title="Destroyes a zombie object. " alt="" coords="1053,709,1168,735"/>
+</map>

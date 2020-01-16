@@ -1,0 +1,5 @@
+<map id="clean_youWin" name="clean_youWin">
+<area shape="rect" id="node2" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="157,31,243,57"/>
+<area shape="rect" id="node3" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="291,5,431,32"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="308,56,413,83"/>
+</map>

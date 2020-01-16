@@ -1,0 +1,5 @@
+<map id="timer_test_int" name="timer_test_int">
+<area shape="rect" id="node2" href="$timer_8c.html#ac57a7e1140a7e00ad95ac5488d2a671b" title="timer_subscribe_int" alt="" coords="162,5,297,32"/>
+<area shape="rect" id="node3" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title="timer_int_handler" alt="" coords="169,56,290,83"/>
+<area shape="rect" id="node4" href="$timer_8c.html#afabd21de449be154dd65d5fdb2d8045d" title="timer_unsubscribe_int" alt="" coords="155,107,304,133"/>
+</map>

@@ -1,0 +1,41 @@
+#include "drawing.h"
+#include "textToScreen.h"
+#include "Images/one.xpm"
+#include "Images/two.xpm"
+#include "Images/three.xpm"
+#include "Images/four.xpm"
+#include "Images/five.xpm"
+#include "Images/six.xpm"
+#include "Images/seven.xpm"
+#include "Images/eight.xpm"
+#include "Images/nine.xpm"
+#include "Images/zero.xpm"
+
+static xpm_image_t numbers_xpms[10];
+
+
+void load_numbers_xpms(){
+
+  xpm_image_t one,two,three,four,five,six,seven,eight,nine,zero;
+  convert_xpm_img(num_xpm,&one);
+  convert_xpm_img(ndois_xpm,&two);
+  convert_xpm_img(ntres_xpm,&three);
+  convert_xpm_img(nquatro_xpm,&four);
+  convert_xpm_img(ncinco_xpm,&five);
+  convert_xpm_img(nseis_xpm,&six);
+  convert_xpm_img(nsete_xpm,&seven);
+  convert_xpm_img(noito_xpm,&eight);
+  convert_xpm_img(nnove_xpm,&nine);
+  convert_xpm_img(zero_xpm,&zero);
+
+  numbers_xpms[0] = zero;
+  numbers_xpms[1] = one;
+  numbers_xpms[2] = two;
+  numbers_xpms[3] = three;
+  numbers_xpms[4] = four;
+  numbers_xpms[5] = five;
+  numbers_xpms[6] = six;
+  numbers_xpms[7] = seven;
+  numbers_xpms[8] = eight;
+  numbers_xpms[9] = nine;
+}

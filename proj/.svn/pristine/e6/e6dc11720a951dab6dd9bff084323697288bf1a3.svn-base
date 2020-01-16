@@ -1,0 +1,5 @@
+<map id="calculate_RGB" name="calculate_RGB">
+<area shape="rect" id="node2" href="$drawing_8c.html#a3885ed72ae1f40d10717bcab035313c9" title="calculates the red component of a pixel " alt="" coords="170,29,349,56"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#af077939f4859163aace3435a706de7ad" title="calculates the green component of a pixel " alt="" coords="164,104,355,131"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a555715b2c8212aae64d17ab4aa09d61b" title="calculates the blue component of a pixel " alt="" coords="169,179,350,205"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Game.h" name="Game.h">
+<area shape="rect" id="node2" href="$Terminix_8h.html" title="Terminix.h" alt="" coords="320,80,403,107"/>
+<area shape="rect" id="node4" href="$i8042_8h.html" title="Responsible for everything related to the keyboard. " alt="" coords="75,304,139,331"/>
+<area shape="rect" id="node7" href="$i8254_8h.html" title="Contains macros used in timer.c. " alt="" coords="512,229,576,256"/>
+<area shape="rect" id="node9" href="$Hero_8h.html" title="Responsible for creating, destroying everything related to the Hero. It also is responsible to changi..." alt="" coords="331,155,392,181"/>
+<area shape="rect" id="node14" href="$Zombie_8h.html" title="Classe que cria e destroi os Zombies, principais enimigos. " alt="" coords="417,155,493,181"/>
+<area shape="rect" id="node15" href="$Menu_8h.html" title="responsible for drawing and cleaning the menus " alt="" coords="241,155,306,181"/>
+<area shape="rect" id="node16" href="$mouse_8h.html" title="responsible for everything related to the mouse " alt="" coords="144,155,216,181"/>
+<area shape="rect" id="node10" href="$Sprite_8h.html" title="Contains everything related to a sprite. " alt="" coords="308,229,375,256"/>
+<area shape="rect" id="node11" href="$drawing_8h.html" title="Classe responsible for drawing images into the screen and animating them. " alt="" coords="302,304,381,331"/>
+</map>

@@ -1,0 +1,404 @@
+\hypertarget{drawing_8c}{}\section{drawing.\+c File Reference}
+\label{drawing_8c}\index{drawing.\+c@{drawing.\+c}}
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8042.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}i8254.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}math.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for drawing.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{drawing_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{drawing_8c_a6402ca094cd1aace6adedd01b2b5496e}{get\+\_\+hres} ()
+\begin{DoxyCompactList}\small\item\em Get the horizontal resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_a484929b3e33f236cd9087e18e1521ee3}{get\+\_\+vres} ()
+\begin{DoxyCompactList}\small\item\em Get the vertical resolution of the sceen. \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_a7f6272b1842da39059fdf1121ce6c7e4}{get\+\_\+vbe\+\_\+mode\+\_\+info} (uint16\+\_\+t mode, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Get the vbe mode info. \end{DoxyCompactList}\item 
+int() \hyperlink{drawing_8c_a30d6689ebb9f64ddca620d3d5a396446}{graphic\+\_\+mode\+\_\+init} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Initializes the graphics card mode. \end{DoxyCompactList}\item 
+int() \hyperlink{drawing_8c_a08c498ffeb0a3962e3b7711b57397741}{vg\+\_\+draw\+\_\+pixel} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a pixel in the screen. \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_a3885ed72ae1f40d10717bcab035313c9}{calculate\+\_\+\+Red\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the red component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_af077939f4859163aace3435a706de7ad}{calculate\+\_\+\+Green\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the green component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_a555715b2c8212aae64d17ab4aa09d61b}{calculate\+\_\+\+Blue\+\_\+\+Component} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em calculates the blue component of a pixel \end{DoxyCompactList}\item 
+int \hyperlink{drawing_8c_a9020d25f429f0fcaaf5ff325fcc72145}{calculate\+\_\+\+R\+GB} (int row, int col, int first, uint8\+\_\+t step, vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$mode\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Calculates the red, blue and green component values of a pixel. \end{DoxyCompactList}\item 
+void \hyperlink{drawing_8c_a923b943e5b1b4762cd38427bdba6f3b1}{draw\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em draws a given xpm in the screen \end{DoxyCompactList}\item 
+void \hyperlink{drawing_8c_a3549b2a65240f7025f5e98bffe20b2f0}{clean\+\_\+xpm} (xpm\+\_\+image\+\_\+t img, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Erases a given xpm. \end{DoxyCompactList}\item 
+void \hyperlink{drawing_8c_a40b707646a9475857a68d37fbf131e4e}{convert\+\_\+xpm\+\_\+img} (xpm\+\_\+map\+\_\+t xpm, xpm\+\_\+image\+\_\+t $\ast$img)
+\begin{DoxyCompactList}\small\item\em Converts an xpm\+\_\+map\+\_\+t into a xpm\+\_\+image\+\_\+t. \end{DoxyCompactList}\item 
+void \hyperlink{drawing_8c_afeded743483b92b165de25bc9f0047ec}{update\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Updates the buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static char $\ast$ \hyperlink{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}{video\+\_\+mem}
+\item 
+static char $\ast$ \hyperlink{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}{buffer}
+\item 
+static unsigned \hyperlink{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}{h\+\_\+res}
+\item 
+static unsigned \hyperlink{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}{v\+\_\+res}
+\item 
+static int \hyperlink{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}{bytes\+\_\+per\+\_\+pixel}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{drawing_8c_a555715b2c8212aae64d17ab4aa09d61b}\label{drawing_8c_a555715b2c8212aae64d17ab4aa09d61b}} 
+\index{drawing.\+c@{drawing.\+c}!calculate\+\_\+\+Blue\+\_\+\+Component@{calculate\+\_\+\+Blue\+\_\+\+Component}}
+\index{calculate\+\_\+\+Blue\+\_\+\+Component@{calculate\+\_\+\+Blue\+\_\+\+Component}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{calculate\+\_\+\+Blue\+\_\+\+Component()}{calculate\_Blue\_Component()}}
+{\footnotesize\ttfamily int calculate\+\_\+\+Blue\+\_\+\+Component (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{int}]{first,  }\item[{uint8\+\_\+t}]{step,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+calculates the blue component of a pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ row of the pixel \\
+\hline
+{\em col} & -\/ column of the pixel \\
+\hline
+{\em first} & -\/ Color to be used in the first rectangle (the rectangle at the top-\/left corner of the screen) \\
+\hline
+{\em step} & -\/ Difference between the values of the R/G component in adjacent rectangles in the same row/column \\
+\hline
+{\em mode\+\_\+info} & -\/ object containing the information of the vbe mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ value of the blue component 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{drawing_8c_a555715b2c8212aae64d17ab4aa09d61b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_af077939f4859163aace3435a706de7ad}\label{drawing_8c_af077939f4859163aace3435a706de7ad}} 
+\index{drawing.\+c@{drawing.\+c}!calculate\+\_\+\+Green\+\_\+\+Component@{calculate\+\_\+\+Green\+\_\+\+Component}}
+\index{calculate\+\_\+\+Green\+\_\+\+Component@{calculate\+\_\+\+Green\+\_\+\+Component}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{calculate\+\_\+\+Green\+\_\+\+Component()}{calculate\_Green\_Component()}}
+{\footnotesize\ttfamily int calculate\+\_\+\+Green\+\_\+\+Component (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{int}]{first,  }\item[{uint8\+\_\+t}]{step,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+calculates the green component of a pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ row of the pixel \\
+\hline
+{\em col} & -\/ column of the pixel \\
+\hline
+{\em first} & -\/ Color to be used in the first rectangle (the rectangle at the top-\/left corner of the screen) \\
+\hline
+{\em step} & -\/ Difference between the values of the R/G component in adjacent rectangles in the same row/column \\
+\hline
+{\em mode\+\_\+info} & -\/ object containing the information of the vbe mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ value of the green component 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{drawing_8c_af077939f4859163aace3435a706de7ad_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_a3885ed72ae1f40d10717bcab035313c9}\label{drawing_8c_a3885ed72ae1f40d10717bcab035313c9}} 
+\index{drawing.\+c@{drawing.\+c}!calculate\+\_\+\+Red\+\_\+\+Component@{calculate\+\_\+\+Red\+\_\+\+Component}}
+\index{calculate\+\_\+\+Red\+\_\+\+Component@{calculate\+\_\+\+Red\+\_\+\+Component}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{calculate\+\_\+\+Red\+\_\+\+Component()}{calculate\_Red\_Component()}}
+{\footnotesize\ttfamily int calculate\+\_\+\+Red\+\_\+\+Component (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{int}]{first,  }\item[{uint8\+\_\+t}]{step,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+calculates the red component of a pixel 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & -\/ row of the pixel \\
+\hline
+{\em col} & -\/ column of the pixel \\
+\hline
+{\em first} & -\/ Color to be used in the first rectangle (the rectangle at the top-\/left corner of the screen) \\
+\hline
+{\em step} & -\/ Difference between the values of the R/G component in adjacent rectangles in the same row/column \\
+\hline
+{\em mode\+\_\+info} & -\/ object containing the information of the vbe mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ value of the red component 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{drawing_8c_a3885ed72ae1f40d10717bcab035313c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_a9020d25f429f0fcaaf5ff325fcc72145}\label{drawing_8c_a9020d25f429f0fcaaf5ff325fcc72145}} 
+\index{drawing.\+c@{drawing.\+c}!calculate\+\_\+\+R\+GB@{calculate\+\_\+\+R\+GB}}
+\index{calculate\+\_\+\+R\+GB@{calculate\+\_\+\+R\+GB}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{calculate\+\_\+\+R\+G\+B()}{calculate\_RGB()}}
+{\footnotesize\ttfamily int calculate\+\_\+\+R\+GB (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{col,  }\item[{int}]{first,  }\item[{uint8\+\_\+t}]{step,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Calculates the red, blue and green component values of a pixel. 
+
+@param row -\/ row of the pixel 
+\begin{DoxyParams}{Parameters}
+{\em col} & -\/ column of the pixel \\
+\hline
+{\em first} & -\/ Color to be used in the first rectangle (the rectangle at the top-\/left corner of the screen) \\
+\hline
+{\em step} & -\/ Difference between the values of the R/G component in adjacent rectangles in the same row/column \\
+\hline
+{\em mode\+\_\+info} & -\/ object containing the information of the vbe mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ value of the colour of the pixel 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{drawing_8c_a9020d25f429f0fcaaf5ff325fcc72145_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_a3549b2a65240f7025f5e98bffe20b2f0}\label{drawing_8c_a3549b2a65240f7025f5e98bffe20b2f0}} 
+\index{drawing.\+c@{drawing.\+c}!clean\+\_\+xpm@{clean\+\_\+xpm}}
+\index{clean\+\_\+xpm@{clean\+\_\+xpm}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+xpm()}{clean\_xpm()}}
+{\footnotesize\ttfamily void clean\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Erases a given xpm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & -\/ image to be drawn \\
+\hline
+{\em x} & -\/ position in the x axis of the screen \\
+\hline
+{\em y} & -\/ position in the y axis of the screen \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{drawing_8c_a3549b2a65240f7025f5e98bffe20b2f0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_a40b707646a9475857a68d37fbf131e4e}\label{drawing_8c_a40b707646a9475857a68d37fbf131e4e}} 
+\index{drawing.\+c@{drawing.\+c}!convert\+\_\+xpm\+\_\+img@{convert\+\_\+xpm\+\_\+img}}
+\index{convert\+\_\+xpm\+\_\+img@{convert\+\_\+xpm\+\_\+img}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{convert\+\_\+xpm\+\_\+img()}{convert\_xpm\_img()}}
+{\footnotesize\ttfamily void convert\+\_\+xpm\+\_\+img (\begin{DoxyParamCaption}\item[{xpm\+\_\+map\+\_\+t}]{xpm,  }\item[{xpm\+\_\+image\+\_\+t $\ast$}]{img }\end{DoxyParamCaption})}
+
+
+
+Converts an xpm\+\_\+map\+\_\+t into a xpm\+\_\+image\+\_\+t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em xpm} & -\/ xpm to be converted \\
+\hline
+{\em img} & -\/ image that saves the infor of the xpm \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{drawing_8c_a923b943e5b1b4762cd38427bdba6f3b1}\label{drawing_8c_a923b943e5b1b4762cd38427bdba6f3b1}} 
+\index{drawing.\+c@{drawing.\+c}!draw\+\_\+xpm@{draw\+\_\+xpm}}
+\index{draw\+\_\+xpm@{draw\+\_\+xpm}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+xpm()}{draw\_xpm()}}
+{\footnotesize\ttfamily void draw\+\_\+xpm (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+draws a given xpm in the screen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & -\/ image to be drawn \\
+\hline
+{\em x} & -\/ position in the x axis of the screen \\
+\hline
+{\em y} & -\/ position in the y axis of the screen \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{drawing_8c_a923b943e5b1b4762cd38427bdba6f3b1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_a6402ca094cd1aace6adedd01b2b5496e}\label{drawing_8c_a6402ca094cd1aace6adedd01b2b5496e}} 
+\index{drawing.\+c@{drawing.\+c}!get\+\_\+hres@{get\+\_\+hres}}
+\index{get\+\_\+hres@{get\+\_\+hres}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+hres()}{get\_hres()}}
+{\footnotesize\ttfamily int get\+\_\+hres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the horizontal resolution of the sceen. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ represents the horizontal resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{drawing_8c_a7f6272b1842da39059fdf1121ce6c7e4}\label{drawing_8c_a7f6272b1842da39059fdf1121ce6c7e4}} 
+\index{drawing.\+c@{drawing.\+c}!get\+\_\+vbe\+\_\+mode\+\_\+info@{get\+\_\+vbe\+\_\+mode\+\_\+info}}
+\index{get\+\_\+vbe\+\_\+mode\+\_\+info@{get\+\_\+vbe\+\_\+mode\+\_\+info}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+vbe\+\_\+mode\+\_\+info()}{get\_vbe\_mode\_info()}}
+{\footnotesize\ttfamily int get\+\_\+vbe\+\_\+mode\+\_\+info (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode,  }\item[{vbe\+\_\+mode\+\_\+info\+\_\+t $\ast$}]{mode\+\_\+info }\end{DoxyParamCaption})}
+
+
+
+Get the vbe mode info. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ specifies the mode which to get the information \\
+\hline
+{\em mode\+\_\+info} & -\/ object to save the information into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if sucess or 1 if error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{drawing_8c_a484929b3e33f236cd9087e18e1521ee3}\label{drawing_8c_a484929b3e33f236cd9087e18e1521ee3}} 
+\index{drawing.\+c@{drawing.\+c}!get\+\_\+vres@{get\+\_\+vres}}
+\index{get\+\_\+vres@{get\+\_\+vres}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+vres()}{get\_vres()}}
+{\footnotesize\ttfamily int get\+\_\+vres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vertical resolution of the sceen. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ represents the vertical resolution 
+\end{DoxyReturn}
+\mbox{\Hypertarget{drawing_8c_a30d6689ebb9f64ddca620d3d5a396446}\label{drawing_8c_a30d6689ebb9f64ddca620d3d5a396446}} 
+\index{drawing.\+c@{drawing.\+c}!graphic\+\_\+mode\+\_\+init@{graphic\+\_\+mode\+\_\+init}}
+\index{graphic\+\_\+mode\+\_\+init@{graphic\+\_\+mode\+\_\+init}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{graphic\+\_\+mode\+\_\+init()}{graphic\_mode\_init()}}
+{\footnotesize\ttfamily int() graphic\+\_\+mode\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+Initializes the graphics card mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & -\/ mode to be initialize \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if sucess or 1 if error 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{drawing_8c_a30d6689ebb9f64ddca620d3d5a396446_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{drawing_8c_afeded743483b92b165de25bc9f0047ec}\label{drawing_8c_afeded743483b92b165de25bc9f0047ec}} 
+\index{drawing.\+c@{drawing.\+c}!update\+\_\+buffer@{update\+\_\+buffer}}
+\index{update\+\_\+buffer@{update\+\_\+buffer}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+buffer()}{update\_buffer()}}
+{\footnotesize\ttfamily void update\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the buffer. 
+
+\mbox{\Hypertarget{drawing_8c_a08c498ffeb0a3962e3b7711b57397741}\label{drawing_8c_a08c498ffeb0a3962e3b7711b57397741}} 
+\index{drawing.\+c@{drawing.\+c}!vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}}
+\index{vg\+\_\+draw\+\_\+pixel@{vg\+\_\+draw\+\_\+pixel}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+pixel()}{vg\_draw\_pixel()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a pixel in the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ position in the x axis of the screen \\
+\hline
+{\em y} & -\/ position in the y axis of the screen \\
+\hline
+{\em color} & -\/ color to be drawn in the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if sucess or 1 if error 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}\label{drawing_8c_aff2566f4c366b48d73479bef43ee4d2e}} 
+\index{drawing.\+c@{drawing.\+c}!buffer@{buffer}}
+\index{buffer@{buffer}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily char$\ast$ buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}\label{drawing_8c_ad1fad3c6fec2bf6f7d7933e68b4b0de5}} 
+\index{drawing.\+c@{drawing.\+c}!bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}}
+\index{bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{bytes\+\_\+per\+\_\+pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily int bytes\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}\label{drawing_8c_a43e7e5a0a8f9069e6413b2066ca52f3e}} 
+\index{drawing.\+c@{drawing.\+c}!h\+\_\+res@{h\+\_\+res}}
+\index{h\+\_\+res@{h\+\_\+res}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{h\+\_\+res}{h\_res}}
+{\footnotesize\ttfamily unsigned h\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}\label{drawing_8c_a5bda1b499253a8fbf3cab646f8760391}} 
+\index{drawing.\+c@{drawing.\+c}!v\+\_\+res@{v\+\_\+res}}
+\index{v\+\_\+res@{v\+\_\+res}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{v\+\_\+res}{v\_res}}
+{\footnotesize\ttfamily unsigned v\+\_\+res\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}\label{drawing_8c_a93a24e067b9083bed6fb5c0336fd7a01}} 
+\index{drawing.\+c@{drawing.\+c}!video\+\_\+mem@{video\+\_\+mem}}
+\index{video\+\_\+mem@{video\+\_\+mem}!drawing.\+c@{drawing.\+c}}
+\subsubsection{\texorpdfstring{video\+\_\+mem}{video\_mem}}
+{\footnotesize\ttfamily char$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+

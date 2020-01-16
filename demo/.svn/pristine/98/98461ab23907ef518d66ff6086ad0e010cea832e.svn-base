@@ -1,0 +1,62 @@
+#include <stdlib.h>
+#include "Hero.h"
+#include "Hero.xpm"
+
+
+
+
+Hero * create_hero(){
+
+  Hero * hero_ptr = malloc(sizeof (Hero));
+  xpm_image_t  hero_img;
+  convert_xpm_img(Hero_xpm,&hero_img);
+
+  hero_ptr->x = HERO_START_POSITION_X;
+  hero_ptr->y = HERO_START_POSITION_Y;
+  hero_ptr->new_x = HERO_START_POSITION_X;
+  hero_ptr->new_y = HERO_START_POSITION_Y;
+  hero_ptr->angle = 0;
+  hero_ptr->hero_img = hero_img;
+  
+  draw_xpm(hero_img,hero_ptr->x,hero_ptr->y);
+ 
+  
+  return hero_ptr;
+}
+
+
+void hero_move_up(Hero * hero_ptr) {
+
+  if(hero_ptr->y < 5){ hero_ptr->new_y = 0;}
+  else{hero_ptr->new_y = hero_ptr->y - 5;}
+
+}
+
+void hero_move_down(Hero * hero){
+    hero->new_y  = hero->y + 5;
+}
+
+void hero_move_left(Hero * hero){
+    if(hero->x < 5){ hero->new_x = 0;}
+    else {hero->new_x = hero->x - 5;}
+}
+
+void hero_move_right(Hero * hero){
+    hero->new_x  = hero->x + 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

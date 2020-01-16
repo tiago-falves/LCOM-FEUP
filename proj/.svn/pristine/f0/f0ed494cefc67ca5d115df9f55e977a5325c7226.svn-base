@@ -1,0 +1,5 @@
+<map id="Menu.c" name="Menu.c">
+<area shape="rect" id="node2" href="$Menu_8h.html" title="responsible for drawing and cleaning the menus " alt="" coords="211,80,277,107"/>
+<area shape="rect" id="node3" href="$Sprite_8h.html" title="Contains everything related to a sprite. " alt="" coords="211,155,277,181"/>
+<area shape="rect" id="node4" href="$drawing_8h.html" title="Classe responsible for drawing images into the screen and animating them. " alt="" coords="205,229,283,256"/>
+</map>

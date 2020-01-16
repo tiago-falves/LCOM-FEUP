@@ -1,0 +1,12 @@
+<map id="keyboard_handler" name="keyboard_handler">
+<area shape="rect" id="node2" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="181,5,321,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#aea970a154161a35f6894898a092ed70a" title="kbc_ih" alt="" coords="411,60,471,87"/>
+<area shape="rect" id="node5" href="$Hero_8c.html#a8e82613c290b342426aef53f5b5ce91d" title="Changes the position values so the Hero moves up. " alt="" coords="197,107,304,133"/>
+<area shape="rect" id="node6" href="$Game_8c.html#a610e8db405e8c7986932336cf6fb85eb" title="Send the information about the movement of the hero. " alt="" coords="177,157,324,184"/>
+<area shape="rect" id="node9" href="$Hero_8c.html#af2bc262749bfcfb933eef366a2b501fb" title="Changes the position values so the Hero moves down. " alt="" coords="189,208,313,235"/>
+<area shape="rect" id="node10" href="$Hero_8c.html#ad0ef8c3ec15731aca633aa0f765eda89" title="Changes the position values so the Hero moves left. " alt="" coords="195,259,306,285"/>
+<area shape="rect" id="node11" href="$Hero_8c.html#a6ad4f1771299a2e5449e209215df6de4" title="Changes the position values so the Hero moves right. " alt="" coords="191,309,310,336"/>
+<area shape="rect" id="node4" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="717,95,808,121"/>
+<area shape="rect" id="node7" href="$Serial__port_8c.html#add4870a81710672ca2478ba34127ab6c" title="Sends a message throw de uart. " alt="" coords="372,132,511,159"/>
+<area shape="rect" id="node8" href="$Serial__port_8c.html#a0223284cebeabb784af7cdb2bca520a6" title="Sends a byte throw the uart. " alt="" coords="559,120,669,147"/>
+</map>

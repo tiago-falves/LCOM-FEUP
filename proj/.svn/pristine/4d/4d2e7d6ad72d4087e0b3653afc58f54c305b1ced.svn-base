@@ -1,0 +1,78 @@
+\hypertarget{Sprite_8h}{}\section{Sprite.\+h File Reference}
+\label{Sprite_8h}\index{Sprite.\+h@{Sprite.\+h}}
+
+
+Contains everything related to a sprite.  
+
+
+{\ttfamily \#include \char`\"{}drawing.\+h\char`\"{}}\newline
+Include dependency graph for Sprite.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Sprite_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structSprite}{Sprite}
+\begin{DoxyCompactList}\small\item\em Struct containing all the information related to a sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{Sprite_8h_a464dfba786b963a26a579396287d291b}{create\+\_\+sprite} (xpm\+\_\+image\+\_\+t sprite\+\_\+img, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t speed)
+\begin{DoxyCompactList}\small\item\em Create a sprite object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains everything related to a sprite. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Sprite_8h_a464dfba786b963a26a579396287d291b}\label{Sprite_8h_a464dfba786b963a26a579396287d291b}} 
+\index{Sprite.\+h@{Sprite.\+h}!create\+\_\+sprite@{create\+\_\+sprite}}
+\index{create\+\_\+sprite@{create\+\_\+sprite}!Sprite.\+h@{Sprite.\+h}}
+\subsubsection{\texorpdfstring{create\+\_\+sprite()}{create\_sprite()}}
+{\footnotesize\ttfamily \hyperlink{structSprite}{Sprite}$\ast$ create\+\_\+sprite (\begin{DoxyParamCaption}\item[{xpm\+\_\+image\+\_\+t}]{sprite\+\_\+img,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{speed }\end{DoxyParamCaption})}
+
+
+
+Create a sprite object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite\+\_\+img} & -\/ image of the sprite \\
+\hline
+{\em x} & -\/ starting x position of the sprite \\
+\hline
+{\em y} & -\/ starting y position of the sprite \\
+\hline
+{\em speed} & -\/ speed of the sprite \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sprite$\ast$ -\/ pointer to the sprite just created 
+\end{DoxyReturn}

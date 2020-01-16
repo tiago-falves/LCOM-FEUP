@@ -1,0 +1,5 @@
+<map id="create_mouse" name="create_mouse">
+<area shape="rect" id="node2" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="157,5,283,32"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="179,56,261,83"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="331,56,436,83"/>
+</map>

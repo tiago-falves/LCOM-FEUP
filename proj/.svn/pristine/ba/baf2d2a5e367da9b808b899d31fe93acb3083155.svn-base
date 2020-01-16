@@ -1,0 +1,41 @@
+\hypertarget{structChest}{}\section{Chest Struct Reference}
+\label{structChest}\index{Chest@{Chest}}
+
+
+{\ttfamily \#include $<$Terminix.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structChest_ad8cb6cb5c69d7de2fbcfc11de8619729}{x}
+\item 
+int \hyperlink{structChest_a6f7c9fc3e2eb7cb00c9ebeee98b15eab}{y}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structChest_ac9f1cdada8abf46f827ff09df89c011e}{chest\+\_\+img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structChest_ac9f1cdada8abf46f827ff09df89c011e}\label{structChest_ac9f1cdada8abf46f827ff09df89c011e}} 
+\index{Chest@{Chest}!chest\+\_\+img@{chest\+\_\+img}}
+\index{chest\+\_\+img@{chest\+\_\+img}!Chest@{Chest}}
+\subsubsection{\texorpdfstring{chest\+\_\+img}{chest\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Chest\+::chest\+\_\+img}
+
+Information about the chest image \mbox{\Hypertarget{structChest_ad8cb6cb5c69d7de2fbcfc11de8619729}\label{structChest_ad8cb6cb5c69d7de2fbcfc11de8619729}} 
+\index{Chest@{Chest}!x@{x}}
+\index{x@{x}!Chest@{Chest}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int Chest\+::x}
+
+Specifies the current position in the x axis \mbox{\Hypertarget{structChest_a6f7c9fc3e2eb7cb00c9ebeee98b15eab}\label{structChest_a6f7c9fc3e2eb7cb00c9ebeee98b15eab}} 
+\index{Chest@{Chest}!y@{y}}
+\index{y@{y}!Chest@{Chest}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int Chest\+::y}
+
+Specifies the current position in the y axis 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Terminix_8h}{Terminix.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,741 @@
+\hypertarget{Game_8h}{}\section{Game.\+h File Reference}
+\label{Game_8h}\index{Game.\+h@{Game.\+h}}
+
+
+Containg everything that regards the logic of the game and the way it runs.  
+
+
+{\ttfamily \#include \char`\"{}Terminix.\+h\char`\"{}}\newline
+Include dependency graph for Game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{Game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{Game_8h_a54b83745e9f20db86407fcdef76e0d3a}{subscribe\+\_\+periphericals} (int $\ast$timer\+\_\+irq, int $\ast$mouse\+\_\+irq, int $\ast$keyboard\+\_\+irq, int $\ast$rtc\+\_\+irq, int $\ast$uart\+\_\+irq)
+\begin{DoxyCompactList}\small\item\em Subscribes to all the periphericals used. \end{DoxyCompactList}\item 
+int \hyperlink{Game_8h_a291882147b24986d611c050246df5a32}{unsubscribe\+\_\+periphericals} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to all the periphericals used. \end{DoxyCompactList}\item 
+\hyperlink{structTerminix}{Terminix} $\ast$ \hyperlink{Game_8h_a63401b160e1b4125d13b63195b8cc09a}{get\+\_\+current\+\_\+terminix} ()
+\begin{DoxyCompactList}\small\item\em Get the current terminix object. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a4ed56aa25646901e2e90801de0edca1c}{update\+\_\+positions} ()
+\begin{DoxyCompactList}\small\item\em Updates the position of all the game objects. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a8ebce32afc6f04c74c31e6ae117c7db9}{update\+\_\+hero\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the hero position while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a75a798133c788dc6869d6a55a514e091}{update\+\_\+zombie\+\_\+position} (\hyperlink{structZombie}{Zombie} $\ast$zombie, int zombie\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the position of a zombie while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_aeda5cbb59d8ddcc06a8126c505233a1c}{update\+\_\+mouse\+\_\+img} (\hyperlink{structMouse}{Mouse} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Updates the position of the mouse. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a72797755e6b9d1841d2e9c7bff17b6cd}{update\+\_\+bullet\+\_\+position} (\hyperlink{structBullet}{Bullet} $\ast$bullet, int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Updates the bullet position while checking for collisions. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a18fa19c055aed56c84050b5794899836}{update\+\_\+bullets\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Calls the update\+\_\+bullet\+\_\+position function to all the bullets. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a3ac0ed4d55e10a17440ba09e85c59199}{update\+\_\+zombies\+\_\+position} (\hyperlink{structZombie}{Zombie} $\ast$zombies\mbox{[}6\mbox{]}, int n)
+\begin{DoxyCompactList}\small\item\em Call the update\+\_\+zombie\+\_\+position function to all the zombies. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_afe16f76ca129d87bfec488f37bc0aacc}{update\+\_\+heroes\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Call the update\+\_\+hero\+\_\+position function to all the heroes. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a65d696c970e3074a3b07780b1cedc407}{update\+\_\+level} ()
+\begin{DoxyCompactList}\small\item\em Starts the level. Initializes the zombies and puts everything in its original position. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a65be84c8b68eec6b653278216887b4ba}{reset\+\_\+heroes\+\_\+position} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Resets the position of all the heroes. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a7d9edd8b0a8d0d2f737eb5ee0b0a5040}{render} ()
+\begin{DoxyCompactList}\small\item\em Renders the game into the screen depending on the state. \end{DoxyCompactList}\item 
+bool \hyperlink{Game_8h_a15a17da14a2aaac56415514511136bd6}{check\+\_\+bullet\+\_\+colisions} (\hyperlink{structBullet}{Bullet} $\ast$bullet, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the bullet as collided with anything. \end{DoxyCompactList}\item 
+bool \hyperlink{Game_8h_acf3c5ee8ecaf5eb146148e5e3269fe13}{check\+\_\+heroe\+\_\+enemy\+\_\+collisions} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the hero as collided with an enemy. \end{DoxyCompactList}\item 
+bool \hyperlink{Game_8h_a275f4c8ad5b91f91d3dede1c46946ee5}{check\+\_\+heroe\+\_\+friendly\+\_\+collisions} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix})
+\begin{DoxyCompactList}\small\item\em Checks if the hero as collided with a friendly object. \end{DoxyCompactList}\item 
+bool \hyperlink{Game_8h_a5eea7a6f4efdb1dd7166b34a614b0ab1}{check\+\_\+zombie\+\_\+collisions} (\hyperlink{structZombie}{Zombie} $\ast$zombie, \hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, int zombie\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Checks if the zombie as collided with anything. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_aa3afe490fccdfdeef019b03a2de701a4}{check\+\_\+hero\+\_\+direction} (\hyperlink{structHero}{Hero} $\ast$hero, \hyperlink{structMouse}{Mouse} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Changes the hero direction based on the mouse position. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_af73db0b415ba94ed8c070b4fe68891c1}{uart\+\_\+message\+\_\+analyse} (char $\ast$message)
+\begin{DoxyCompactList}\small\item\em Analyses and acts on the message received by the uart. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_ae6d5829cbab7d81e5e004c33e3bb3903}{change\+\_\+other\+\_\+hero\+\_\+direction} (char message, \hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the other player\textquotesingle{}s hero direction based on the uart message. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_ae77af44145e909fac44792a8583c0935}{change\+\_\+other\+\_\+hero\+\_\+position} (char message, \hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the other player\textquotesingle{}s hero position based on the uart message. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a610e8db405e8c7986932336cf6fb85eb}{send\+\_\+movement\+\_\+info} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, char movement)
+\begin{DoxyCompactList}\small\item\em Send the information about the movement of the hero. \end{DoxyCompactList}\item 
+char \hyperlink{Game_8h_af5e9e5cb046a4b21b7e72424eac9056d}{check\+\_\+smallest\+\_\+distance} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, \hyperlink{structZombie}{Zombie} $\ast$zombie)
+\begin{DoxyCompactList}\small\item\em Checks the smallest distance between the \hyperlink{structZombie}{Zombie} and all the other game objects (except other zombies) \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a63f41f9c6089f42e768b981f4d9765ae}{change\+\_\+zombie\+\_\+coords} (\hyperlink{structTerminix}{Terminix} $\ast$\hyperlink{Terminix_8c_a430d7c3936016a6ae5f6f19f10af2d47}{terminix}, \hyperlink{structZombie}{Zombie} $\ast$zombie, char object)
+\begin{DoxyCompactList}\small\item\em Changes the zombies coordinatess based on the output of the check\+\_\+smallest\+\_\+distance. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_ad497d88bc271e65ce31454c4659e4477}{save\+\_\+score} ()
+\begin{DoxyCompactList}\small\item\em Saves the score of the hero. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_aa13653318c21b0e6b86838e6091bfc9a}{draw\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the menu image. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_aeb2c7e9c7d14c9eccb7e624bd9611ef8}{draw\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Draws the game over image. \end{DoxyCompactList}\item 
+void \hyperlink{Game_8h_a7b8cbde4affe3d2b71eb5bdb75f5e9b3}{clean\+Game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Cleans the game over image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Containg everything that regards the logic of the game and the way it runs. 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Game_8h_ae6d5829cbab7d81e5e004c33e3bb3903}\label{Game_8h_ae6d5829cbab7d81e5e004c33e3bb3903}} 
+\index{Game.\+h@{Game.\+h}!change\+\_\+other\+\_\+hero\+\_\+direction@{change\+\_\+other\+\_\+hero\+\_\+direction}}
+\index{change\+\_\+other\+\_\+hero\+\_\+direction@{change\+\_\+other\+\_\+hero\+\_\+direction}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{change\+\_\+other\+\_\+hero\+\_\+direction()}{change\_other\_hero\_direction()}}
+{\footnotesize\ttfamily void change\+\_\+other\+\_\+hero\+\_\+direction (\begin{DoxyParamCaption}\item[{char}]{message,  }\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero }\end{DoxyParamCaption})}
+
+
+
+Changes the other player\textquotesingle{}s hero direction based on the uart message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message received by the uart \\
+\hline
+{\em hero} & -\/ pointer to the other player\textquotesingle{}s hero \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_ae6d5829cbab7d81e5e004c33e3bb3903_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_ae77af44145e909fac44792a8583c0935}\label{Game_8h_ae77af44145e909fac44792a8583c0935}} 
+\index{Game.\+h@{Game.\+h}!change\+\_\+other\+\_\+hero\+\_\+position@{change\+\_\+other\+\_\+hero\+\_\+position}}
+\index{change\+\_\+other\+\_\+hero\+\_\+position@{change\+\_\+other\+\_\+hero\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{change\+\_\+other\+\_\+hero\+\_\+position()}{change\_other\_hero\_position()}}
+{\footnotesize\ttfamily void change\+\_\+other\+\_\+hero\+\_\+position (\begin{DoxyParamCaption}\item[{char}]{message,  }\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero }\end{DoxyParamCaption})}
+
+
+
+Changes the other player\textquotesingle{}s hero position based on the uart message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message received by the uart \\
+\hline
+{\em hero} & -\/ pointer to the other player\textquotesingle{}s hero \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{Game_8h_ae77af44145e909fac44792a8583c0935_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a63f41f9c6089f42e768b981f4d9765ae}\label{Game_8h_a63f41f9c6089f42e768b981f4d9765ae}} 
+\index{Game.\+h@{Game.\+h}!change\+\_\+zombie\+\_\+coords@{change\+\_\+zombie\+\_\+coords}}
+\index{change\+\_\+zombie\+\_\+coords@{change\+\_\+zombie\+\_\+coords}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{change\+\_\+zombie\+\_\+coords()}{change\_zombie\_coords()}}
+{\footnotesize\ttfamily void change\+\_\+zombie\+\_\+coords (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix,  }\item[{\hyperlink{structZombie}{Zombie} $\ast$}]{zombie,  }\item[{char}]{object }\end{DoxyParamCaption})}
+
+
+
+Changes the zombies coordinatess based on the output of the check\+\_\+smallest\+\_\+distance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/current terminix \\
+\hline
+{\em zombie} & -\/ pointer to the zombi to change the coordinatess \\
+\hline
+{\em object} & -\/ represents the object thats the most near to the zombie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Game_8h_a15a17da14a2aaac56415514511136bd6}\label{Game_8h_a15a17da14a2aaac56415514511136bd6}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+bullet\+\_\+colisions@{check\+\_\+bullet\+\_\+colisions}}
+\index{check\+\_\+bullet\+\_\+colisions@{check\+\_\+bullet\+\_\+colisions}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+bullet\+\_\+colisions()}{check\_bullet\_colisions()}}
+{\footnotesize\ttfamily bool check\+\_\+bullet\+\_\+colisions (\begin{DoxyParamCaption}\item[{\hyperlink{structBullet}{Bullet} $\ast$}]{bullet,  }\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Checks if the bullet as collided with anything. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bullet} & -\/ bullet to check the collision \\
+\hline
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the bullet has collided with anything 
+
+false -\/ if the bullet hasn\textquotesingle{}t collided 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a15a17da14a2aaac56415514511136bd6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_aa3afe490fccdfdeef019b03a2de701a4}\label{Game_8h_aa3afe490fccdfdeef019b03a2de701a4}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+hero\+\_\+direction@{check\+\_\+hero\+\_\+direction}}
+\index{check\+\_\+hero\+\_\+direction@{check\+\_\+hero\+\_\+direction}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+hero\+\_\+direction()}{check\_hero\_direction()}}
+{\footnotesize\ttfamily void check\+\_\+hero\+\_\+direction (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero,  }\item[{\hyperlink{structMouse}{Mouse} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Changes the hero direction based on the mouse position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ pointer to the hero to change the direction \\
+\hline
+{\em mouse} & -\/ pointer to the mouse object \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_aa3afe490fccdfdeef019b03a2de701a4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_acf3c5ee8ecaf5eb146148e5e3269fe13}\label{Game_8h_acf3c5ee8ecaf5eb146148e5e3269fe13}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+heroe\+\_\+enemy\+\_\+collisions@{check\+\_\+heroe\+\_\+enemy\+\_\+collisions}}
+\index{check\+\_\+heroe\+\_\+enemy\+\_\+collisions@{check\+\_\+heroe\+\_\+enemy\+\_\+collisions}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+heroe\+\_\+enemy\+\_\+collisions()}{check\_heroe\_enemy\_collisions()}}
+{\footnotesize\ttfamily bool check\+\_\+heroe\+\_\+enemy\+\_\+collisions (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero,  }\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Checks if the hero as collided with an enemy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ hero to check the collision \\
+\hline
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the hero has collided with an enemy 
+
+false -\/ if the hero hasn\textquotesingle{}t collided 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Game_8h_a275f4c8ad5b91f91d3dede1c46946ee5}\label{Game_8h_a275f4c8ad5b91f91d3dede1c46946ee5}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+heroe\+\_\+friendly\+\_\+collisions@{check\+\_\+heroe\+\_\+friendly\+\_\+collisions}}
+\index{check\+\_\+heroe\+\_\+friendly\+\_\+collisions@{check\+\_\+heroe\+\_\+friendly\+\_\+collisions}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+heroe\+\_\+friendly\+\_\+collisions()}{check\_heroe\_friendly\_collisions()}}
+{\footnotesize\ttfamily bool check\+\_\+heroe\+\_\+friendly\+\_\+collisions (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero,  }\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Checks if the hero as collided with a friendly object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ hero to check the collision \\
+\hline
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the hero has collided with a friendly object 
+
+false -\/ if the hero hasn\textquotesingle{}t collided 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Game_8h_af5e9e5cb046a4b21b7e72424eac9056d}\label{Game_8h_af5e9e5cb046a4b21b7e72424eac9056d}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+smallest\+\_\+distance@{check\+\_\+smallest\+\_\+distance}}
+\index{check\+\_\+smallest\+\_\+distance@{check\+\_\+smallest\+\_\+distance}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+smallest\+\_\+distance()}{check\_smallest\_distance()}}
+{\footnotesize\ttfamily char check\+\_\+smallest\+\_\+distance (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix,  }\item[{\hyperlink{structZombie}{Zombie} $\ast$}]{zombie }\end{DoxyParamCaption})}
+
+
+
+Checks the smallest distance between the \hyperlink{structZombie}{Zombie} and all the other game objects (except other zombies) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+{\em zombie} & -\/ pointer to the zombie to calculate the smallest distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char -\/ representes the object thats the most near 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Game_8h_a5eea7a6f4efdb1dd7166b34a614b0ab1}\label{Game_8h_a5eea7a6f4efdb1dd7166b34a614b0ab1}} 
+\index{Game.\+h@{Game.\+h}!check\+\_\+zombie\+\_\+collisions@{check\+\_\+zombie\+\_\+collisions}}
+\index{check\+\_\+zombie\+\_\+collisions@{check\+\_\+zombie\+\_\+collisions}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{check\+\_\+zombie\+\_\+collisions()}{check\_zombie\_collisions()}}
+{\footnotesize\ttfamily bool check\+\_\+zombie\+\_\+collisions (\begin{DoxyParamCaption}\item[{\hyperlink{structZombie}{Zombie} $\ast$}]{zombie,  }\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix,  }\item[{int}]{zombie\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Checks if the zombie as collided with anything. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zombie} & -\/ zombie to check the collision \\
+\hline
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the zombie has collided with anything 
+
+false -\/ if the zombie hasn\textquotesingle{}t collided 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{Game_8h_a5eea7a6f4efdb1dd7166b34a614b0ab1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a7b8cbde4affe3d2b71eb5bdb75f5e9b3}\label{Game_8h_a7b8cbde4affe3d2b71eb5bdb75f5e9b3}} 
+\index{Game.\+h@{Game.\+h}!clean\+Game\+Over@{clean\+Game\+Over}}
+\index{clean\+Game\+Over@{clean\+Game\+Over}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{clean\+Game\+Over()}{cleanGameOver()}}
+{\footnotesize\ttfamily void clean\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Cleans the game over image. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a7b8cbde4affe3d2b71eb5bdb75f5e9b3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_aeb2c7e9c7d14c9eccb7e624bd9611ef8}\label{Game_8h_aeb2c7e9c7d14c9eccb7e624bd9611ef8}} 
+\index{Game.\+h@{Game.\+h}!draw\+Game\+Over@{draw\+Game\+Over}}
+\index{draw\+Game\+Over@{draw\+Game\+Over}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{draw\+Game\+Over()}{drawGameOver()}}
+{\footnotesize\ttfamily void draw\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the game over image. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_aeb2c7e9c7d14c9eccb7e624bd9611ef8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_aa13653318c21b0e6b86838e6091bfc9a}\label{Game_8h_aa13653318c21b0e6b86838e6091bfc9a}} 
+\index{Game.\+h@{Game.\+h}!draw\+Menu@{draw\+Menu}}
+\index{draw\+Menu@{draw\+Menu}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{draw\+Menu()}{drawMenu()}}
+{\footnotesize\ttfamily void draw\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the menu image. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_aa13653318c21b0e6b86838e6091bfc9a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a63401b160e1b4125d13b63195b8cc09a}\label{Game_8h_a63401b160e1b4125d13b63195b8cc09a}} 
+\index{Game.\+h@{Game.\+h}!get\+\_\+current\+\_\+terminix@{get\+\_\+current\+\_\+terminix}}
+\index{get\+\_\+current\+\_\+terminix@{get\+\_\+current\+\_\+terminix}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+current\+\_\+terminix()}{get\_current\_terminix()}}
+{\footnotesize\ttfamily \hyperlink{structTerminix}{Terminix}$\ast$ get\+\_\+current\+\_\+terminix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the current terminix object. 
+
+\begin{DoxyReturn}{Returns}
+Terminix$\ast$ -\/ pointer to the current terminix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Game_8h_a7d9edd8b0a8d0d2f737eb5ee0b0a5040}\label{Game_8h_a7d9edd8b0a8d0d2f737eb5ee0b0a5040}} 
+\index{Game.\+h@{Game.\+h}!render@{render}}
+\index{render@{render}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the game into the screen depending on the state. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a7d9edd8b0a8d0d2f737eb5ee0b0a5040_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a65be84c8b68eec6b653278216887b4ba}\label{Game_8h_a65be84c8b68eec6b653278216887b4ba}} 
+\index{Game.\+h@{Game.\+h}!reset\+\_\+heroes\+\_\+position@{reset\+\_\+heroes\+\_\+position}}
+\index{reset\+\_\+heroes\+\_\+position@{reset\+\_\+heroes\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{reset\+\_\+heroes\+\_\+position()}{reset\_heroes\_position()}}
+{\footnotesize\ttfamily void reset\+\_\+heroes\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Resets the position of all the heroes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{Game_8h_a65be84c8b68eec6b653278216887b4ba_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_ad497d88bc271e65ce31454c4659e4477}\label{Game_8h_ad497d88bc271e65ce31454c4659e4477}} 
+\index{Game.\+h@{Game.\+h}!save\+\_\+score@{save\+\_\+score}}
+\index{save\+\_\+score@{save\+\_\+score}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{save\+\_\+score()}{save\_score()}}
+{\footnotesize\ttfamily void save\+\_\+score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Saves the score of the hero. 
+
+\mbox{\Hypertarget{Game_8h_a610e8db405e8c7986932336cf6fb85eb}\label{Game_8h_a610e8db405e8c7986932336cf6fb85eb}} 
+\index{Game.\+h@{Game.\+h}!send\+\_\+movement\+\_\+info@{send\+\_\+movement\+\_\+info}}
+\index{send\+\_\+movement\+\_\+info@{send\+\_\+movement\+\_\+info}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{send\+\_\+movement\+\_\+info()}{send\_movement\_info()}}
+{\footnotesize\ttfamily void send\+\_\+movement\+\_\+info (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix,  }\item[{char}]{movement }\end{DoxyParamCaption})}
+
+
+
+Send the information about the movement of the hero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+{\em movement} & -\/ char representing the movement made by the hero \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a610e8db405e8c7986932336cf6fb85eb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a54b83745e9f20db86407fcdef76e0d3a}\label{Game_8h_a54b83745e9f20db86407fcdef76e0d3a}} 
+\index{Game.\+h@{Game.\+h}!subscribe\+\_\+periphericals@{subscribe\+\_\+periphericals}}
+\index{subscribe\+\_\+periphericals@{subscribe\+\_\+periphericals}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{subscribe\+\_\+periphericals()}{subscribe\_periphericals()}}
+{\footnotesize\ttfamily int subscribe\+\_\+periphericals (\begin{DoxyParamCaption}\item[{int $\ast$}]{timer\+\_\+irq,  }\item[{int $\ast$}]{mouse\+\_\+irq,  }\item[{int $\ast$}]{keyboard\+\_\+irq,  }\item[{int $\ast$}]{rtc\+\_\+irq,  }\item[{int $\ast$}]{uart\+\_\+irq }\end{DoxyParamCaption})}
+
+
+
+Subscribes to all the periphericals used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+\_\+irq} & -\/ irq of the timer \\
+\hline
+{\em mouse\+\_\+irq} & -\/ irq of the mouse \\
+\hline
+{\em keyboard\+\_\+irq} & -\/ irq of the keyboard \\
+\hline
+{\em rtc\+\_\+irq} & -\/ irq of the rtc \\
+\hline
+{\em uart\+\_\+irq} & -\/ irq of the uart \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if success or 1 if fail 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a54b83745e9f20db86407fcdef76e0d3a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_af73db0b415ba94ed8c070b4fe68891c1}\label{Game_8h_af73db0b415ba94ed8c070b4fe68891c1}} 
+\index{Game.\+h@{Game.\+h}!uart\+\_\+message\+\_\+analyse@{uart\+\_\+message\+\_\+analyse}}
+\index{uart\+\_\+message\+\_\+analyse@{uart\+\_\+message\+\_\+analyse}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{uart\+\_\+message\+\_\+analyse()}{uart\_message\_analyse()}}
+{\footnotesize\ttfamily void uart\+\_\+message\+\_\+analyse (\begin{DoxyParamCaption}\item[{char $\ast$}]{message }\end{DoxyParamCaption})}
+
+
+
+Analyses and acts on the message received by the uart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message received by the uart \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_af73db0b415ba94ed8c070b4fe68891c1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a291882147b24986d611c050246df5a32}\label{Game_8h_a291882147b24986d611c050246df5a32}} 
+\index{Game.\+h@{Game.\+h}!unsubscribe\+\_\+periphericals@{unsubscribe\+\_\+periphericals}}
+\index{unsubscribe\+\_\+periphericals@{unsubscribe\+\_\+periphericals}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{unsubscribe\+\_\+periphericals()}{unsubscribe\_periphericals()}}
+{\footnotesize\ttfamily int unsubscribe\+\_\+periphericals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to all the periphericals used. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if success or 1 if fail 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a291882147b24986d611c050246df5a32_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a72797755e6b9d1841d2e9c7bff17b6cd}\label{Game_8h_a72797755e6b9d1841d2e9c7bff17b6cd}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+bullet\+\_\+position@{update\+\_\+bullet\+\_\+position}}
+\index{update\+\_\+bullet\+\_\+position@{update\+\_\+bullet\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+bullet\+\_\+position()}{update\_bullet\_position()}}
+{\footnotesize\ttfamily void update\+\_\+bullet\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structBullet}{Bullet} $\ast$}]{bullet,  }\item[{int}]{hero\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Updates the bullet position while checking for collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bullet} & -\/ bullet to be updated \\
+\hline
+{\em hero\+\_\+index} & -\/ index of the hero that the bullet belongs to \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a72797755e6b9d1841d2e9c7bff17b6cd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a18fa19c055aed56c84050b5794899836}\label{Game_8h_a18fa19c055aed56c84050b5794899836}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+bullets\+\_\+position@{update\+\_\+bullets\+\_\+position}}
+\index{update\+\_\+bullets\+\_\+position@{update\+\_\+bullets\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+bullets\+\_\+position()}{update\_bullets\_position()}}
+{\footnotesize\ttfamily void update\+\_\+bullets\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Calls the update\+\_\+bullet\+\_\+position function to all the bullets. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a18fa19c055aed56c84050b5794899836_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a8ebce32afc6f04c74c31e6ae117c7db9}\label{Game_8h_a8ebce32afc6f04c74c31e6ae117c7db9}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+hero\+\_\+position@{update\+\_\+hero\+\_\+position}}
+\index{update\+\_\+hero\+\_\+position@{update\+\_\+hero\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+hero\+\_\+position()}{update\_hero\_position()}}
+{\footnotesize\ttfamily void update\+\_\+hero\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix,  }\item[{int}]{hero\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Updates the hero position while checking for collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+{\em hero\+\_\+index} & -\/ index of the hero to udpate the position \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a8ebce32afc6f04c74c31e6ae117c7db9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_afe16f76ca129d87bfec488f37bc0aacc}\label{Game_8h_afe16f76ca129d87bfec488f37bc0aacc}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+heroes\+\_\+position@{update\+\_\+heroes\+\_\+position}}
+\index{update\+\_\+heroes\+\_\+position@{update\+\_\+heroes\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+heroes\+\_\+position()}{update\_heroes\_position()}}
+{\footnotesize\ttfamily void update\+\_\+heroes\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structTerminix}{Terminix} $\ast$}]{terminix }\end{DoxyParamCaption})}
+
+
+
+Call the update\+\_\+hero\+\_\+position function to all the heroes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminix} & -\/ current terminix \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_afe16f76ca129d87bfec488f37bc0aacc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a65d696c970e3074a3b07780b1cedc407}\label{Game_8h_a65d696c970e3074a3b07780b1cedc407}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+level@{update\+\_\+level}}
+\index{update\+\_\+level@{update\+\_\+level}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+level()}{update\_level()}}
+{\footnotesize\ttfamily void update\+\_\+level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts the level. Initializes the zombies and puts everything in its original position. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a65d696c970e3074a3b07780b1cedc407_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_aeda5cbb59d8ddcc06a8126c505233a1c}\label{Game_8h_aeda5cbb59d8ddcc06a8126c505233a1c}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+mouse\+\_\+img@{update\+\_\+mouse\+\_\+img}}
+\index{update\+\_\+mouse\+\_\+img@{update\+\_\+mouse\+\_\+img}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+mouse\+\_\+img()}{update\_mouse\_img()}}
+{\footnotesize\ttfamily void update\+\_\+mouse\+\_\+img (\begin{DoxyParamCaption}\item[{\hyperlink{structMouse}{Mouse} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+Updates the position of the mouse. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & -\/ mouse to be updated \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_aeda5cbb59d8ddcc06a8126c505233a1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a4ed56aa25646901e2e90801de0edca1c}\label{Game_8h_a4ed56aa25646901e2e90801de0edca1c}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+positions@{update\+\_\+positions}}
+\index{update\+\_\+positions@{update\+\_\+positions}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+positions()}{update\_positions()}}
+{\footnotesize\ttfamily void update\+\_\+positions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the position of all the game objects. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a4ed56aa25646901e2e90801de0edca1c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a75a798133c788dc6869d6a55a514e091}\label{Game_8h_a75a798133c788dc6869d6a55a514e091}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+zombie\+\_\+position@{update\+\_\+zombie\+\_\+position}}
+\index{update\+\_\+zombie\+\_\+position@{update\+\_\+zombie\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+zombie\+\_\+position()}{update\_zombie\_position()}}
+{\footnotesize\ttfamily void update\+\_\+zombie\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structZombie}{Zombie} $\ast$}]{zombie,  }\item[{int}]{zombie\+\_\+index }\end{DoxyParamCaption})}
+
+
+
+Updates the position of a zombie while checking for collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zombie} & -\/ \hyperlink{structZombie}{Zombie} to be updated \\
+\hline
+{\em zombie\+\_\+index} & -\/ index of the zombie to be updated \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Game_8h_a75a798133c788dc6869d6a55a514e091_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Game_8h_a3ac0ed4d55e10a17440ba09e85c59199}\label{Game_8h_a3ac0ed4d55e10a17440ba09e85c59199}} 
+\index{Game.\+h@{Game.\+h}!update\+\_\+zombies\+\_\+position@{update\+\_\+zombies\+\_\+position}}
+\index{update\+\_\+zombies\+\_\+position@{update\+\_\+zombies\+\_\+position}!Game.\+h@{Game.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+zombies\+\_\+position()}{update\_zombies\_position()}}
+{\footnotesize\ttfamily void update\+\_\+zombies\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structZombie}{Zombie} $\ast$}]{zombies\mbox{[}6\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Call the update\+\_\+zombie\+\_\+position function to all the zombies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zombies} & -\/ array containing all the zombies \\
+\hline
+{\em n} & -\/ number of total zombies \\
+\hline
+\end{DoxyParams}

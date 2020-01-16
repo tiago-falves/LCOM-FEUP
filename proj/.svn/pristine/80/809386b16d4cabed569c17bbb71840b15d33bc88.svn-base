@@ -1,0 +1,5 @@
+<map id="rtc_ih" name="rtc_ih">
+<area shape="rect" id="node2" href="$RTC_8c.html#ab4e3a24c7228998edc81bafcf315e764" title="Reads data from the RTC_DATA_REG. " alt="" coords="143,5,213,32"/>
+<area shape="rect" id="node4" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="108,56,248,83"/>
+<area shape="rect" id="node3" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="296,5,387,32"/>
+</map>

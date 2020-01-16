@@ -1,0 +1,281 @@
+\hypertarget{Hero_8c}{}\section{Hero.\+c File Reference}
+\label{Hero_8c}\index{Hero.\+c@{Hero.\+c}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Hero.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+up.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+down.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+S\+E.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+N\+E.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+N\+W.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+\+S\+W.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/hero1\+\_\+right.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/bullet.\+xpm\char`\"{}}\newline
+Include dependency graph for Hero.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structHero}{Hero} $\ast$ \hyperlink{Hero_8c_a302b01469625ed347b10bf601d544857}{create\+\_\+hero} ()
+\begin{DoxyCompactList}\small\item\em Create a hero object. \end{DoxyCompactList}\item 
+\hyperlink{structBullet}{Bullet} $\ast$ \hyperlink{Hero_8c_a18e1485adb452d4cccc03b3413286655}{shoot} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Creates a bullet object and draws it. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a8e82613c290b342426aef53f5b5ce91d}{hero\+\_\+move\+\_\+up} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves up. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_af2bc262749bfcfb933eef366a2b501fb}{hero\+\_\+move\+\_\+down} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves down. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_ad0ef8c3ec15731aca633aa0f765eda89}{hero\+\_\+move\+\_\+left} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves left. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a6ad4f1771299a2e5449e209215df6de4}{hero\+\_\+move\+\_\+right} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} moves right. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_abacf757d624835370dac1b72975db77f}{reset\+\_\+hero\+\_\+position} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} goes back to the initial position. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a93b2cf88fd937e91131502a252565ffb}{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon} (\hyperlink{structHero}{Hero} $\ast$hero\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Changes the position values so the \hyperlink{structHero}{Hero} of the player one starts in the right position. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a53ce3ef3123128ecf5d97853f1d00270}{destroy\+\_\+bullet} (\hyperlink{structBullet}{Bullet} $\ast$$\ast$bullet)
+\begin{DoxyCompactList}\small\item\em Destroys the bullet. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_aa1e5857dcfd09c2438d013b95b93c2c9}{destroy\+\_\+hero} (\hyperlink{structHero}{Hero} $\ast$$\ast$hero)
+\begin{DoxyCompactList}\small\item\em Destroys the hero. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a84b19814b865635c101d1eac30b654f2}{update\+\_\+xpm} (\hyperlink{structHero}{Hero} $\ast$hero)
+\begin{DoxyCompactList}\small\item\em Updates the xpm of the hero, mainly used when he changes direction. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_aac2a4eecd0a12794666227ae37f492ba}{get\+\_\+bullet\+\_\+coords} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet coordinatess based on where the hero is and which direction he is facing. \end{DoxyCompactList}\item 
+void \hyperlink{Hero_8c_a890d0f121b609c134877b2139edd46da}{get\+\_\+bullet\+\_\+direction} (\hyperlink{structHero}{Hero} $\ast$hero, uint16\+\_\+t $\ast$x, uint16\+\_\+t $\ast$y)
+\begin{DoxyCompactList}\small\item\em Get the bullet direction based on which direction the hero is facing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Hero_8c_a93b2cf88fd937e91131502a252565ffb}\label{Hero_8c_a93b2cf88fd937e91131502a252565ffb}} 
+\index{Hero.\+c@{Hero.\+c}!change\+\_\+hero1\+\_\+multiplayer\+\_\+positon@{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon}}
+\index{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon@{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{change\+\_\+hero1\+\_\+multiplayer\+\_\+positon()}{change\_hero1\_multiplayer\_positon()}}
+{\footnotesize\ttfamily void change\+\_\+hero1\+\_\+multiplayer\+\_\+positon (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} of the player one starts in the right position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero of player 1 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_a302b01469625ed347b10bf601d544857}\label{Hero_8c_a302b01469625ed347b10bf601d544857}} 
+\index{Hero.\+c@{Hero.\+c}!create\+\_\+hero@{create\+\_\+hero}}
+\index{create\+\_\+hero@{create\+\_\+hero}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+hero()}{create\_hero()}}
+{\footnotesize\ttfamily \hyperlink{structHero}{Hero}$\ast$ create\+\_\+hero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a hero object. 
+
+\begin{DoxyReturn}{Returns}
+Hero$\ast$ -\/ pointer to the hero just created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{Hero_8c_a302b01469625ed347b10bf601d544857_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Hero_8c_a53ce3ef3123128ecf5d97853f1d00270}\label{Hero_8c_a53ce3ef3123128ecf5d97853f1d00270}} 
+\index{Hero.\+c@{Hero.\+c}!destroy\+\_\+bullet@{destroy\+\_\+bullet}}
+\index{destroy\+\_\+bullet@{destroy\+\_\+bullet}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+bullet()}{destroy\_bullet()}}
+{\footnotesize\ttfamily void destroy\+\_\+bullet (\begin{DoxyParamCaption}\item[{\hyperlink{structBullet}{Bullet} $\ast$$\ast$}]{bullet }\end{DoxyParamCaption})}
+
+
+
+Destroys the bullet. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bullet} & -\/ bullet to be destroyed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_aa1e5857dcfd09c2438d013b95b93c2c9}\label{Hero_8c_aa1e5857dcfd09c2438d013b95b93c2c9}} 
+\index{Hero.\+c@{Hero.\+c}!destroy\+\_\+hero@{destroy\+\_\+hero}}
+\index{destroy\+\_\+hero@{destroy\+\_\+hero}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+hero()}{destroy\_hero()}}
+{\footnotesize\ttfamily void destroy\+\_\+hero (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$$\ast$}]{hero }\end{DoxyParamCaption})}
+
+
+
+Destroys the hero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ hero to be destroyd \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_aac2a4eecd0a12794666227ae37f492ba}\label{Hero_8c_aac2a4eecd0a12794666227ae37f492ba}} 
+\index{Hero.\+c@{Hero.\+c}!get\+\_\+bullet\+\_\+coords@{get\+\_\+bullet\+\_\+coords}}
+\index{get\+\_\+bullet\+\_\+coords@{get\+\_\+bullet\+\_\+coords}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+bullet\+\_\+coords()}{get\_bullet\_coords()}}
+{\footnotesize\ttfamily void get\+\_\+bullet\+\_\+coords (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero,  }\item[{uint16\+\_\+t $\ast$}]{x,  }\item[{uint16\+\_\+t $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the bullet coordinatess based on where the hero is and which direction he is facing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ hero to whom the bullet belongs \\
+\hline
+{\em x} & -\/ x coordinate of the bullet \\
+\hline
+{\em y} & -\/ y coordinate of the bullet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_a890d0f121b609c134877b2139edd46da}\label{Hero_8c_a890d0f121b609c134877b2139edd46da}} 
+\index{Hero.\+c@{Hero.\+c}!get\+\_\+bullet\+\_\+direction@{get\+\_\+bullet\+\_\+direction}}
+\index{get\+\_\+bullet\+\_\+direction@{get\+\_\+bullet\+\_\+direction}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+bullet\+\_\+direction()}{get\_bullet\_direction()}}
+{\footnotesize\ttfamily void get\+\_\+bullet\+\_\+direction (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero,  }\item[{uint16\+\_\+t $\ast$}]{x,  }\item[{uint16\+\_\+t $\ast$}]{y }\end{DoxyParamCaption})}
+
+
+
+Get the bullet direction based on which direction the hero is facing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & \\
+\hline
+{\em x} & \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_af2bc262749bfcfb933eef366a2b501fb}\label{Hero_8c_af2bc262749bfcfb933eef366a2b501fb}} 
+\index{Hero.\+c@{Hero.\+c}!hero\+\_\+move\+\_\+down@{hero\+\_\+move\+\_\+down}}
+\index{hero\+\_\+move\+\_\+down@{hero\+\_\+move\+\_\+down}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{hero\+\_\+move\+\_\+down()}{hero\_move\_down()}}
+{\footnotesize\ttfamily void hero\+\_\+move\+\_\+down (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} moves down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero that moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_ad0ef8c3ec15731aca633aa0f765eda89}\label{Hero_8c_ad0ef8c3ec15731aca633aa0f765eda89}} 
+\index{Hero.\+c@{Hero.\+c}!hero\+\_\+move\+\_\+left@{hero\+\_\+move\+\_\+left}}
+\index{hero\+\_\+move\+\_\+left@{hero\+\_\+move\+\_\+left}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{hero\+\_\+move\+\_\+left()}{hero\_move\_left()}}
+{\footnotesize\ttfamily void hero\+\_\+move\+\_\+left (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} moves left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero that moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_a6ad4f1771299a2e5449e209215df6de4}\label{Hero_8c_a6ad4f1771299a2e5449e209215df6de4}} 
+\index{Hero.\+c@{Hero.\+c}!hero\+\_\+move\+\_\+right@{hero\+\_\+move\+\_\+right}}
+\index{hero\+\_\+move\+\_\+right@{hero\+\_\+move\+\_\+right}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{hero\+\_\+move\+\_\+right()}{hero\_move\_right()}}
+{\footnotesize\ttfamily void hero\+\_\+move\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} moves right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero that moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_a8e82613c290b342426aef53f5b5ce91d}\label{Hero_8c_a8e82613c290b342426aef53f5b5ce91d}} 
+\index{Hero.\+c@{Hero.\+c}!hero\+\_\+move\+\_\+up@{hero\+\_\+move\+\_\+up}}
+\index{hero\+\_\+move\+\_\+up@{hero\+\_\+move\+\_\+up}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{hero\+\_\+move\+\_\+up()}{hero\_move\_up()}}
+{\footnotesize\ttfamily void hero\+\_\+move\+\_\+up (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} moves up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero that moved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_abacf757d624835370dac1b72975db77f}\label{Hero_8c_abacf757d624835370dac1b72975db77f}} 
+\index{Hero.\+c@{Hero.\+c}!reset\+\_\+hero\+\_\+position@{reset\+\_\+hero\+\_\+position}}
+\index{reset\+\_\+hero\+\_\+position@{reset\+\_\+hero\+\_\+position}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{reset\+\_\+hero\+\_\+position()}{reset\_hero\_position()}}
+{\footnotesize\ttfamily void reset\+\_\+hero\+\_\+position (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Changes the position values so the \hyperlink{structHero}{Hero} goes back to the initial position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero that will get its position reseted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{Hero_8c_a18e1485adb452d4cccc03b3413286655}\label{Hero_8c_a18e1485adb452d4cccc03b3413286655}} 
+\index{Hero.\+c@{Hero.\+c}!shoot@{shoot}}
+\index{shoot@{shoot}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{shoot()}{shoot()}}
+{\footnotesize\ttfamily \hyperlink{structBullet}{Bullet}$\ast$ shoot (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Creates a bullet object and draws it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero\+\_\+ptr} & -\/ pointer to the hero who shot the bullet \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Bullet$\ast$ -\/ pointer to the bullet just created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8c_a18e1485adb452d4cccc03b3413286655_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Hero_8c_a84b19814b865635c101d1eac30b654f2}\label{Hero_8c_a84b19814b865635c101d1eac30b654f2}} 
+\index{Hero.\+c@{Hero.\+c}!update\+\_\+xpm@{update\+\_\+xpm}}
+\index{update\+\_\+xpm@{update\+\_\+xpm}!Hero.\+c@{Hero.\+c}}
+\subsubsection{\texorpdfstring{update\+\_\+xpm()}{update\_xpm()}}
+{\footnotesize\ttfamily void update\+\_\+xpm (\begin{DoxyParamCaption}\item[{\hyperlink{structHero}{Hero} $\ast$}]{hero }\end{DoxyParamCaption})}
+
+
+
+Updates the xpm of the hero, mainly used when he changes direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hero} & -\/ pointer to the hero \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Hero_8c_a84b19814b865635c101d1eac30b654f2_cgraph}
+\end{center}
+\end{figure}

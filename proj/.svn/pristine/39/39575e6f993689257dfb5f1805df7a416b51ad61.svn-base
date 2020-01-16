@@ -1,0 +1,11 @@
+<map id="update_level" name="update_level">
+<area shape="rect" id="node2" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="345,5,485,32"/>
+<area shape="rect" id="node3" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="180,56,265,83"/>
+<area shape="rect" id="node5" href="$Terminix_8c.html#a1740e510328eef8db9c80b9ea8d39e33" title="Create a zombies in a number related to the level. " alt="" coords="165,107,280,133"/>
+<area shape="rect" id="node9" href="$Game_8c.html#a65be84c8b68eec6b653278216887b4ba" title="Resets the position of all the heroes. " alt="" coords="148,157,297,184"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="363,56,468,83"/>
+<area shape="rect" id="node6" href="$Zombie_8c.html#aa003ca5fa8438b430e6fe9ccac7ed1bd" title="Create a zombie object. " alt="" coords="362,107,469,133"/>
+<area shape="rect" id="node7" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="533,81,659,108"/>
+<area shape="rect" id="node8" href="$Sprite_8c.html#a464dfba786b963a26a579396287d291b" title="Create a sprite object. " alt="" coords="547,132,645,159"/>
+<area shape="rect" id="node10" href="$Hero_8c.html#abacf757d624835370dac1b72975db77f" title="Changes the position values so the Hero goes back to the initial position. " alt="" coords="348,157,483,184"/>
+</map>

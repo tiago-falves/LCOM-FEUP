@@ -1,0 +1,10 @@
+var searchData=
+[
+  ['save_5fscore',['save_score',['../group__Game.html#gad497d88bc271e65ce31454c4659e4477',1,'save_score():&#160;Game.h'],['../group__Highscore.html#ga282a23438b4a11db250b677940e5957b',1,'save_score(int hero_index):&#160;highscores.c'],['../group__Highscore.html#ga282a23438b4a11db250b677940e5957b',1,'save_score(int hero_index):&#160;highscores.c']]],
+  ['send_5fmovement_5finfo',['send_movement_info',['../group__Game.html#ga610e8db405e8c7986932336cf6fb85eb',1,'send_movement_info(Terminix *terminix, char movement):&#160;Game.c'],['../group__Game.html#ga610e8db405e8c7986932336cf6fb85eb',1,'send_movement_info(Terminix *terminix, char movement):&#160;Game.c']]],
+  ['set_5falarm_5fhour',['set_alarm_hour',['../group__RTC.html#gaabf0c92b98c848db38ef0f3063b6aa92',1,'set_alarm_hour(uint8_t hour):&#160;RTC.c'],['../group__RTC.html#gaabf0c92b98c848db38ef0f3063b6aa92',1,'set_alarm_hour(uint8_t hour):&#160;RTC.c']]],
+  ['set_5falarm_5fminute',['set_alarm_minute',['../group__RTC.html#ga356598c3705fad6db2b319b58b27530e',1,'set_alarm_minute(uint8_t minute):&#160;RTC.c'],['../group__RTC.html#ga356598c3705fad6db2b319b58b27530e',1,'set_alarm_minute(uint8_t minute):&#160;RTC.c']]],
+  ['set_5falarm_5fsecond',['set_alarm_second',['../group__RTC.html#gaf4cbfcf7cd2fd02862614a8209e6b7f6',1,'set_alarm_second(uint8_t second):&#160;RTC.c'],['../group__RTC.html#gaf4cbfcf7cd2fd02862614a8209e6b7f6',1,'set_alarm_second(uint8_t second):&#160;RTC.c']]],
+  ['shoot',['shoot',['../group__HERO.html#gafe71445b565fa332c2b971ace8fe6967',1,'shoot(Hero *hero):&#160;Hero.c'],['../group__HERO.html#gafe71445b565fa332c2b971ace8fe6967',1,'shoot(Hero *hero_ptr):&#160;Hero.c']]],
+  ['subscribe_5fperiphericals',['subscribe_periphericals',['../group__Game.html#ga54b83745e9f20db86407fcdef76e0d3a',1,'subscribe_periphericals(int *timer_irq, int *mouse_irq, int *keyboard_irq, int *rtc_irq, int *uart_irq):&#160;Game.c'],['../group__Game.html#ga54b83745e9f20db86407fcdef76e0d3a',1,'subscribe_periphericals(int *timer_irq, int *mouse_irq, int *keyboard_irq, int *rtc_irq, int *uart_irq):&#160;Game.c']]]
+];

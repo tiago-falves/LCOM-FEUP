@@ -1,0 +1,68 @@
+\hypertarget{Zombie_8c}{}\section{Zombie.\+c File Reference}
+\label{Zombie_8c}\index{Zombie.\+c@{Zombie.\+c}}
+{\ttfamily \#include \char`\"{}Zombie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+down.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+up.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+left.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/black\+\_\+zombie\+\_\+right.\+xpm\char`\"{}}\newline
+Include dependency graph for Zombie.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Zombie_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structZombie}{Zombie} $\ast$ \hyperlink{Zombie_8c_aa003ca5fa8438b430e6fe9ccac7ed1bd}{create\+\_\+zombie} (uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Create a zombie object. \end{DoxyCompactList}\item 
+void \hyperlink{Zombie_8c_ae811d7eac3687aee9cf5dd7bc73aed3b}{destroy\+\_\+zombie} (\hyperlink{structZombie}{Zombie} $\ast$$\ast$zombie)
+\begin{DoxyCompactList}\small\item\em Destroyes a zombie object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Zombie_8c_aa003ca5fa8438b430e6fe9ccac7ed1bd}\label{Zombie_8c_aa003ca5fa8438b430e6fe9ccac7ed1bd}} 
+\index{Zombie.\+c@{Zombie.\+c}!create\+\_\+zombie@{create\+\_\+zombie}}
+\index{create\+\_\+zombie@{create\+\_\+zombie}!Zombie.\+c@{Zombie.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+zombie()}{create\_zombie()}}
+{\footnotesize\ttfamily \hyperlink{structZombie}{Zombie}$\ast$ create\+\_\+zombie (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+Create a zombie object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & -\/ position in the x axis where the zombies starts \\
+\hline
+{\em y} & -\/ position in the y axis where the zombies starts \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Zombie$\ast$ -\/ pointer to the zombie created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{Zombie_8c_aa003ca5fa8438b430e6fe9ccac7ed1bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Zombie_8c_ae811d7eac3687aee9cf5dd7bc73aed3b}\label{Zombie_8c_ae811d7eac3687aee9cf5dd7bc73aed3b}} 
+\index{Zombie.\+c@{Zombie.\+c}!destroy\+\_\+zombie@{destroy\+\_\+zombie}}
+\index{destroy\+\_\+zombie@{destroy\+\_\+zombie}!Zombie.\+c@{Zombie.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+zombie()}{destroy\_zombie()}}
+{\footnotesize\ttfamily void destroy\+\_\+zombie (\begin{DoxyParamCaption}\item[{\hyperlink{structZombie}{Zombie} $\ast$$\ast$}]{zombie }\end{DoxyParamCaption})}
+
+
+
+Destroyes a zombie object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zombie} & -\/ zombie to be destroyed \\
+\hline
+\end{DoxyParams}

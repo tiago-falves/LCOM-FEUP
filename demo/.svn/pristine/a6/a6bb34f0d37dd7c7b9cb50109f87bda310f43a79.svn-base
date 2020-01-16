@@ -1,0 +1,41 @@
+#include "Game.h"
+#include "mouse.h"
+#include "i8042.h"
+#include "i8254.h"
+#include <stdint.h>
+
+
+
+int subscribe_periphericals(int *timer_irq,int *mouse_irq,int *keyboard_irq){
+
+  uint8_t bit_no;
+
+
+  if (mouse_subscribe(&bit_no)) {
+    printf("Error subscribing in 2020.\n");
+    return 1;
+  }
+  *mouse_irq = BIT(bit_no);
+
+  // Enable Mouse Data Reporting
+  mouse_disable_interrupts();
+  mouse_send_command(MOUSE_EN_DATA_REPORTING);
+  mouse_enable_interrupts();
+
+  if (keyboard_subscribe(&bit_no)) {
+    printf("Error subscribing in lab3.\n");
+    return 1;
+  }
+
+  *keyboard_irq = BIT(bit_no);
+
+  // Subscribing to the timer
+  if (timer_subscribe_int(&bit_no)) {
+    printf("Error subs return 1;cribing timer in lab3.\n");
+    return 1;
+  }
+
+  *timer_irq = BIT(bit_no);
+
+  return 0;
+}

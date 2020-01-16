@@ -1,0 +1,107 @@
+\hypertarget{structMenu}{}\section{Menu Struct Reference}
+\label{structMenu}\index{Menu@{Menu}}
+
+
+Struct that saves all the information related to the \hyperlink{structMenu}{Menu}.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+
+
+Collaboration diagram for Menu\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{structMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_a83e3a9c80f639fdc00c001ccbc24bdd5}{menu\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_a570db0c599c229ff17bd821c592c18f1}{game\+Over\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_ad18cb6dc06d39849a544e4fce8c19590}{you\+Win\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_a29a44e6653b1baf5467705165ff5cb5b}{waiting\+Screen\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_aa18cf8746ae883a6cf379f2904156aa9}{back\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_af2fcb2383c85e1eb59c9074b8636b0df}{score\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMenu_a0df26409cc36a11a657e48a417560070}{easter\+Egg\+\_\+img}
+\item 
+\hyperlink{structSprite}{Sprite} $\ast$ \hyperlink{structMenu_a3dbe2d1ebc49eb3d2c348d873e8d86a2}{highscore}
+\item 
+bool \hyperlink{structMenu_aea3f5c6fed860844d8eadb651ec4de07}{easter\+Egg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that saves all the information related to the \hyperlink{structMenu}{Menu}. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structMenu_aa18cf8746ae883a6cf379f2904156aa9}\label{structMenu_aa18cf8746ae883a6cf379f2904156aa9}} 
+\index{Menu@{Menu}!back\+\_\+img@{back\+\_\+img}}
+\index{back\+\_\+img@{back\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{back\+\_\+img}{back\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::back\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_aea3f5c6fed860844d8eadb651ec4de07}\label{structMenu_aea3f5c6fed860844d8eadb651ec4de07}} 
+\index{Menu@{Menu}!easter\+Egg@{easter\+Egg}}
+\index{easter\+Egg@{easter\+Egg}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{easter\+Egg}{easterEgg}}
+{\footnotesize\ttfamily bool Menu\+::easter\+Egg}
+
+\mbox{\Hypertarget{structMenu_a0df26409cc36a11a657e48a417560070}\label{structMenu_a0df26409cc36a11a657e48a417560070}} 
+\index{Menu@{Menu}!easter\+Egg\+\_\+img@{easter\+Egg\+\_\+img}}
+\index{easter\+Egg\+\_\+img@{easter\+Egg\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{easter\+Egg\+\_\+img}{easterEgg\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::easter\+Egg\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_a570db0c599c229ff17bd821c592c18f1}\label{structMenu_a570db0c599c229ff17bd821c592c18f1}} 
+\index{Menu@{Menu}!game\+Over\+\_\+img@{game\+Over\+\_\+img}}
+\index{game\+Over\+\_\+img@{game\+Over\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{game\+Over\+\_\+img}{gameOver\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::game\+Over\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_a3dbe2d1ebc49eb3d2c348d873e8d86a2}\label{structMenu_a3dbe2d1ebc49eb3d2c348d873e8d86a2}} 
+\index{Menu@{Menu}!highscore@{highscore}}
+\index{highscore@{highscore}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{highscore}{highscore}}
+{\footnotesize\ttfamily \hyperlink{structSprite}{Sprite}$\ast$ Menu\+::highscore}
+
+\mbox{\Hypertarget{structMenu_a83e3a9c80f639fdc00c001ccbc24bdd5}\label{structMenu_a83e3a9c80f639fdc00c001ccbc24bdd5}} 
+\index{Menu@{Menu}!menu\+\_\+img@{menu\+\_\+img}}
+\index{menu\+\_\+img@{menu\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{menu\+\_\+img}{menu\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::menu\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_af2fcb2383c85e1eb59c9074b8636b0df}\label{structMenu_af2fcb2383c85e1eb59c9074b8636b0df}} 
+\index{Menu@{Menu}!score\+\_\+img@{score\+\_\+img}}
+\index{score\+\_\+img@{score\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{score\+\_\+img}{score\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::score\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_a29a44e6653b1baf5467705165ff5cb5b}\label{structMenu_a29a44e6653b1baf5467705165ff5cb5b}} 
+\index{Menu@{Menu}!waiting\+Screen\+\_\+img@{waiting\+Screen\+\_\+img}}
+\index{waiting\+Screen\+\_\+img@{waiting\+Screen\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{waiting\+Screen\+\_\+img}{waitingScreen\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::waiting\+Screen\+\_\+img}
+
+\mbox{\Hypertarget{structMenu_ad18cb6dc06d39849a544e4fce8c19590}\label{structMenu_ad18cb6dc06d39849a544e4fce8c19590}} 
+\index{Menu@{Menu}!you\+Win\+\_\+img@{you\+Win\+\_\+img}}
+\index{you\+Win\+\_\+img@{you\+Win\+\_\+img}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{you\+Win\+\_\+img}{youWin\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Menu\+::you\+Win\+\_\+img}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Menu_8h}{Menu.\+h}\end{DoxyCompactItemize}

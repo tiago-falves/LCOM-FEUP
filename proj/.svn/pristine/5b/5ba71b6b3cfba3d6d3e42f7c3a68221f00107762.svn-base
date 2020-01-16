@@ -1,0 +1,119 @@
+\hypertarget{mouse_8h}{}\section{mouse.\+h File Reference}
+\label{mouse_8h}\index{mouse.\+h@{mouse.\+h}}
+
+
+responsible for everything related to the mouse  
+
+
+{\ttfamily \#include \char`\"{}Sprite.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for mouse.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMouse}{Mouse}
+\begin{DoxyCompactList}\small\item\em Struct containg all the information related to the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{mouse_8h_a21360eb5532c41e588f7b63cd3004585}{\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+}
+\item 
+\#define \hyperlink{group__Mouse_gac584bf6da2a39394f5d72fa9087ea24b}{D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+Y\+TE}~0x\+A7
+\item 
+\#define \hyperlink{group__Mouse_gacb6e5fa437221ac9c430658954b1d3c3}{M\+O\+U\+S\+E\+\_\+\+S\+T\+A\+R\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON}~300
+\item 
+\#define \hyperlink{group__Mouse_ga50465b84f53615a3813eb69291f2fcb1}{E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+Y\+TE}~0x\+A8
+\item 
+\#define \hyperlink{group__Mouse_ga2a4d1bee423a3756e59bd242433a6b5a}{C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+C\+E\+\_\+\+B\+Y\+TE}~0x\+A8
+\item 
+\#define \hyperlink{group__Mouse_ga0fcdbd39ed7dcf62fede44082d09cb7a}{W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}~0x\+D4
+\item 
+\#define \hyperlink{group__Mouse_gac584bf6da2a39394f5d72fa9087ea24b}{D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+S\+E\+\_\+\+B\+Y\+TE}~0x\+A7
+\item 
+\#define \hyperlink{group__Mouse_ga85964cb90343bb1a029b1d1b4229f910}{M\+O\+U\+S\+E\+\_\+\+I\+RQ}~12
+\item 
+\#define \hyperlink{group__Mouse_ga406990532f617eb5e6405d7a88be7432}{M\+O\+U\+S\+E\+\_\+\+E\+V\+E\+NT}~B\+IT(0)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMouse}{Mouse} $\ast$ \hyperlink{group__Mouse_ga746cb478532b016b28ad06f8e03b22bc}{create\+\_\+mouse} ()
+\begin{DoxyCompactList}\small\item\em Create a mouse object. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_ga45dc77b0600161f8d821d5e758aa8d88}{mouse\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribe the interrupts of the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_gabb62339e13d96f9050f69a71428f8eb9}{mouse\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribe the interrupts of the mouse. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gacbc1b5c21b7dfa3f4bde746667b3b3b2}{packet\+\_\+byte\+\_\+handler} (int $\ast$position, uint8\+\_\+t bytes\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Saves the byte received from the mouse into an array of bytes. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gaed5e0cdccd09938aab783602cb657331}{packet\+\_\+handler} (struct packet $\ast$pp, uint8\+\_\+t packet\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Saves the informatin of a packet sent by the mouse into a struct. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_ga8f2981a74d75d33c2e4bec9a93314711}{mouse\+\_\+send\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the mouse controller. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_ga92e15de5ff284887d84010dec166c684}{mouse\+\_\+enable\+\_\+interrupts} ()
+\begin{DoxyCompactList}\small\item\em Enables the mouse interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gaea10ce450ff0807b0a151bbd930af51c}{mouse\+\_\+disable\+\_\+interrupts} ()
+\begin{DoxyCompactList}\small\item\em Disables the mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_ga0f9e6b0c9d8f68dada2f0c9bb56a7e6f}{mouse\+\_\+flush\+\_\+\+O\+BF} ()
+\begin{DoxyCompactList}\small\item\em Flushes the mouse O\+BF. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_ga0706b44aae98189c8b9330d8c259cdd6}{reset\+\_\+\+K\+B\+C\+\_\+command\+\_\+byte} (uint8\+\_\+t byte)
+\begin{DoxyCompactList}\small\item\em Resets the controller command byte. \end{DoxyCompactList}\item 
+int \hyperlink{group__Mouse_gafa2d1d26c3b833ddc82ba44d1700f094}{check\+\_\+if\+\_\+\+I\+B\+F\+\_\+full} ()
+\begin{DoxyCompactList}\small\item\em Checks if the I\+BF is full. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_ga3912f46409af7da093ddd4bbbb91930a}{mouse\+\_\+actions\+\_\+analyser} (struct mouse\+\_\+ev $\ast$mouse\+\_\+event)
+\begin{DoxyCompactList}\small\item\em Analyses the mouse events and acts on them. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gae0e722e1e3878b0ecdd7b485b4b44792}{mouse\+\_\+handler} (int $\ast$position, uint8\+\_\+t packet\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Handles the mouse interrupts and acts on them. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gac0d90e1b25f00bb1969e4966e265e03d}{update\+\_\+mouse\+\_\+position} (struct packet pp)
+\begin{DoxyCompactList}\small\item\em updates the mouse position based on the information received \end{DoxyCompactList}\item 
+struct mouse\+\_\+ev \hyperlink{group__Mouse_gac0bcec0b1fd2734eb5ae269361180366}{mouse\+\_\+event\+\_\+detector} (struct packet $\ast$pp, uint8\+\_\+t $\ast$event)
+\begin{DoxyCompactList}\small\item\em Detects wheter an event as occured or not, based on the information sent bye th mouse. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Mouse_ga1d896c3172a19ca6777d49723c641c75}{mouse\+\_\+over\+\_\+img} (\hyperlink{structSprite}{Sprite} $\ast$sprite)
+\begin{DoxyCompactList}\small\item\em Checks if the mouse is over a given image. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Mouse_gafd31dd4a6dff655543bd26091a34ea16}{mouse\+\_\+over\+\_\+coop\+\_\+option} ()
+\begin{DoxyCompactList}\small\item\em Checks if the mouse is over the Co-\/\+Op option in the menu. \end{DoxyCompactList}\item 
+bool \hyperlink{group__Mouse_ga23b01b6f552adaddb4feb0c192c95333}{mouse\+\_\+over\+\_\+1player\+\_\+option} ()
+\begin{DoxyCompactList}\small\item\em Checks if the mouse is over the 1 Player option in the menu. \end{DoxyCompactList}\item 
+void \hyperlink{group__Mouse_gaf3c9525efdbd26f95704c0cae843732d}{destroy\+\_\+mouse} (\hyperlink{structMouse}{Mouse} $\ast$$\ast$mouse)
+\begin{DoxyCompactList}\small\item\em Destroy mouse object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+responsible for everything related to the mouse 
+
+\begin{DoxyAuthor}{Author}
+Bernardo Ramalho \& Tiago Alves 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/01-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{mouse_8h_a21360eb5532c41e588f7b63cd3004585}\label{mouse_8h_a21360eb5532c41e588f7b63cd3004585}} 
+\index{mouse.\+h@{mouse.\+h}!\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+@{\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+}}
+\index{\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+@{\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+}!mouse.\+h@{mouse.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+}{\_MOUSE\_H\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+M\+O\+U\+S\+E\+\_\+\+H\+\_\+}
+

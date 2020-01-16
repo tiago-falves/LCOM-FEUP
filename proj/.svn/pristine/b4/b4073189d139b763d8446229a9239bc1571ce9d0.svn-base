@@ -1,0 +1,12 @@
+\section{Class List}
+Here are the classes, structs, unions and interfaces with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{structBullet}{Bullet} \\*Struct that saves the information of a bullet }{\pageref{structBullet}}{}
+\item\contentsline{section}{\hyperlink{structChest}{Chest} }{\pageref{structChest}}{}
+\item\contentsline{section}{\hyperlink{structHero}{Hero} \\*Struct that saves the information of a hero }{\pageref{structHero}}{}
+\item\contentsline{section}{\hyperlink{structHighscore}{Highscore} }{\pageref{structHighscore}}{}
+\item\contentsline{section}{\hyperlink{structMenu}{Menu} \\*Struct that saves all the information related to the \hyperlink{structMenu}{Menu} }{\pageref{structMenu}}{}
+\item\contentsline{section}{\hyperlink{structMouse}{Mouse} \\*Struct containg all the information related to the mouse }{\pageref{structMouse}}{}
+\item\contentsline{section}{\hyperlink{structSprite}{Sprite} \\*Struct containing all the information related to a sprite }{\pageref{structSprite}}{}
+\item\contentsline{section}{\hyperlink{structTerminix}{Terminix} }{\pageref{structTerminix}}{}
+\item\contentsline{section}{\hyperlink{structZombie}{Zombie} }{\pageref{structZombie}}{}
+\end{DoxyCompactList}

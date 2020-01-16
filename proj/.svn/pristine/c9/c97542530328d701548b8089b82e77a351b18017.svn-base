@@ -1,0 +1,72 @@
+#include <stdlib.h>
+#include "i8042.h"
+#include "i8254.h"
+#include "Hero.h"
+#include "Zombie.h"
+#include "Menu.h"
+#include "mouse.h"
+#include "Images/new_background.xpm"
+#include "Images/chest.xpm"
+
+#define MENU_STATE 0
+#define HIGHSCORE_STATE 1
+#define START_LEVEL_STATE 2
+#define LEVEL_STATE 3
+#define LEADERBOARD_STATE 4
+#define END_STATE 5
+#define WAITING_FOR_PLAYER 6
+#define WIN 7
+
+#define CHEST_X 549
+#define CHEST_Y 399
+
+
+enum game_states {menu,hardcore_state, start_level, level, learderboard, end, waiting_for_player, win};
+
+typedef struct{
+  int x;
+  int y;
+  xpm_image_t chest_img;
+} Chest;
+
+typedef struct {
+
+  Mouse * mouse;
+  Chest * chest;
+  Hero * heroes[2];
+  Zombie * zombies[8];
+
+  Menu * menu;
+  
+  bool multiplayer;
+
+  int nr_zombies;
+  int nr_dead_zombies;
+  int nr_dead_players;
+
+  int level;
+  int max_level;
+
+  int nr_player;
+
+  enum game_states state;
+
+
+  uint8_t x;
+  xpm_image_t  background_xpm;
+
+  vbe_mode_info_t mode_info;
+
+} Terminix;
+
+Terminix * create_terminix();
+Terminix * get_current_terminix();
+void create_random_zombies();
+Hero * create_second_hero();
+void destroy_terminix(Terminix ** terminix);
+void reset_terminix();
+Chest * create_chest();
+void destroy_chest(Chest ** chest);
+void draw_chest();
+void clean_chest();
+

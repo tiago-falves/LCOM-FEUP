@@ -1,0 +1,6 @@
+<map id="print_highscores" name="print_highscores">
+<area shape="rect" id="node2" href="$drawing_8c.html#a40b707646a9475857a68d37fbf131e4e" title="Converts an xpm_map_t into a xpm_image_t. " alt="" coords="171,5,296,32"/>
+<area shape="rect" id="node3" href="$highscores_8c.html#a09d90496d9ad097720ef2b990b07bb9a" title="Given a number, prints to the screen the corresponding number. " alt="" coords="194,56,273,83"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="344,81,427,108"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="475,81,580,108"/>
+</map>

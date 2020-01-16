@@ -1,0 +1,139 @@
+\hypertarget{structHero}{}\section{Hero Struct Reference}
+\label{structHero}\index{Hero@{Hero}}
+
+
+Struct that saves the information of a hero.  
+
+
+
+
+{\ttfamily \#include $<$Hero.\+h$>$}
+
+
+
+Collaboration diagram for Hero\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=129pt]{structHero__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structHero_affcbab4f5a580104b3fb3a1d6c913acb}{x}
+\item 
+uint16\+\_\+t \hyperlink{structHero_a8487447a461bf8fac7deb8dd90c82a1f}{y}
+\item 
+uint16\+\_\+t \hyperlink{structHero_a5ed23f4fac44ea0b63b3af862cc45f95}{new\+\_\+x}
+\item 
+uint16\+\_\+t \hyperlink{structHero_aa44277dd069e4fbcf6410ec8c13214d8}{new\+\_\+y}
+\item 
+uint16\+\_\+t \hyperlink{structHero_ab63bffe2803bb8d26ce98aac482ad86f}{init\+\_\+x}
+\item 
+uint16\+\_\+t \hyperlink{structHero_a29eb0ec5efade8c4509697ca99374eff}{init\+\_\+y}
+\item 
+uint16\+\_\+t \hyperlink{structHero_a8bec22cb7e47d9fb69cd5ce96d58e941}{x\+\_\+direction}
+\item 
+uint16\+\_\+t \hyperlink{structHero_ad029ceaf338346b11eeb169cd0d6eed6}{y\+\_\+direction}
+\item 
+uint16\+\_\+t \hyperlink{structHero_a435177e25675db6dd97a7aecc66ae15b}{score}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structHero_abafe26cc4b65e84bab4afcd6ac93648c}{hero\+\_\+img}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structHero_ae6446d28ba9ceb715a8160ee425e049d}{sprites} \mbox{[}8\mbox{]}
+\item 
+enum \hyperlink{group__HERO_ga99f26e6ee9fcd62f75203b5402df8098}{direction} \hyperlink{structHero_ac1d974c9a3f2102c9eae6007807de6df}{direction}
+\item 
+\hyperlink{structBullet}{Bullet} $\ast$ \hyperlink{structHero_a447faf7aa90bb6b76d29f85de240b0ef}{bullet}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that saves the information of a hero. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structHero_a447faf7aa90bb6b76d29f85de240b0ef}\label{structHero_a447faf7aa90bb6b76d29f85de240b0ef}} 
+\index{Hero@{Hero}!bullet@{bullet}}
+\index{bullet@{bullet}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily \hyperlink{structBullet}{Bullet}$\ast$ Hero\+::bullet}
+
+Specifies the bullet object of the heror \mbox{\Hypertarget{structHero_ac1d974c9a3f2102c9eae6007807de6df}\label{structHero_ac1d974c9a3f2102c9eae6007807de6df}} 
+\index{Hero@{Hero}!direction@{direction}}
+\index{direction@{direction}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily enum \hyperlink{group__HERO_ga99f26e6ee9fcd62f75203b5402df8098}{direction} Hero\+::direction}
+
+Specifies the direction the hero is facing towards \mbox{\Hypertarget{structHero_abafe26cc4b65e84bab4afcd6ac93648c}\label{structHero_abafe26cc4b65e84bab4afcd6ac93648c}} 
+\index{Hero@{Hero}!hero\+\_\+img@{hero\+\_\+img}}
+\index{hero\+\_\+img@{hero\+\_\+img}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{hero\+\_\+img}{hero\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Hero\+::hero\+\_\+img}
+
+Specifies the image to be drawn \mbox{\Hypertarget{structHero_ab63bffe2803bb8d26ce98aac482ad86f}\label{structHero_ab63bffe2803bb8d26ce98aac482ad86f}} 
+\index{Hero@{Hero}!init\+\_\+x@{init\+\_\+x}}
+\index{init\+\_\+x@{init\+\_\+x}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{init\+\_\+x}{init\_x}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::init\+\_\+x}
+
+Specifies the initial position in the x axis \mbox{\Hypertarget{structHero_a29eb0ec5efade8c4509697ca99374eff}\label{structHero_a29eb0ec5efade8c4509697ca99374eff}} 
+\index{Hero@{Hero}!init\+\_\+y@{init\+\_\+y}}
+\index{init\+\_\+y@{init\+\_\+y}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{init\+\_\+y}{init\_y}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::init\+\_\+y}
+
+Specifies the initial position in the y axis \mbox{\Hypertarget{structHero_a5ed23f4fac44ea0b63b3af862cc45f95}\label{structHero_a5ed23f4fac44ea0b63b3af862cc45f95}} 
+\index{Hero@{Hero}!new\+\_\+x@{new\+\_\+x}}
+\index{new\+\_\+x@{new\+\_\+x}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{new\+\_\+x}{new\_x}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::new\+\_\+x}
+
+Specifies the next position in the x axis \mbox{\Hypertarget{structHero_aa44277dd069e4fbcf6410ec8c13214d8}\label{structHero_aa44277dd069e4fbcf6410ec8c13214d8}} 
+\index{Hero@{Hero}!new\+\_\+y@{new\+\_\+y}}
+\index{new\+\_\+y@{new\+\_\+y}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{new\+\_\+y}{new\_y}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::new\+\_\+y}
+
+Specifies the next position in the y axis \mbox{\Hypertarget{structHero_a435177e25675db6dd97a7aecc66ae15b}\label{structHero_a435177e25675db6dd97a7aecc66ae15b}} 
+\index{Hero@{Hero}!score@{score}}
+\index{score@{score}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::score}
+
+Specifies the score of the hero \mbox{\Hypertarget{structHero_ae6446d28ba9ceb715a8160ee425e049d}\label{structHero_ae6446d28ba9ceb715a8160ee425e049d}} 
+\index{Hero@{Hero}!sprites@{sprites}}
+\index{sprites@{sprites}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{sprites}{sprites}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Hero\+::sprites\mbox{[}8\mbox{]}}
+
+Saves all the possible sprites of the hero \mbox{\Hypertarget{structHero_affcbab4f5a580104b3fb3a1d6c913acb}\label{structHero_affcbab4f5a580104b3fb3a1d6c913acb}} 
+\index{Hero@{Hero}!x@{x}}
+\index{x@{x}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::x}
+
+Specifies the current position in the x axis \mbox{\Hypertarget{structHero_a8bec22cb7e47d9fb69cd5ce96d58e941}\label{structHero_a8bec22cb7e47d9fb69cd5ce96d58e941}} 
+\index{Hero@{Hero}!x\+\_\+direction@{x\+\_\+direction}}
+\index{x\+\_\+direction@{x\+\_\+direction}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{x\+\_\+direction}{x\_direction}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::x\+\_\+direction}
+
+Specifies the direction in the x axis \mbox{\Hypertarget{structHero_a8487447a461bf8fac7deb8dd90c82a1f}\label{structHero_a8487447a461bf8fac7deb8dd90c82a1f}} 
+\index{Hero@{Hero}!y@{y}}
+\index{y@{y}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::y}
+
+Specifies the current position in the y axis \mbox{\Hypertarget{structHero_ad029ceaf338346b11eeb169cd0d6eed6}\label{structHero_ad029ceaf338346b11eeb169cd0d6eed6}} 
+\index{Hero@{Hero}!y\+\_\+direction@{y\+\_\+direction}}
+\index{y\+\_\+direction@{y\+\_\+direction}!Hero@{Hero}}
+\subsubsection{\texorpdfstring{y\+\_\+direction}{y\_direction}}
+{\footnotesize\ttfamily uint16\+\_\+t Hero\+::y\+\_\+direction}
+
+Specifies the direction in the y axis 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Hero_8h}{Hero.\+h}\end{DoxyCompactItemize}

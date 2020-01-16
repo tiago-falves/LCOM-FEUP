@@ -1,0 +1,47 @@
+\hypertarget{highscores_8h}{}\section{highscores.\+h File Reference}
+\label{highscores_8h}\index{highscores.\+h@{highscores.\+h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$minix/driver.\+h$>$}\newline
+{\ttfamily \#include $<$sys/mman.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for highscores.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{highscores_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{highscores_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structHighscore}{Highscore}
+\begin{DoxyCompactList}\small\item\em Struct that saves the information of a \hyperlink{structHighscore}{Highscore}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__Highscore_ga2b6da2f788faf5219097209fd0c6a037}{load\+\_\+numbers\+\_\+xpms} ()
+\begin{DoxyCompactList}\small\item\em Loads all the xpms, corresponding to numbers and. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga282a23438b4a11db250b677940e5957b}{save\+\_\+score} (int hero\+\_\+index)
+\begin{DoxyCompactList}\small\item\em Saves the score to the scores.\+txt file. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga09d90496d9ad097720ef2b990b07bb9a}{print\+\_\+digit} (unsigned num, uint16\+\_\+t x, uint16\+\_\+t y)
+\begin{DoxyCompactList}\small\item\em Given a number, prints to the screen the corresponding number. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga6cc8c84ab9739c5413e011f6f8ec35b6}{read\+\_\+highscores} ()
+\begin{DoxyCompactList}\small\item\em Reads the Highscores from the scores.\+txt file. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_gaf004aefe7f64968a793d968b2ac0e86f}{print\+\_\+highscores} ()
+\begin{DoxyCompactList}\small\item\em Prints all the highscores in a formatted way. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga97df1c7501b1ec44d1bfc2c9044b82c5}{draw\+Highscores\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the Highscores \hyperlink{structMenu}{Menu}. \end{DoxyCompactList}\item 
+\hyperlink{structHighscore}{Highscore} $\ast$ \hyperlink{group__Highscore_gaa56da1d2f24e53b5d61b07a0b5974bab}{create\+\_\+highscore} (int score, int day, int month, int year, int hour, int minute, int second)
+\begin{DoxyCompactList}\small\item\em Creates the struct \hyperlink{structHighscore}{Highscore} according to the paramters. \end{DoxyCompactList}\item 
+void \hyperlink{group__Highscore_ga030ed7b517c039e183ab155c9222f40d}{destroy\+\_\+highscore} (\hyperlink{structHighscore}{Highscore} $\ast$$\ast$highscore)
+\begin{DoxyCompactList}\small\item\em Destroys the Highscores Struct. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+#include <stdlib.h>
+#include "i8042.h"
+#include "i8254.h"
+#include "Hero.h"
+
+
+
+typedef struct {
+
+  Hero * hero;
+  uint8_t x;
+
+} Terminix;
+
+void create_terminix();

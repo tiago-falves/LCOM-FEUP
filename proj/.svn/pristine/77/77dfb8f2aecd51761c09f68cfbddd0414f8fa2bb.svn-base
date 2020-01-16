@@ -1,0 +1,18 @@
+<map id="unsubscribe_periphericals" name="unsubscribe_periphericals">
+<area shape="rect" id="node2" href="$mouse_8c.html#aea10ce450ff0807b0a151bbd930af51c" title="Disables the mouse interrupts. " alt="" coords="225,5,396,32"/>
+<area shape="rect" id="node3" href="$mouse_8c.html#a8f2981a74d75d33c2e4bec9a93314711" title="Sends a command to the mouse controller. " alt="" coords="231,56,391,83"/>
+<area shape="rect" id="node6" href="$mouse_8c.html#a92e15de5ff284887d84010dec166c684" title="Enables the mouse interrupts. " alt="" coords="227,309,394,336"/>
+<area shape="rect" id="node7" href="$mouse_8c.html#abb62339e13d96f9050f69a71428f8eb9" title="Unsubscribe the interrupts of the mouse. " alt="" coords="241,360,380,387"/>
+<area shape="rect" id="node8" href="$i8042_8h.html#ac5a55c875cfe613e7fc3dec67ab0dde8" title="Unsubscribe the interrupts of the keyboard. " alt="" coords="235,411,387,437"/>
+<area shape="rect" id="node9" href="$timer_8c.html#afabd21de449be154dd65d5fdb2d8045d" title="timer_unsubscribe_int" alt="" coords="236,461,385,488"/>
+<area shape="rect" id="node10" href="$RTC_8c.html#a69ba31d0081549b2418944de50971670" title="Disable alarm interrupts. " alt="" coords="242,157,379,184"/>
+<area shape="rect" id="node13" href="$RTC_8c.html#a7ddb6af7a877e44c12f8db6c4ff37f93" title="Disable update interrupts. " alt="" coords="245,208,376,235"/>
+<area shape="rect" id="node14" href="$RTC_8c.html#ac8915ed7e97ce0c42a5efc6fcf002e35" title="Disable alarm interrupts. " alt="" coords="249,259,373,285"/>
+<area shape="rect" id="node15" href="$RTC_8c.html#a8ee1ffb1e38bc735ccf645370fe5b573" title="Unsubscribes RTC interrupts. " alt="" coords="253,512,368,539"/>
+<area shape="rect" id="node16" href="$Serial__port_8c.html#a64788186a16312699f03e3ae1a489c45" title="Unsubscribes to the uart interrupts. " alt="" coords="250,563,371,589"/>
+<area shape="rect" id="node17" href="$mouse_8c.html#a0f9e6b0c9d8f68dada2f0c9bb56a7e6f" title="Flushes the mouse OBF. " alt="" coords="444,107,575,133"/>
+<area shape="rect" id="node4" href="$mouse_8c.html#afa2d1d26c3b833ddc82ba44d1700f094" title="Checks if the IBF is full. " alt="" coords="448,56,571,83"/>
+<area shape="rect" id="node5" href="$utils_8c.html#a79a031a8611f5b2d6afa4158e92b0fb4" title="util_sys_inb" alt="" coords="623,81,713,108"/>
+<area shape="rect" id="node11" href="$RTC_8c.html#ab4e3a24c7228998edc81bafcf315e764" title="Reads data from the RTC_DATA_REG. " alt="" coords="475,208,544,235"/>
+<area shape="rect" id="node12" href="$RTC_8c.html#ae067c9946aaa508970933b1527ea063e" title="Write a value to a register. " alt="" coords="473,157,545,184"/>
+</map>

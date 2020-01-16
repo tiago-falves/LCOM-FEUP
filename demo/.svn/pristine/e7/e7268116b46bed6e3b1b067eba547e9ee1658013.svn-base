@@ -1,0 +1,11 @@
+#include "Terminix.h"
+
+Terminix * create_terminix(){
+
+  Terminix * terminix = malloc(sizeof *terminix);
+
+  terminix->hero = create_hero();
+
+  return terminix;
+
+}

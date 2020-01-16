@@ -1,0 +1,167 @@
+\hypertarget{Menu_8c}{}\section{Menu.\+c File Reference}
+\label{Menu_8c}\index{Menu.\+c@{Menu.\+c}}
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/main\+\_\+menu.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/game\+\_\+over.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/you\+Lost.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/you\+Win.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/waiting\+Screen.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/highscores1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/menu\+\_\+back.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/score.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Images/garf.\+xpm\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for Menu.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structMenu}{Menu} $\ast$ \hyperlink{Menu_8c_a89bccdf2d8b12f81102d85e3b77d2505}{create\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Create a menu object. \end{DoxyCompactList}\item 
+void \hyperlink{Menu_8c_aff74431082e0cab33a257a6947626212}{destroy\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$$\ast$\hyperlink{Terminix_8h_ab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em destroyes the menu \end{DoxyCompactList}\item 
+void \hyperlink{Menu_8c_a9a634cb675f49714a001a3ac55efe1d4}{clean\+\_\+menu} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{Terminix_8h_ab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the main menu image. \end{DoxyCompactList}\item 
+void \hyperlink{Menu_8c_abc6c4076d16fb5f03ed1b6c19da082eb}{clean\+\_\+game\+Over} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{Terminix_8h_ab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the game over image. \end{DoxyCompactList}\item 
+void \hyperlink{Menu_8c_a2bd58aed5d881d9f708ce50d60d2ad51}{clean\+\_\+you\+Win} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{Terminix_8h_ab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the win image. \end{DoxyCompactList}\item 
+void \hyperlink{Menu_8c_ad08f0c8b6e2f9704c0d8a0dbceb46f52}{clean\+\_\+waiting\+Screen\+Img} (\hyperlink{structMenu}{Menu} $\ast$\hyperlink{Terminix_8h_ab0edca8721ed515bb9906f1c3e538c60ad6dc1651e46be5ab2415ae082f1f320b}{menu})
+\begin{DoxyCompactList}\small\item\em Clean the waiting screen image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Menu_8c_abc6c4076d16fb5f03ed1b6c19da082eb}\label{Menu_8c_abc6c4076d16fb5f03ed1b6c19da082eb}} 
+\index{Menu.\+c@{Menu.\+c}!clean\+\_\+game\+Over@{clean\+\_\+game\+Over}}
+\index{clean\+\_\+game\+Over@{clean\+\_\+game\+Over}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+game\+Over()}{clean\_gameOver()}}
+{\footnotesize\ttfamily void clean\+\_\+game\+Over (\begin{DoxyParamCaption}\item[{\hyperlink{structMenu}{Menu} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Clean the game over image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & -\/ pointer to the menu containing the image info \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c_abc6c4076d16fb5f03ed1b6c19da082eb_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Menu_8c_a9a634cb675f49714a001a3ac55efe1d4}\label{Menu_8c_a9a634cb675f49714a001a3ac55efe1d4}} 
+\index{Menu.\+c@{Menu.\+c}!clean\+\_\+menu@{clean\+\_\+menu}}
+\index{clean\+\_\+menu@{clean\+\_\+menu}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+menu()}{clean\_menu()}}
+{\footnotesize\ttfamily void clean\+\_\+menu (\begin{DoxyParamCaption}\item[{\hyperlink{structMenu}{Menu} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Clean the main menu image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & -\/ pointer to the menu containing the image info \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c_a9a634cb675f49714a001a3ac55efe1d4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Menu_8c_ad08f0c8b6e2f9704c0d8a0dbceb46f52}\label{Menu_8c_ad08f0c8b6e2f9704c0d8a0dbceb46f52}} 
+\index{Menu.\+c@{Menu.\+c}!clean\+\_\+waiting\+Screen\+Img@{clean\+\_\+waiting\+Screen\+Img}}
+\index{clean\+\_\+waiting\+Screen\+Img@{clean\+\_\+waiting\+Screen\+Img}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+waiting\+Screen\+Img()}{clean\_waitingScreenImg()}}
+{\footnotesize\ttfamily void clean\+\_\+waiting\+Screen\+Img (\begin{DoxyParamCaption}\item[{\hyperlink{structMenu}{Menu} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Clean the waiting screen image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & -\/ pointer to the menu containing the image info \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c_ad08f0c8b6e2f9704c0d8a0dbceb46f52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Menu_8c_a2bd58aed5d881d9f708ce50d60d2ad51}\label{Menu_8c_a2bd58aed5d881d9f708ce50d60d2ad51}} 
+\index{Menu.\+c@{Menu.\+c}!clean\+\_\+you\+Win@{clean\+\_\+you\+Win}}
+\index{clean\+\_\+you\+Win@{clean\+\_\+you\+Win}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{clean\+\_\+you\+Win()}{clean\_youWin()}}
+{\footnotesize\ttfamily void clean\+\_\+you\+Win (\begin{DoxyParamCaption}\item[{\hyperlink{structMenu}{Menu} $\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+Clean the win image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & -\/ pointer to the menu containing the image info \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Menu_8c_a2bd58aed5d881d9f708ce50d60d2ad51_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Menu_8c_a89bccdf2d8b12f81102d85e3b77d2505}\label{Menu_8c_a89bccdf2d8b12f81102d85e3b77d2505}} 
+\index{Menu.\+c@{Menu.\+c}!create\+\_\+menu@{create\+\_\+menu}}
+\index{create\+\_\+menu@{create\+\_\+menu}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{create\+\_\+menu()}{create\_menu()}}
+{\footnotesize\ttfamily \hyperlink{structMenu}{Menu}$\ast$ create\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a menu object. 
+
+\begin{DoxyReturn}{Returns}
+Menu$\ast$ -\/ pointer to the \hyperlink{structMenu}{Menu} just created 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{Menu_8c_a89bccdf2d8b12f81102d85e3b77d2505_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Menu_8c_aff74431082e0cab33a257a6947626212}\label{Menu_8c_aff74431082e0cab33a257a6947626212}} 
+\index{Menu.\+c@{Menu.\+c}!destroy\+\_\+menu@{destroy\+\_\+menu}}
+\index{destroy\+\_\+menu@{destroy\+\_\+menu}!Menu.\+c@{Menu.\+c}}
+\subsubsection{\texorpdfstring{destroy\+\_\+menu()}{destroy\_menu()}}
+{\footnotesize\ttfamily void destroy\+\_\+menu (\begin{DoxyParamCaption}\item[{\hyperlink{structMenu}{Menu} $\ast$$\ast$}]{menu }\end{DoxyParamCaption})}
+
+
+
+destroyes the menu 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu} & -\/ menu to be destroyed \\
+\hline
+\end{DoxyParams}

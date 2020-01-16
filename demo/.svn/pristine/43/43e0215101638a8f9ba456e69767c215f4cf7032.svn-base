@@ -1,0 +1,36 @@
+#include <stdlib.h>
+#include "i8042.h"
+#include "i8254.h"
+#include "Hero.h"
+#include "Zombie.h"
+#include "mouse.h"
+#include "background.xpm"
+
+
+
+typedef struct {
+
+  Mouse * mouse;
+
+  Hero * hero;
+  
+  Zombie * zombie1;
+  Zombie * zombie2;
+  Zombie * zombie3;
+  Zombie * zombie4;
+  Zombie * zombie5;
+  Zombie * zombie6;
+
+  //Mouse * mouse;
+
+  //struct Zombie * zombies[6] = {zombie1,zombie2,zombie3,zombie4,zombie5,zombie6};
+
+
+  uint8_t x;
+  xpm_image_t  background_xpm;
+
+} Terminix;
+
+void create_terminix();
+Terminix * get_current_terminix();
+

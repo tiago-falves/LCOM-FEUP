@@ -1,0 +1,11 @@
+#include <stdlib.h>
+#include "Hero.h"
+
+
+typedef struct Terminix {
+
+  Hero * hero;
+
+} Terminix;
+
+Terminix * create_terminix();

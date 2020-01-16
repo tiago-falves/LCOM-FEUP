@@ -1,0 +1,11 @@
+<map id="update_zombies_position" name="update_zombies_position">
+<area shape="rect" id="node2" href="$Game_8c.html#a75a798133c788dc6869d6a55a514e091" title="Updates the position of a zombie while checking for collisions. " alt="" coords="223,112,385,139"/>
+<area shape="rect" id="node3" href="$Game_8h.html#a63401b160e1b4125d13b63195b8cc09a" title="Get the current terminix object. " alt="" coords="651,11,791,37"/>
+<area shape="rect" id="node4" href="$drawing_8c.html#a3549b2a65240f7025f5e98bffe20b2f0" title="Erases a given xpm. " alt="" coords="475,36,561,63"/>
+<area shape="rect" id="node6" href="$Game_8c.html#af5e9e5cb046a4b21b7e72424eac9056d" title="Checks the smallest distance between the Zombie and all the other game objects (except other zombies)..." alt="" coords="433,87,603,113"/>
+<area shape="rect" id="node7" href="$Game_8c.html#a63f41f9c6089f42e768b981f4d9765ae" title="Changes the zombies coordinatess based on the output of the check_smallest_distance. " alt="" coords="439,137,597,164"/>
+<area shape="rect" id="node8" href="$Game_8c.html#a5eea7a6f4efdb1dd7166b34a614b0ab1" title="Checks if the zombie as collided with anything. " alt="" coords="435,239,601,265"/>
+<area shape="rect" id="node10" href="$drawing_8c.html#a923b943e5b1b4762cd38427bdba6f3b1" title="draws a given xpm in the screen " alt="" coords="477,188,559,215"/>
+<area shape="rect" id="node5" href="$drawing_8c.html#a08c498ffeb0a3962e3b7711b57397741" title="Draws a pixel in the screen. " alt="" coords="668,137,773,164"/>
+<area shape="rect" id="node9" href="$Game_8h.html#ad497d88bc271e65ce31454c4659e4477" title="Saves the score of the hero. " alt="" coords="676,239,765,265"/>
+</map>

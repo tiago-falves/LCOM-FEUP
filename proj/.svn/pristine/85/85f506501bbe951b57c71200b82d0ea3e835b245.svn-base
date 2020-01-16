@@ -1,0 +1,65 @@
+\hypertarget{structMouse}{}\section{Mouse Struct Reference}
+\label{structMouse}\index{Mouse@{Mouse}}
+
+
+Struct containg all the information related to the mouse.  
+
+
+
+
+{\ttfamily \#include $<$mouse.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+\+\_\+int16\+\_\+t \hyperlink{structMouse_aedd5388b39872d196d56d633b6002a6b}{x}
+\item 
+\+\_\+\+\_\+int16\+\_\+t \hyperlink{structMouse_a5e4e3dbd0f65f635dd80a38b254a9336}{y}
+\item 
+\+\_\+\+\_\+int16\+\_\+t \hyperlink{structMouse_ae928bc8fe19bb6d85ec50e51589e298e}{new\+\_\+x}
+\item 
+\+\_\+\+\_\+int16\+\_\+t \hyperlink{structMouse_a138f6a21db2d1a7346cddf0eb9750d47}{new\+\_\+y}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{structMouse_a1117a958f36367ae1e972ffafc0ab828}{mouse\+\_\+img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct containg all the information related to the mouse. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structMouse_a1117a958f36367ae1e972ffafc0ab828}\label{structMouse_a1117a958f36367ae1e972ffafc0ab828}} 
+\index{Mouse@{Mouse}!mouse\+\_\+img@{mouse\+\_\+img}}
+\index{mouse\+\_\+img@{mouse\+\_\+img}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{mouse\+\_\+img}{mouse\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t Mouse\+::mouse\+\_\+img}
+
+Information about the mouse image \mbox{\Hypertarget{structMouse_ae928bc8fe19bb6d85ec50e51589e298e}\label{structMouse_ae928bc8fe19bb6d85ec50e51589e298e}} 
+\index{Mouse@{Mouse}!new\+\_\+x@{new\+\_\+x}}
+\index{new\+\_\+x@{new\+\_\+x}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{new\+\_\+x}{new\_x}}
+{\footnotesize\ttfamily \+\_\+\+\_\+int16\+\_\+t Mouse\+::new\+\_\+x}
+
+Specifies the new x position of the mouse \mbox{\Hypertarget{structMouse_a138f6a21db2d1a7346cddf0eb9750d47}\label{structMouse_a138f6a21db2d1a7346cddf0eb9750d47}} 
+\index{Mouse@{Mouse}!new\+\_\+y@{new\+\_\+y}}
+\index{new\+\_\+y@{new\+\_\+y}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{new\+\_\+y}{new\_y}}
+{\footnotesize\ttfamily \+\_\+\+\_\+int16\+\_\+t Mouse\+::new\+\_\+y}
+
+Specifies the new y position of the mouse \mbox{\Hypertarget{structMouse_aedd5388b39872d196d56d633b6002a6b}\label{structMouse_aedd5388b39872d196d56d633b6002a6b}} 
+\index{Mouse@{Mouse}!x@{x}}
+\index{x@{x}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \+\_\+\+\_\+int16\+\_\+t Mouse\+::x}
+
+Specifies the current x position of the mouse \mbox{\Hypertarget{structMouse_a5e4e3dbd0f65f635dd80a38b254a9336}\label{structMouse_a5e4e3dbd0f65f635dd80a38b254a9336}} 
+\index{Mouse@{Mouse}!y@{y}}
+\index{y@{y}!Mouse@{Mouse}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \+\_\+\+\_\+int16\+\_\+t Mouse\+::y}
+
+Specifies the current y position of the mouse 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mouse_8h}{mouse.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,73 @@
+\hypertarget{structHighscore}{}\section{Highscore Struct Reference}
+\label{structHighscore}\index{Highscore@{Highscore}}
+
+
+{\ttfamily \#include $<$highscores.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{structHighscore_ac9dae3cd8bbd8b55fd4611203b10e082}{score}
+\item 
+int \hyperlink{structHighscore_a7b3504e6391adac4c21b3f9b4c54bfe3}{day}
+\item 
+int \hyperlink{structHighscore_a1aba28dd2d79ed3401e75f4403bb475d}{month}
+\item 
+int \hyperlink{structHighscore_ad5bb7a2172a3b71e52b7e7a7425cad8f}{year}
+\item 
+int \hyperlink{structHighscore_a7f3da8af677dbf30552117c2c3f37842}{hour}
+\item 
+int \hyperlink{structHighscore_a3dd4202afc48b7751034f5b86c25761f}{minute}
+\item 
+int \hyperlink{structHighscore_a33a38f2583d2d3c2400d50a4d16e6cd5}{sec}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structHighscore_a7b3504e6391adac4c21b3f9b4c54bfe3}\label{structHighscore_a7b3504e6391adac4c21b3f9b4c54bfe3}} 
+\index{Highscore@{Highscore}!day@{day}}
+\index{day@{day}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily int Highscore\+::day}
+
+\mbox{\Hypertarget{structHighscore_a7f3da8af677dbf30552117c2c3f37842}\label{structHighscore_a7f3da8af677dbf30552117c2c3f37842}} 
+\index{Highscore@{Highscore}!hour@{hour}}
+\index{hour@{hour}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily int Highscore\+::hour}
+
+\mbox{\Hypertarget{structHighscore_a3dd4202afc48b7751034f5b86c25761f}\label{structHighscore_a3dd4202afc48b7751034f5b86c25761f}} 
+\index{Highscore@{Highscore}!minute@{minute}}
+\index{minute@{minute}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily int Highscore\+::minute}
+
+\mbox{\Hypertarget{structHighscore_a1aba28dd2d79ed3401e75f4403bb475d}\label{structHighscore_a1aba28dd2d79ed3401e75f4403bb475d}} 
+\index{Highscore@{Highscore}!month@{month}}
+\index{month@{month}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily int Highscore\+::month}
+
+\mbox{\Hypertarget{structHighscore_ac9dae3cd8bbd8b55fd4611203b10e082}\label{structHighscore_ac9dae3cd8bbd8b55fd4611203b10e082}} 
+\index{Highscore@{Highscore}!score@{score}}
+\index{score@{score}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{score}{score}}
+{\footnotesize\ttfamily int Highscore\+::score}
+
+\mbox{\Hypertarget{structHighscore_a33a38f2583d2d3c2400d50a4d16e6cd5}\label{structHighscore_a33a38f2583d2d3c2400d50a4d16e6cd5}} 
+\index{Highscore@{Highscore}!sec@{sec}}
+\index{sec@{sec}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{sec}{sec}}
+{\footnotesize\ttfamily int Highscore\+::sec}
+
+\mbox{\Hypertarget{structHighscore_ad5bb7a2172a3b71e52b7e7a7425cad8f}\label{structHighscore_ad5bb7a2172a3b71e52b7e7a7425cad8f}} 
+\index{Highscore@{Highscore}!year@{year}}
+\index{year@{year}!Highscore@{Highscore}}
+\subsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily int Highscore\+::year}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{highscores_8h}{highscores.\+h}\end{DoxyCompactItemize}

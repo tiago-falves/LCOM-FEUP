@@ -1,0 +1,201 @@
+\hypertarget{Serial__port_8c}{}\section{Serial\+\_\+port.\+c File Reference}
+\label{Serial__port_8c}\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+{\ttfamily \#include \char`\"{}Serial\+\_\+port.\+h\char`\"{}}\newline
+Include dependency graph for Serial\+\_\+port.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{Serial__port_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{Serial__port_8c_a04c839ee1193ff6747831a64a0971b48}{uart\+\_\+subscribe} (uint8\+\_\+t $\ast$bit\+\_\+no)
+\begin{DoxyCompactList}\small\item\em Subscribes to the uart interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{Serial__port_8c_a64788186a16312699f03e3ae1a489c45}{uart\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to the uart interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{Serial__port_8c_a5e41e03b0dd1e22a95997287df58f620}{uart\+\_\+config} ()
+\begin{DoxyCompactList}\small\item\em Configures the uart so that it can receive interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{Serial__port_8c_a9caf04ba76e8da51b28c2e9b872a5d78}{uart\+\_\+ih} (char $\ast$$\ast$message, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Handles the uart interrupts. \end{DoxyCompactList}\item 
+bool \hyperlink{Serial__port_8c_a6f1cda41030f00afdc86fc70e377dc9e}{uart\+\_\+check\+\_\+full\+\_\+message} (char $\ast$$\ast$message, int $\ast$size)
+\begin{DoxyCompactList}\small\item\em Checks if the uart as received a full message. \end{DoxyCompactList}\item 
+void \hyperlink{Serial__port_8c_a0223284cebeabb784af7cdb2bca520a6}{uart\+\_\+send\+\_\+byte} (uint8\+\_\+t info)
+\begin{DoxyCompactList}\small\item\em Sends a byte throw the uart. \end{DoxyCompactList}\item 
+void \hyperlink{Serial__port_8c_add4870a81710672ca2478ba34127ab6c}{uart\+\_\+send\+\_\+message} (char $\ast$message, int size)
+\begin{DoxyCompactList}\small\item\em Sends a message throw de uart. \end{DoxyCompactList}\item 
+void \hyperlink{Serial__port_8c_af8543c1ae5b4005356ff6ecc81e3b227}{uart\+\_\+clear\+\_\+buffer} ()
+\begin{DoxyCompactList}\small\item\em Clears the uart buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{Serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483}{sp\+\_\+hook\+\_\+id} = 4
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{Serial__port_8c_a6f1cda41030f00afdc86fc70e377dc9e}\label{Serial__port_8c_a6f1cda41030f00afdc86fc70e377dc9e}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+check\+\_\+full\+\_\+message@{uart\+\_\+check\+\_\+full\+\_\+message}}
+\index{uart\+\_\+check\+\_\+full\+\_\+message@{uart\+\_\+check\+\_\+full\+\_\+message}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+check\+\_\+full\+\_\+message()}{uart\_check\_full\_message()}}
+{\footnotesize\ttfamily bool uart\+\_\+check\+\_\+full\+\_\+message (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{message,  }\item[{int $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Checks if the uart as received a full message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message received \\
+\hline
+{\em size} & -\/ size of the message received \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true -\/ if the uart as received a full message 
+
+false -\/ if the uart as not received a full message 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Serial__port_8c_af8543c1ae5b4005356ff6ecc81e3b227}\label{Serial__port_8c_af8543c1ae5b4005356ff6ecc81e3b227}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+clear\+\_\+buffer@{uart\+\_\+clear\+\_\+buffer}}
+\index{uart\+\_\+clear\+\_\+buffer@{uart\+\_\+clear\+\_\+buffer}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+clear\+\_\+buffer()}{uart\_clear\_buffer()}}
+{\footnotesize\ttfamily void uart\+\_\+clear\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clears the uart buffer. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{Serial__port_8c_af8543c1ae5b4005356ff6ecc81e3b227_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Serial__port_8c_a5e41e03b0dd1e22a95997287df58f620}\label{Serial__port_8c_a5e41e03b0dd1e22a95997287df58f620}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+config@{uart\+\_\+config}}
+\index{uart\+\_\+config@{uart\+\_\+config}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+config()}{uart\_config()}}
+{\footnotesize\ttfamily void uart\+\_\+config (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Configures the uart so that it can receive interrupts. 
+
+\mbox{\Hypertarget{Serial__port_8c_a9caf04ba76e8da51b28c2e9b872a5d78}\label{Serial__port_8c_a9caf04ba76e8da51b28c2e9b872a5d78}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+ih@{uart\+\_\+ih}}
+\index{uart\+\_\+ih@{uart\+\_\+ih}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+ih()}{uart\_ih()}}
+{\footnotesize\ttfamily void uart\+\_\+ih (\begin{DoxyParamCaption}\item[{char $\ast$$\ast$}]{message,  }\item[{int $\ast$}]{size }\end{DoxyParamCaption})}
+
+
+
+Handles the uart interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ place to save the message received \\
+\hline
+{\em size} & -\/ size of the message received \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{Serial__port_8c_a9caf04ba76e8da51b28c2e9b872a5d78_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Serial__port_8c_a0223284cebeabb784af7cdb2bca520a6}\label{Serial__port_8c_a0223284cebeabb784af7cdb2bca520a6}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+send\+\_\+byte@{uart\+\_\+send\+\_\+byte}}
+\index{uart\+\_\+send\+\_\+byte@{uart\+\_\+send\+\_\+byte}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+send\+\_\+byte()}{uart\_send\_byte()}}
+{\footnotesize\ttfamily void uart\+\_\+send\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{info }\end{DoxyParamCaption})}
+
+
+
+Sends a byte throw the uart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & -\/ byte to be sent \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{Serial__port_8c_a0223284cebeabb784af7cdb2bca520a6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Serial__port_8c_add4870a81710672ca2478ba34127ab6c}\label{Serial__port_8c_add4870a81710672ca2478ba34127ab6c}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+send\+\_\+message@{uart\+\_\+send\+\_\+message}}
+\index{uart\+\_\+send\+\_\+message@{uart\+\_\+send\+\_\+message}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+send\+\_\+message()}{uart\_send\_message()}}
+{\footnotesize\ttfamily void uart\+\_\+send\+\_\+message (\begin{DoxyParamCaption}\item[{char $\ast$}]{message,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Sends a message throw de uart. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & -\/ message to be sent \\
+\hline
+{\em size} & -\/ size of the message to be sent \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Serial__port_8c_add4870a81710672ca2478ba34127ab6c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{Serial__port_8c_a04c839ee1193ff6747831a64a0971b48}\label{Serial__port_8c_a04c839ee1193ff6747831a64a0971b48}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+subscribe@{uart\+\_\+subscribe}}
+\index{uart\+\_\+subscribe@{uart\+\_\+subscribe}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+subscribe()}{uart\_subscribe()}}
+{\footnotesize\ttfamily int uart\+\_\+subscribe (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{bit\+\_\+no }\end{DoxyParamCaption})}
+
+
+
+Subscribes to the uart interrupts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+no} & -\/ bit number of the uart \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if success or 1 if fail 
+\end{DoxyReturn}
+\mbox{\Hypertarget{Serial__port_8c_a64788186a16312699f03e3ae1a489c45}\label{Serial__port_8c_a64788186a16312699f03e3ae1a489c45}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!uart\+\_\+unsubscribe@{uart\+\_\+unsubscribe}}
+\index{uart\+\_\+unsubscribe@{uart\+\_\+unsubscribe}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{uart\+\_\+unsubscribe()}{uart\_unsubscribe()}}
+{\footnotesize\ttfamily int uart\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to the uart interrupts. 
+
+\begin{DoxyReturn}{Returns}
+int -\/ 0 if success or 1 if fail 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{Serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483}\label{Serial__port_8c_a279e4c9a05cd63c43dd4c18c80c27483}} 
+\index{Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}!sp\+\_\+hook\+\_\+id@{sp\+\_\+hook\+\_\+id}}
+\index{sp\+\_\+hook\+\_\+id@{sp\+\_\+hook\+\_\+id}!Serial\+\_\+port.\+c@{Serial\+\_\+port.\+c}}
+\subsubsection{\texorpdfstring{sp\+\_\+hook\+\_\+id}{sp\_hook\_id}}
+{\footnotesize\ttfamily int sp\+\_\+hook\+\_\+id = 4}
+
